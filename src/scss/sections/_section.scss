@@ -228,6 +228,13 @@
   }
 
   &--documents{
+    &:nth-child(){
+      .section__heading,
+      .section__content{
+        padding-top: 0;
+      }
+    }
+
     .section__heading{
       &::before{
         @include breakpoint(laptop) {
