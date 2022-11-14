@@ -8,6 +8,14 @@
         @include breakpoint(small-mobile) {
             justify-content: space-between;
         }
+
+        li{
+            @include breakpoint(mobile) {
+                &:nth-child(3){
+                    display: none;
+                }
+            }
+        }
     }
 
     &__list-link{

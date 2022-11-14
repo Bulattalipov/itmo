@@ -125,7 +125,6 @@
 
     
     iframe{
-       
         border-radius: 2.4rem;
         overflow: hidden;
         object-fit: contain;
@@ -169,7 +168,6 @@
         }
 
         @include breakpoint(small-mobile) {
- 
             margin: 2rem 0;
         }
     }
@@ -234,6 +232,7 @@
 
         img:not(.documents-list__item-img-box img, .content-text__swiper-item-box){
             width: 100%;
+            margin: 0;
         }
     }
 
@@ -241,6 +240,11 @@
         display: flex;
         flex-direction: column;
         gap: 4rem;
+        width: calc(100% + 13.5rem);
+
+        @include breakpoint(laptop) {
+            width: 100%;
+        }
     }
 
     .documents-list__item{
@@ -250,6 +254,7 @@
     &__slider{
         margin: 4rem 0;
         min-width: 0;
+        position: relative
     }
 
     &__swiper{
@@ -262,6 +267,7 @@
         border-radius: 2.4rem;
         overflow: hidden;
         padding-bottom: 64%;
+        background-color: $grayscale-100;
     }
 
     &__swiper-item-box{
@@ -276,7 +282,7 @@
     &__slider-wrapper{
         display: flex;
         justify-content: space-between;
-        gap: 2.4rem 1.2rem;
+        gap: 2.4rem 3.2rem;
         margin-top: 2.4rem;
 
         span{
@@ -284,8 +290,22 @@
             color: $grayscale-600;
         }
 
+        @include breakpoint(small-tablet) {
+            flex-direction: column;
+        }
+
         .slider-pagination-btns{
+            flex-shrink: 0;
             margin-left: auto;
+
+            @include breakpoint(small-tablet) {
+                margin-left: 0;
+            }
         }
     }
+
+    &__text-slider{
+        min-width: 0;
+    }
+
 }

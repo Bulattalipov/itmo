@@ -82,6 +82,8 @@
         .choices__list{
             padding: 1rem 0;
             z-index: 20;
+            max-height: 12.3rem;
+            overflow-y: auto;
         }
 
         .choices__list--single{
@@ -115,17 +117,20 @@
 
         transition: all $tt $te;
 
-        &::placeholder{
-            color: $grayscale-600;
+        &::placeholder {
+            opacity: 0;
         }
 
         &:placeholder-shown~.filter__form-input-placeholder{
             transform: translateY(1.85rem);
+            font-size: inherit
         }
 
         &:focus{
-            & ~ .input__placeholder {
+            & ~ .filter__form-input-placeholder{
                 transform: translateY(0);
+                font-size: 1.2rem;
+                color: $grayscale-600;
             }
         }
     }
@@ -134,6 +139,7 @@
         position: absolute;
         left: 2.8rem;
         top: 0;
+        @extend %fs-body-m;
 
         transform: translateY(0);
         font-size: 1.2rem;
@@ -182,22 +188,28 @@
         max-width: 78rem;
     }
 
-    &__footer-list-link{
+    &__footer-list-item{
+        cursor: pointer
+    }
+
+    &__footer-list-item-text{
         display: inline-block;
         @extend %fs-roboto-xs;
         padding: 0.6rem 1.6rem;
         background-color: $grayscale-300;
         border-radius: 2rem;
 
-        transition: background-color $tt $te, border-color $tt $te, color $tt $te;
+        transition: background-color $tt $te, color $tt $te;
+    }
 
-        &:hover {
-            background-color: $primary-700;
-            border-color: $primary-700;
-            color: $grayscale-300;
-        }
+    &__footer-list-item-input{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
 
-        &.active{
+        &:checked~.filter__footer-list-item-text{
             background-color: $primary-700;
             color: $grayscale-300;
         }
@@ -215,10 +227,30 @@
 
         svg{
             margin-left: 0.8rem;
+            stroke: #000;
+        }
+
+        &:hover{
+            svg{
+                stroke: $primary-500;
+            }
         }
 
         @include breakpoint(small-tablet) {
             margin-left: 0;
+        }
+    }
+
+    &__tabs-content-box{
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s ease,visibility .3s ease;
+
+        &.active{
+            position: relative;
+            opacity: 1;
+            visibility: visible;
         }
     }
 }
