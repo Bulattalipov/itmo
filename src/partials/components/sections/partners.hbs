@@ -1,9 +1,9 @@
 {{#extend "section"}}
     {{#content "content"}}
 
-    <div class="partners">
+    <div class="partners {{#if data.whiteBgImg}}partners--bg-img{{/if}}">
       <h2 class="partners__title title-h2">
-        Мы любим сотрудничество
+        {{data.mainTitle}}
       </h2>
       <div class="partners__wrapper js-init-tabs">
         {{#if data.notTabs}}
@@ -22,7 +22,7 @@
                 {{/each}}
               </ul>
             </div>
-            <div class="partners__navigation slider-pagination-btns">
+            <div class="partners__navigation slider-pagination-btns {{#if data.partnersContent}}slider-pagination-btns--bg-white{{/if}}">
                 <button class="slider-pagination-btns__button prev" type="button" title="Prev">
                     <svg width="8" height="16">
                         <use xlink:href="#arrow-slide" />
@@ -47,7 +47,7 @@
                 {{/each}}
               </ul>
             </div>
-            <div class="partners__navigation slider-pagination-btns">
+            <div class="partners__navigation slider-pagination-btns {{#if data.partnersContent}}slider-pagination-btns--bg-white{{/if}}">
                 <button class="slider-pagination-btns__button prev" type="button" title="Prev">
                     <svg width="8" height="16">
                         <use xlink:href="#arrow-slide" />

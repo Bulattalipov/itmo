@@ -1,4 +1,39 @@
 .intro-main {
+
+  &--modf{
+    .intro-main__inner{
+      background-position: center;
+      background-size: cover;
+      position: relative;
+
+      @include breakpoint(small-tablet) {
+        background-image: none !important;
+      }
+    }
+    .intro-main__menu{
+      display: none;
+    }
+    .intro-main__heading-decoration{
+      display: none;
+    }
+    .intro-main__heading{
+      margin-left: 22rem;
+    }
+    .mini-slider__slider-navigation{
+      display: none;
+    }
+
+    .intro-main__slider {
+      grid-column: 9/-1;
+    }
+
+    .mini-slider__slider{
+      grid-column: 1/-1
+    }
+      
+    }
+  }
+
   &__inner {
     position: relative;
     overflow: hidden;

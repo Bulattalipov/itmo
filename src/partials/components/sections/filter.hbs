@@ -13,6 +13,7 @@
         </div>
         {{/if}}
         <form class="filter__form">
+            {{!-- блок с инпутом и двумя селектами --}}
             {{#if data.inputAndSelect}}
             <fieldset class="filter__form-selects">
                 <div class="filter__form-input-wrapper">
@@ -24,40 +25,31 @@
                         </svg>
                     </span>
                 </div>
-                <select class="filter__from-select js-choice-select" >
-                    <option value="Направление"></option>
-                    <option value="Направление 2"></option>
-                    <option value="Направление 3"></option>
-                    <option value="Направление"></option>
-                    <option value="Направление 2"></option>
-                    <option value="Направление 3"></option>
-                    <option value="Направление"></option>
-                    <option value="Направление 2"></option>
-                    <option value="Направление 3"></option>
-                    <option value="Направление"></option>
-                    <option value="Направление 2"></option>
-                    <option value="Направление 3"></option>
-                    <option value="Направление 2"></option>
-                    <option value="Направление 3"></option>
-                    <option value="Направление"></option>
-                    <option value="Направление 2"></option>
-                    <option value="Направление 3"></option>
-                    <option value="Направление"></option>
-                    <option value="Направление 2"></option>
-                    <option value="Направление 3"></option>
-                </select>
-                <select class="filter__from-select js-choice-select" >
-                    <option value="Направление"></option>
-                    <option value="Направление 2"></option>
-                    <option value="Направление 3"></option>
-                </select>
+                    <select class="filter__from-select js-choice-select">
+                        <option value="Направление"></option>
+                        <option value="Направление 2"></option>
+                        <option value="Направление 3"></option>
+                        <option value="Направление"></option>
+                        <option value="Направление 2"></option>
+                        <option value="Направление 3"></option>
+                        <option value="Направление"></option>
+                        <option value="Направление 2"></option>
+                        <option value="Направление 3"></option>
+                        <option value="Направление"></option>
+                    </select>
+                    <select class="filter__from-select js-choice-select" >
+                        <option value="Направление"></option>
+                        <option value="Направление 2"></option>
+                        <option value="Направление 3"></option>
+                    </select>
             </fieldset>
             {{/if}}
+            {{!-- блок с 1 инпутом, чекбоксами и кнопкой сброса --}}
             {{#if data.simplyBlock}}
             <fieldset class="filter__form-selects">
                 <div class="filter__form-input-wrapper">
                     <input class="filter__form-input" type="text" placeholder="Выпускники">
-                    {{!-- <span class="filter__form-input-placeholder">Поиск по ФИО</span> --}}
+                    <span class="filter__form-input-placeholder">Выпускники</span>
                     <span class="filter__form-input-search">
                         <svg width="20" height="20">
                             <use xlink:href="#search" />
@@ -88,12 +80,43 @@
                 </button>
             </fieldset>
             {{/if}}
+            {{!-- блок с табом, инпутом, селектами, чекбоксами и кнопкой сброса--}}
             {{#if data.bigBox}}
             <div class="filter__tabs js-init-tabs">
             {{>components/tabs-buttons button1="Ближайшие" button2="Активные и завершенные"}}
                 <div class="filter__tabs-content">
                     <div class="filter__tabs-content-box js-tab-body">
-
+                        <fieldset class="filter__form-selects filter__form-selects--column">
+                            <div class="filter__form-input-wrapper">
+                                <input class="filter__form-input" type="text" placeholder="Поиск по названию">
+                                <span class="filter__form-input-placeholder">Поиск по названию</span>
+                                <span class="filter__form-input-search">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="#search" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="filter__form-selects-inner">
+                                <select class="filter__from-select js-choice-select">
+                                    <option value="Все года"></option>
+                                    <option value="Все года 2"></option>
+                                    <option value="Все года 3"></option>
+                                    <option value="Все года 4"></option>
+                                </select>
+                                <select class="filter__from-select js-choice-select">
+                                    <option value="Категория участников"></option>
+                                    <option value="Категория участников 2"></option>
+                                    <option value="Категория участников 3"></option>
+                                    <option value="Категория участников 4"></option>
+                                    <option value="Категория участников 5"></option>
+                                </select>
+                                <select class="filter__from-select js-choice-select">
+                                    <option value="Формат участия"></option>
+                                    <option value="Формат участия 2"></option>
+                                    <option value="Формат участия 3"></option>
+                                </select>
+                            </div>
+                        </fieldset>
                         <fieldset class="filter__footer">
                             <div class="filter__footer-list">
                                 <label class="filter__footer-list-item">
@@ -134,7 +157,80 @@
                         </fieldset>
                     </div>
                     <div class="filter__tabs-content-box js-tab-body">
-                        45436734
+                        <fieldset class="filter__form-selects filter__form-selects--column">
+                            <div class="filter__form-input-wrapper">
+                                <input class="filter__form-input" type="text" placeholder="Поиск по названию">
+                                <span class="filter__form-input-placeholder">Поиск по названию</span>
+                                <span class="filter__form-input-search">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="#search" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="filter__form-selects-inner">
+                                <select class="filter__from-select js-choice-select">
+                                    <option value="Все года"></option>
+                                    <option value="Все года 2"></option>
+                                    <option value="Все года 3"></option>
+                                    <option value="Все года 4"></option>
+                                </select>
+                                <select class="filter__from-select js-choice-select">
+                                    <option value="Категория участников"></option>
+                                    <option value="Категория участников 2"></option>
+                                    <option value="Категория участников 3"></option>
+                                    <option value="Категория участников 4"></option>
+                                    <option value="Категория участников 5"></option>
+                                </select>
+                                <select class="filter__from-select js-choice-select">
+                                    <option value="Формат участия"></option>
+                                    <option value="Формат участия 2"></option>
+                                    <option value="Формат участия 3"></option>
+                                </select>
+                                <select class="filter__from-select js-choice-select">
+                                    <option value="Статус мероприятия"></option>
+                                    <option value="Статус мероприятия 2"></option>
+                                    <option value="Статус мероприятия 3"></option>
+                                </select>
+                            </div>
+                        </fieldset>
+                        <fieldset class="filter__footer">
+                            <div class="filter__footer-list">
+                                <label class="filter__footer-list-item">
+                                    <input class="filter__footer-list-item-input" type="checkbox" checked>
+                                    <span class="filter__footer-list-item-text">Все</span>
+                                </label>
+                                <label class="filter__footer-list-item">
+                                    <input class="filter__footer-list-item-input" type="checkbox">
+                                    <span class="filter__footer-list-item-text">Соревнования</span>
+                                </label>
+                                <label class="filter__footer-list-item">
+                                    <input class="filter__footer-list-item-input" type="checkbox">
+                                    <span class="filter__footer-list-item-text">Олимпиады</span>
+                                </label>
+                                <label class="filter__footer-list-item">
+                                    <input class="filter__footer-list-item-input" type="checkbox">
+                                    <span class="filter__footer-list-item-text">Хакатоны</span>
+                                </label>
+                                <label class="filter__footer-list-item">
+                                    <input class="filter__footer-list-item-input" type="checkbox">
+                                    <span class="filter__footer-list-item-text">День открытых дверей</span>
+                                </label>
+                                <label class="filter__footer-list-item">
+                                    <input class="filter__footer-list-item-input" type="checkbox">
+                                    <span class="filter__footer-list-item-text">Курсы и летняя школа</span>
+                                </label>
+                                <label class="filter__footer-list-item">
+                                    <input class="filter__footer-list-item-input" type="checkbox">
+                                    <span class="filter__footer-list-item-text">Научный семинар</span>
+                                </label>
+                            </div>
+                            <button class="filter__footer-reset" type="reset">
+                                <svg width="16" height="16">
+                                    <use xlink:href="#delete" />
+                                </svg>
+                                Сбросить фильтры
+                            </button>
+                        </fieldset>
                     </div>
                 </div>
             </div>

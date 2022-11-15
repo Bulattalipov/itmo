@@ -208,6 +208,93 @@
     }
   },
   "sections": {
+    "introMain": {
+      "modf": false,
+      "mobileBgIbg": "img/content/intro-main/mobile.jpg",
+      "mainTitle": "МНОЦ",
+      "desc": "Первый научно-образовательный центр, занимающийся реализацией проектов в области информационной безопасности на стыке науки и бизнеса.",
+      "slides": [
+          {
+              "link": "#",
+              "image": "img/content/intro-main/1.jpg",
+              "date": "25 мая",
+              "section": "Мероприятие",
+              "title": "Киберучения на Национальном Киберполигоне"
+          },
+          {
+              "link": "#",
+              "image": "img/content/intro-main/1.jpg",
+              "date": "26 мая",
+              "section": "Мероприятие",
+              "title": "Киберучения на Национальном Киберполигоне 1"
+          },
+          {
+              "link": "#",
+              "image": "img/content/intro-main/1.jpg",
+              "date": "27 мая",
+              "section": "Мероприятие",
+              "title": "Киберучения на Национальном Киберполигоне 2"
+          },
+          {
+              "link": "#",
+              "image": "img/content/intro-main/1.jpg",
+              "date": "28 мая",
+              "section": "Мероприятие",
+              "title": "Киберучения на Национальном Киберполигоне 3"
+          },
+          {
+              "link": "#",
+              "image": "img/content/intro-main/1.jpg",
+              "date": "29 мая",
+              "section": "Мероприятие",
+              "title": "Киберучения на Национальном Киберполигоне 4"
+          }
+       ]
+    },
+    "introMain2": {
+      "modf": true,
+      "mobileBgIbg": "img/content/about-the-center/bg.jpg",
+      "mainTitle": "О центре",
+      "desc": "Сегодня факультет БИТ – это факультет с устоявшимися академическими традициями, ориентированный на новейшие и передовые исследования и технологии, как в науке, так и в образовании.",
+      "bgImg": "../../img/content/about-the-center/bg.jpg",
+      "slides": [
+          {
+              "link": "#",
+              "image": "img/content/intro-main/1.jpg",
+              "date": "25 мая",
+              "section": "Мероприятие",
+              "title": "Киберучения на Национальном Киберполигоне"
+          },
+          {
+              "link": "#",
+              "image": "img/content/intro-main/1.jpg",
+              "date": "26 мая",
+              "section": "Мероприятие",
+              "title": "Киберучения на Национальном Киберполигоне 1"
+          },
+          {
+              "link": "#",
+              "image": "img/content/intro-main/1.jpg",
+              "date": "27 мая",
+              "section": "Мероприятие",
+              "title": "Киберучения на Национальном Киберполигоне 2"
+          },
+          {
+              "link": "#",
+              "image": "img/content/intro-main/1.jpg",
+              "date": "28 мая",
+              "section": "Мероприятие",
+              "title": "Киберучения на Национальном Киберполигоне 3"
+          },
+          {
+              "link": "#",
+              "image": "img/content/intro-main/1.jpg",
+              "date": "29 мая",
+              "section": "Мероприятие",
+              "title": "Киберучения на Национальном Киберполигоне 4"
+          }
+       ]
+    },
     "contacts": {
       "block": "contacts",
       "dot": true,
@@ -778,8 +865,8 @@
     "feedbackSubcription": {
       "block": "feedback-subscription",
       "dot": false,
-      "title": "",
-      "desc": "",
+      "title": "Используйте возможности по максимуму",
+      "desc": "Подписывайтесь на рассылку полезных материалов",
       "mods": ""
     },
     "feedbackJoin": {
@@ -834,6 +921,20 @@
       "titleMain": "Результат поиска",
       "desc": "",
       "bigBox": true
+    },
+    "filter4": {
+      "block": "filter",
+      "dot": false,
+      "title": "",
+      "mods": "",
+      "breadcrumbs": [
+        {"name": "Главная"},
+        {"name": "Бизнес"}
+      ],
+      "titleMain": "Кейс-стади",
+      "desc": "Реализованные кейс-стади под реальные задачи малого, среднего и крупного бизнеса",
+      "bigBox": true,
+      "tabs": true
     },
     "cardsSimple": {
       "block": "cards",
@@ -970,6 +1071,359 @@
           "link": "#",
           "name": "Павел Валерьевич Кустарев",
           "post": "Кандидат технических наук, доцент"
+        }
+      ]
+    },
+    "partners": {
+      "block": "partners",
+      "dot": true,
+      "title": "Сотрудничаем с лидерами рынка",
+      "mods": "",
+      "mainTitle": "Мы любим сотрудничество",
+      "notTabs": true,
+      "partnersContent": [
+        {
+          "urlImg": "img/content/partners/1.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/2.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/3.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/4.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/5.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/6.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/7.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/8.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/5.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/6.png",
+          "altImg": "",
+          "link": "#"
+        }
+      ],
+      "clientContent": [
+        {
+          "urlImg": "img/content/partners/1.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/2.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/3.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/4.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/5.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/6.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/7.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/8.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/4.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/5.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/6.png",
+          "altImg": "",
+          "link": "#"
+        }
+      ]
+    },
+    "partners2": {
+      "block": "partners",
+      "dot": true,
+      "title": "Сотрудничаем с лидерами рынка",
+      "mods": "",
+      "mainTitle": "Мы любим сотрудничество",
+      "notTabs": false,
+      "partnersContent": [
+        {
+          "urlImg": "img/content/partners/1.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/2.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/3.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/4.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/5.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/6.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/7.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/8.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/5.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/6.png",
+          "altImg": "",
+          "link": "#"
+        }
+      ],
+      "clientContent": [
+        {
+          "urlImg": "img/content/partners/1.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/2.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/3.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/4.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/5.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/6.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/7.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/8.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/4.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/5.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/6.png",
+          "altImg": "",
+          "link": "#"
+        }
+      ]
+    },
+    "partners3Transparent": {
+      "block": "partners",
+      "dot": true,
+      "title": "Наши партнеры",
+      "mods": "section--bg-transparent section--without-right section--adaptive-without-padding",
+      "mainTitle": "Сотрудничаем с ведущими компаниями",
+      "notTabs": false,
+      "whitePaginationsBtns": true,
+      "whiteBgImg": true,
+      "partnersContent": [
+        {
+          "urlImg": "img/content/partners/1.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/2.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/3.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/4.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/5.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/6.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/7.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/8.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/5.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/6.png",
+          "altImg": "",
+          "link": "#"
+        }
+      ],
+      "clientContent": [
+        {
+          "urlImg": "img/content/partners/1.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/2.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/3.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/4.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/5.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/6.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/7.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/8.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/4.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/5.png",
+          "altImg": "",
+          "link": "#"
+        },
+        {
+          "urlImg": "img/content/partners/6.png",
+          "altImg": "",
+          "link": "#"
         }
       ]
     }

@@ -1,7 +1,21 @@
 .partners{
 
+  &--bg-img{
+    .partners__swiper-item{
+      background-color: $grayscale-100;
+    }
+  }
+
   &__title{
     margin-bottom: 4rem;
+  }
+
+  .tabs-buttons{
+    margin-bottom: 6.4rem;
+
+    @include breakpoint(tablet){
+        margin-bottom: 4rem;
+    }
   }
 
   &__sliders{
@@ -64,6 +78,7 @@
     align-items: center;
     justify-content: center;
     padding: 1.5rem;
+    overflow: hidden;
 
     @include breakpoint(laptop){
       width: 9rem;

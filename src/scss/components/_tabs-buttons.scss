@@ -1,18 +1,15 @@
 .tabs-buttons{
-    display: inline-flex;
+    display: flex;
     align-items: center;
     background-color: $grayscale-300;
-    @extend %fs-button-2;
+    width: max-content;
+    @extend %fs-button-1;
+    font-weight: 400;
     padding: 0.4rem;
     border-radius: 999px;
-    margin-bottom: 6.4rem;
-
-    @include breakpoint(tablet){
-        margin-bottom: 4rem;
-    }
+    text-transform: uppercase;
 
     @include breakpoint(mobile){
-        width: 100%;
         flex-direction: column;
         padding: 0.4rem;
         border-radius: 2.4rem;
@@ -34,7 +31,7 @@
     
         &.active{
           background-color: $grayscale-100;
-          @extend %fs-button-1;
+          font-weight: 700;
         }
     
         @include breakpoint(mobile){

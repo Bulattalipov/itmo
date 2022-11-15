@@ -123,8 +123,8 @@
     overflow-y: auto;
     max-height: 18.2rem;
 
-    scrollbar-width: 10px;
-    scrollbar-color: $grayscale-300 transparent;
+    scrollbar-width: 0.4rem;
+    scrollbar-color: $grayscale-500 transparent;
     &::-webkit-scrollbar {
       width: 0.4rem;
     }
@@ -133,7 +133,7 @@
       background-color: transparent;
     }
     &::-webkit-scrollbar-thumb {
-      background-color: $grayscale-300;
+      background-color: $grayscale-500;
       border-radius: 1rem;
     }
 
