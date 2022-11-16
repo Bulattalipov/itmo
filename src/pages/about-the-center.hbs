@@ -1,54 +1,122 @@
 {{#extend "layout"}}
 {{#content "main"}}
 
-    {{!-- <section class="section section--about-the-center">
+    {{> sections/intro-main data=sections/introMain2}}
+    {{> sections/numbers-main data=sections.numbersMain3}}
+    {{> sections/focus-block data=focusBlock}}
+
+    <section class="section section--platform">
         <div class="container">
             <div class="section__inner">
                 <div class="section__heading">
-                    <h2></h2>
-                    <div class="breadcrumbs">
-                        <ul class="breadcrumbs__list">
-                            <li>
-                                <a class="breadcrumbs__link" href="#">
-                                    Главная
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
                 <div class="section__content">
-                    <div class="about-the-center">
-                        <h1 class="about-the-center about-the-center__title">
-                            О центре
-                        </h1>
-                        <div class="about-the-center__desc">
-                            Сегодня факультет БИТ – это факультет с устоявшимися академическими традициями, ориентированный на новейшие и передовые исследования и технологии, как в науке, так и в образовании.
-                        </div>
-                        <div class="about-the-center__footer">
-                            <img class="about-the-center__footer-decoration" src="img/content/decorations/intro-main-footer.svg" width="728" height="299" alt="Intro Main Footer Decoration">
-                            <div class="about-the-center__info">
-                                <div class="about-the-center__img-box">
-                                    <img class="about-the-center__img" src="img/content/about-the-center/1.jpg" alt="">
-                                </div>
-                                <div class="about-the-center__content">
-                                    <span class="about-the-center__content-text">
-                                        Презентация факультета БИТ
-                                    </span>
-                                    <a class="about-the-center__content-link" href="#">
-                                        Посмотреть
-                                        <svg width="16" height="16">
-                                            <use xlink:href="#download-black-135" />
-                                        </svg>
-                                    </a>
-                                </div>
+                    <div class="platform">
+                        <div class="platform__wrapper">
+                            <h2 class="platform__title">
+                                М-Платформа
+                            </h2>
+                            <div class="platform__desc">
+                                <p>
+                                    ИФБ - среда (методология, средства и способы) подготовки исследовательских кадров высокой квалификации и проведения научной и проектной деятельности по обеспечению ИФБ и обоснованного доверия к инновационным продуктам и сервисам.
+                                </p>
                             </div>
+                            <ul class="platform__list">
+                                <li>
+                                    Secure by design
+                                </li>
+                                <li>
+                                    Разработка сервисов
+                                </li>
+                                <li>
+                                    Сертификация и сопровождение
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section> --}}
-    {{> sections/intro-main data=sections/introMain2}}
+    </section>
+
+    <section class="section section--peculiarities section--bg-transparent section--adaptive-without-padding">
+        <div class="container">
+            <div class="section__inner">
+                <div class="section__heading section__heading--dot">
+                    <h2>Наши особенности</h2>
+                </div>
+                <div class="section__content">
+                  <div class="peculiarities">
+                    <div class="peculiarities__wrapper">
+                        <div class="peculiarities__item">
+                            <div class="peculiarities__item-img-box">
+                                <img class="peculiarities__item-img" src="img/content/peculiarities/1.jpg" alt="ITMO встреча">
+                            </div>
+                            <div class="peculiarities__item-info">
+                                <span class="peculiarities__item-info-title">
+                                    Устойчивость к высоким повторяемым результатам
+                                </span>
+                                <div class="peculiarities__item-info-text">
+                                    <p>
+                                        Текст — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="peculiarities__item">
+                            <div class="peculiarities__item-img-box">
+                                <img class="peculiarities__item-img" src="img/content/peculiarities/2.jpg" alt="ITMO встреча">
+                            </div>
+                            <div class="peculiarities__item-info">
+                                <span class="peculiarities__item-info-title">
+                                    стремление выйти за пределы университета
+                                </span>
+                                <div class="peculiarities__item-info-text">
+                                    <p>
+                                        Текст — зафиксированная на каком-либо материальном носителе человеческая мысль;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="peculiarities__item">
+                            <div class="peculiarities__item-img-box">
+                                <img class="peculiarities__item-img" src="img/content/peculiarities/3.jpg" alt="ITMO встреча">
+                            </div>
+                            <div class="peculiarities__item-info">
+                                <span class="peculiarities__item-info-title">
+                                    Риски и решения
+                                </span>
+                                <div class="peculiarities__item-info-text">
+                                    <p>
+                                        С одной стороны, конкуренция с бизнесом за кадровый потенциал. С другой - индустрия воспринимает ИБ, как аналог, а не как жизненную необходимость. Ситуацию необходимо менять с помощью рассудительно-доказательной базы
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section section--victories">
+        <div class="container">
+            <div class="section__inner">
+                <div class="section__heading section__heading--dot">
+                    <h2>Команда чемпионов</h2>
+                </div>
+                <div class="section__content">
+                    <div class="victories">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     {{> sections/cards-articls data=sections.cardsArticle2}}
     {{> sections/cards-simple data=sections.cardsSimple2}}
     {{> sections/partners data=sections.partners3Transparent}}

@@ -1,0 +1,32 @@
+.focus-block{
+    &__span{
+        display: block;
+        @extend %fs-roboto-s;
+        margin-bottom: 8rem;
+        max-width: 52rem;
+
+        @include breakpoint(laptop) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__title{
+        word-wrap: break-word;
+        text-transform: uppercase;
+        background: linear-gradient(77.88deg, #9A85EC 13.57%, #F68DA2 58.87%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin: 4rem 0;
+        @extend %fs-hero;
+
+        @include breakpoint(laptop) {
+            margin: 2rem 0;
+        }
+    }
+
+    &__desc{
+        max-width: 79rem;
+        @extend %fs-roboto-m;
+    }
+}

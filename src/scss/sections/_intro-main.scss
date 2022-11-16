@@ -1,6 +1,9 @@
 .intro-main {
 
   &--modf{
+    .breadcrumbs{
+      width: 100%;
+    }
     .intro-main__inner{
       background-position: center;
       background-size: cover;
@@ -10,27 +13,36 @@
         background-image: none !important;
       }
     }
+    .intro-main__heading-block{
+      gap: 0;
+    }
     .intro-main__menu{
       display: none;
     }
     .intro-main__heading-decoration{
       display: none;
     }
-    .intro-main__heading{
-      margin-left: 22rem;
-    }
     .mini-slider__slider-navigation{
       display: none;
     }
-
-    .intro-main__slider {
-      grid-column: 9/-1;
+    .mini-slider__slide{
+      gap: 1.5rem;
     }
-
+    .mini-slider__slide-image-wrapper{
+      @include breakpoint(laptop) {
+        width: 8.3rem;
+        height: 8.3rem;
+        border-radius: 1.6rem;
+      }
+    }
     .mini-slider__slider{
       grid-column: 1/-1
     }
-      
+    .intro-main__mobile-wrapper{
+      min-height: 60rem;
+    }
+    .intro-main__mobile-background{
+      object-position: 77% 50%;
     }
   }
 
@@ -357,7 +369,94 @@
     }
   }
 
-  .mini-slider {
+  &__box{
+    grid-column: 8/-1;
+    margin-right: 4rem;
 
+    @include breakpoint(laptop) {
+      grid-column: 2/3;
+      margin-right: 2.4rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      grid-column: 1/1;
+      margin-right: 0;
+    }
+  }
+
+  &__box-info{
+      background-color: $grayscale-100;
+      border-radius: 2rem;
+      overflow: hidden;
+      padding: 1.4rem 2rem;
+      margin-left: auto;
+      display: flex;
+      gap: 2rem;
+
+      @include breakpoint(small-tablet) {
+          padding: 2.4rem;
+          border-radius: 2.4rem;
+      }
+  }
+
+  &__box-img-box{
+      width: 17.2rem;
+      height: 17.2rem;
+      border-radius: 1.6rem;
+      position: relative;
+      overflow: hidden;
+      flex-shrink: 0;
+
+      @include breakpoint(laptop) {
+          width: 8.3rem;
+          height: 8.3rem;
+      }
+  }
+
+  &__box-img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  &__box-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      color: $grayscale-900;
+      row-gap: 1rem;
+  }
+
+  &__box-content-text{
+      @extend %fs-roboto-s;
+  }
+
+  &__box-content-link{
+      display: inline-block;
+      color: $grayscale-900;
+      @extend %fs-roboto-xl;
+      position: relative;
+      padding: 0.65rem 1.6rem;
+      border-radius: 2rem;
+      border: 0.1rem solid $grayscale-900;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      transition: all $tt $te;
+
+      svg{
+        stroke: $grayscale-900;
+      }
+
+      &:hover{
+        color: $grayscale-100;
+      }
+
+      @extend %interactive-svg-stroke-button;
   }
 }

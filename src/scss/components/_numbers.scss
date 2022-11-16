@@ -7,7 +7,11 @@
         }
 
         .numbers__desc{
-            @extend %fs-roboto-s
+            @extend %fs-roboto-s;
+
+            @include breakpoint(mobile) {
+                font-size: 1.4rem;
+            }
         }
     }
     
@@ -29,12 +33,7 @@
     }
 
     &__desc {
-    font-size: 1.6rem;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    word-break: break-word;
-
-    @extend %fs-roboto-xs;
-
+        word-break: break-word;
+        @extend %fs-roboto-xs;
     }
 }

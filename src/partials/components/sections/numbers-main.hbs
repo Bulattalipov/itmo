@@ -1,17 +1,27 @@
 {{#extend "section"}}
     {{#content "content"}}
 
-    <div class="numbers-main">
+    <div class="numbers-main {{data.mods}}">
+      {{#if data.mainTitle}}
       <h2 class="numbers-main__title title-h2">
-        О центре
+        {{data.mainTitle}}
       </h2>
+      {{/if}}
       <div class="numbers-main__wrapper">
         <div class="numbers-main__info">
           <div class="numbers-main__info-desc desc">
             <p>
-              В состав центра входят известные ученые, опытные преподаватели и практикующие специалисты ведущих компаний отрасли информационной безопасности, проектирования и конструирования
+              {{data.desc}}
             </p>
           </div>
+          {{#if data.infoText}}
+          <div class="numbers-main__info-text">
+            <span>
+              Центр создан в 2017 году на базе 4-х кафедр университета
+            </span>
+          </div>
+          {{/if}}
+          {{#if data.imgAndBtns}}
           <div class="numbers-main__info-box">
             <img class="numbers-main__info-box-img" src="img/content/numbers-main/1.jpg" alt="">
             <a class="numbers-main__info-box-link" href="#">
@@ -24,6 +34,7 @@
           <a class="numbers-main__info-link round-buttons" href="#">
             Презентация о нас
           </a>
+          {{/if}}
         </div>
         <ul class="numbers-main__items">
           {{#each data.numbers}}
