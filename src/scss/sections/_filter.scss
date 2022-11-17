@@ -24,7 +24,7 @@
         }
     }
 
-    &__form{
+    fieldset{
 
         .choices{
             max-width: 30rem;
@@ -126,6 +126,16 @@
             position: relative;
             padding: 1rem 1.6rem;
         }
+
+        .filter__form-selects-inner{
+            .choices{
+                max-width: 100%;
+            }
+    
+            @include breakpoint(small-tablet) {
+                flex-direction: column;
+            }
+        }
     }
 
     &__form-selects{
@@ -145,14 +155,6 @@
         display: flex;
         justify-content: space-between;
         gap: 0.8rem 1.4rem;
-
-        .choices{
-            max-width: 100%;
-        }
-
-        @include breakpoint(small-tablet) {
-            flex-direction: column;
-        }
     }
 
     &__from-select-box{
@@ -313,7 +315,14 @@
         }
     }
 
+    &__tabs-content{
+        position: relative;
+    }
+
     &__tabs-content-box{
+        top: 0;
+        left: 0;
+        width: 100%;
         position: absolute;
         opacity: 0;
         visibility: hidden;

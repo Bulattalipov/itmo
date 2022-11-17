@@ -1,242 +1,469 @@
 {{#extend "section"}}
     {{#content "content"}}
 
-      <div class="filter">
-        <h2 class="filter__title title-h2">
-            {{data.titleMain}}
-        </h2>
-        {{#if data.desc}}
-        <div class="filter__desc desc">
-            <p>
-                {{data.desc}}
-            </p>
-        </div>
+        {{#if data.filterResulSearch}}
+            <div class="filter">
+                <h2 class="filter__title title-h2">
+                    Результат поиска
+                </h2>
+                <form class="filter__form">
+                    <fieldset class="filter__form-selects">
+                        <div class="filter__form-input-wrapper">
+                            <input class="filter__form-input" type="text" placeholder="Выпускники">
+                            <span class="filter__form-input-placeholder">Выпускники</span>
+                            <span class="filter__form-input-search">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#search" />
+                                </svg>
+                            </span>
+                        </div>
+                    </fieldset>
+                    <fieldset class="filter__footer">
+                        <div class="filter__footer-list">
+                            <label class="filter__footer-list-item">
+                                <input class="filter__footer-list-item-input" type="checkbox" checked>
+                                <span class="filter__footer-list-item-text">Страницы сайта</span>
+                            </label>
+                            <label class="filter__footer-list-item">
+                                <input class="filter__footer-list-item-input" type="checkbox">
+                                <span class="filter__footer-list-item-text">Блог</span>
+                            </label>
+                            <label class="filter__footer-list-item">
+                                <input class="filter__footer-list-item-input" type="checkbox">
+                                <span class="filter__footer-list-item-text">Мероприятия и олимпиады</span>
+                            </label>
+                        </div>
+                        <button class="filter__footer-reset" type="reset">
+                            <svg width="16" height="16">
+                                <use xlink:href="#delete" />
+                            </svg>
+                            Сбросить фильтры
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
         {{/if}}
-        <form class="filter__form">
-            {{!-- блок с инпутом и двумя селектами --}}
-            {{#if data.inputAndSelect}}
-            <fieldset class="filter__form-selects">
-                <div class="filter__form-input-wrapper">
-                    <input class="filter__form-input" type="text" placeholder="Поиск по ФИО">
-                    <span class="filter__form-input-placeholder">Поиск по ФИО</span>
-                    <span class="filter__form-input-search">
-                        <svg width="20" height="20">
-                            <use xlink:href="#search" />
-                        </svg>
-                    </span>
+
+
+        {{#if data.scientificPublications}}
+            <div class="filter">
+                <h2 class="filter__title title-h2">
+                    Научные публикации
+                </h2>
+                <div class="filter__desc desc">
+                    <p>
+                        Реализованные кейс-стади под реальные задачи малого, среднего и крупного бизнеса
+                    </p>
                 </div>
-                    <select class="filter__from-select js-choice-select">
-                        <option value="Направление"></option>
-                        <option value="Направление 2"></option>
-                        <option value="Направление 3"></option>
-                        <option value="Направление"></option>
-                        <option value="Направление 2"></option>
-                        <option value="Направление 3"></option>
-                        <option value="Направление"></option>
-                        <option value="Направление 2"></option>
-                        <option value="Направление 3"></option>
-                        <option value="Направление"></option>
-                    </select>
-                    <select class="filter__from-select js-choice-select" >
-                        <option value="Направление"></option>
-                        <option value="Направление 2"></option>
-                        <option value="Направление 3"></option>
-                    </select>
-            </fieldset>
-            {{/if}}
-            {{!-- блок с 1 инпутом, чекбоксами и кнопкой сброса --}}
-            {{#if data.simplyBlock}}
-            <fieldset class="filter__form-selects">
-                <div class="filter__form-input-wrapper">
-                    <input class="filter__form-input" type="text" placeholder="Выпускники">
-                    <span class="filter__form-input-placeholder">Выпускники</span>
-                    <span class="filter__form-input-search">
-                        <svg width="20" height="20">
-                            <use xlink:href="#search" />
-                        </svg>
-                    </span>
-                </div>
-            </fieldset>
-            <fieldset class="filter__footer">
-                <div class="filter__footer-list">
-                    <label class="filter__footer-list-item">
-                        <input class="filter__footer-list-item-input" type="checkbox" checked>
-                        <span class="filter__footer-list-item-text">Страницы сайта</span>
-                    </label>
-                    <label class="filter__footer-list-item">
-                        <input class="filter__footer-list-item-input" type="checkbox">
-                        <span class="filter__footer-list-item-text">Блог</span>
-                    </label>
-                    <label class="filter__footer-list-item">
-                        <input class="filter__footer-list-item-input" type="checkbox">
-                        <span class="filter__footer-list-item-text">Мероприятия и олимпиады</span>
-                    </label>
-                </div>
-                <button class="filter__footer-reset" type="reset">
-                    <svg width="16" height="16">
-                        <use xlink:href="#delete" />
-                    </svg>
-                    Сбросить фильтры
-                </button>
-            </fieldset>
-            {{/if}}
-            {{!-- блок с табом, инпутом, селектами, чекбоксами и кнопкой сброса--}}
-            {{#if data.bigBox}}
-            <div class="filter__tabs js-init-tabs">
-            {{>components/tabs-buttons button1="Ближайшие" button2="Активные и завершенные"}}
-                <div class="filter__tabs-content">
-                    <div class="filter__tabs-content-box js-tab-body">
-                        <fieldset class="filter__form-selects filter__form-selects--column">
-                            <div class="filter__form-input-wrapper">
-                                <input class="filter__form-input" type="text" placeholder="Поиск по названию">
-                                <span class="filter__form-input-placeholder">Поиск по названию</span>
-                                <span class="filter__form-input-search">
-                                    <svg width="20" height="20">
-                                        <use xlink:href="#search" />
-                                    </svg>
-                                </span>
-                            </div>
-                            <div class="filter__form-selects-inner">
-                                <select class="filter__from-select js-choice-select">
-                                    <option value="Все года"></option>
-                                    <option value="Все года 2"></option>
-                                    <option value="Все года 3"></option>
-                                    <option value="Все года 4"></option>
-                                </select>
-                                <select class="filter__from-select js-choice-select">
-                                    <option value="Категория участников"></option>
-                                    <option value="Категория участников 2"></option>
-                                    <option value="Категория участников 3"></option>
-                                    <option value="Категория участников 4"></option>
-                                    <option value="Категория участников 5"></option>
-                                </select>
-                                <select class="filter__from-select js-choice-select">
-                                    <option value="Формат участия"></option>
-                                    <option value="Формат участия 2"></option>
-                                    <option value="Формат участия 3"></option>
-                                </select>
-                            </div>
-                        </fieldset>
-                        <fieldset class="filter__footer">
-                            <div class="filter__footer-list">
-                                <label class="filter__footer-list-item">
-                                    <input class="filter__footer-list-item-input" type="checkbox" checked>
-                                    <span class="filter__footer-list-item-text">Все</span>
-                                </label>
-                                <label class="filter__footer-list-item">
-                                    <input class="filter__footer-list-item-input" type="checkbox">
-                                    <span class="filter__footer-list-item-text">Соревнования</span>
-                                </label>
-                                <label class="filter__footer-list-item">
-                                    <input class="filter__footer-list-item-input" type="checkbox">
-                                    <span class="filter__footer-list-item-text">Олимпиады</span>
-                                </label>
-                                <label class="filter__footer-list-item">
-                                    <input class="filter__footer-list-item-input" type="checkbox">
-                                    <span class="filter__footer-list-item-text">Хакатоны</span>
-                                </label>
-                                <label class="filter__footer-list-item">
-                                    <input class="filter__footer-list-item-input" type="checkbox">
-                                    <span class="filter__footer-list-item-text">День открытых дверей</span>
-                                </label>
-                                <label class="filter__footer-list-item">
-                                    <input class="filter__footer-list-item-input" type="checkbox">
-                                    <span class="filter__footer-list-item-text">Курсы и летняя школа</span>
-                                </label>
-                                <label class="filter__footer-list-item">
-                                    <input class="filter__footer-list-item-input" type="checkbox">
-                                    <span class="filter__footer-list-item-text">Научный семинар</span>
-                                </label>
-                            </div>
-                            <button class="filter__footer-reset" type="reset">
-                                <svg width="16" height="16">
-                                    <use xlink:href="#delete" />
+                <form class="filter__form">
+                    <fieldset class="filter__form-selects">
+                        <div class="filter__form-input-wrapper">
+                            <input class="filter__form-input" type="text" placeholder="Поиск по ФИО">
+                            <span class="filter__form-input-placeholder">Поиск по ФИО</span>
+                            <span class="filter__form-input-search">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#search" />
                                 </svg>
-                                Сбросить фильтры
-                            </button>
-                        </fieldset>
-                    </div>
-                    <div class="filter__tabs-content-box js-tab-body">
-                        <fieldset class="filter__form-selects filter__form-selects--column">
-                            <div class="filter__form-input-wrapper">
-                                <input class="filter__form-input" type="text" placeholder="Поиск по названию">
-                                <span class="filter__form-input-placeholder">Поиск по названию</span>
-                                <span class="filter__form-input-search">
-                                    <svg width="20" height="20">
-                                        <use xlink:href="#search" />
-                                    </svg>
-                                </span>
-                            </div>
-                            <div class="filter__form-selects-inner">
-                                <select class="filter__from-select js-choice-select">
-                                    <option value="Все года"></option>
-                                    <option value="Все года 2"></option>
-                                    <option value="Все года 3"></option>
-                                    <option value="Все года 4"></option>
-                                </select>
-                                <select class="filter__from-select js-choice-select">
-                                    <option value="Категория участников"></option>
-                                    <option value="Категория участников 2"></option>
-                                    <option value="Категория участников 3"></option>
-                                    <option value="Категория участников 4"></option>
-                                    <option value="Категория участников 5"></option>
-                                </select>
-                                <select class="filter__from-select js-choice-select">
-                                    <option value="Формат участия"></option>
-                                    <option value="Формат участия 2"></option>
-                                    <option value="Формат участия 3"></option>
-                                </select>
-                                <select class="filter__from-select js-choice-select">
-                                    <option value="Статус мероприятия"></option>
-                                    <option value="Статус мероприятия 2"></option>
-                                    <option value="Статус мероприятия 3"></option>
-                                </select>
-                            </div>
-                        </fieldset>
-                        <fieldset class="filter__footer">
-                            <div class="filter__footer-list">
-                                <label class="filter__footer-list-item">
-                                    <input class="filter__footer-list-item-input" type="checkbox" checked>
-                                    <span class="filter__footer-list-item-text">Все</span>
-                                </label>
-                                <label class="filter__footer-list-item">
-                                    <input class="filter__footer-list-item-input" type="checkbox">
-                                    <span class="filter__footer-list-item-text">Соревнования</span>
-                                </label>
-                                <label class="filter__footer-list-item">
-                                    <input class="filter__footer-list-item-input" type="checkbox">
-                                    <span class="filter__footer-list-item-text">Олимпиады</span>
-                                </label>
-                                <label class="filter__footer-list-item">
-                                    <input class="filter__footer-list-item-input" type="checkbox">
-                                    <span class="filter__footer-list-item-text">Хакатоны</span>
-                                </label>
-                                <label class="filter__footer-list-item">
-                                    <input class="filter__footer-list-item-input" type="checkbox">
-                                    <span class="filter__footer-list-item-text">День открытых дверей</span>
-                                </label>
-                                <label class="filter__footer-list-item">
-                                    <input class="filter__footer-list-item-input" type="checkbox">
-                                    <span class="filter__footer-list-item-text">Курсы и летняя школа</span>
-                                </label>
-                                <label class="filter__footer-list-item">
-                                    <input class="filter__footer-list-item-input" type="checkbox">
-                                    <span class="filter__footer-list-item-text">Научный семинар</span>
-                                </label>
-                            </div>
-                            <button class="filter__footer-reset" type="reset">
-                                <svg width="16" height="16">
-                                    <use xlink:href="#delete" />
+                            </span>
+                        </div>
+                            <select class="filter__from-select js-choice-select">
+                                <option value="Год публикации"></option>
+                                <option value="2022"></option>
+                                <option value="2021"></option>
+                                <option value="2020"></option>
+                                <option value="2019"></option>
+                                <option value="2018"></option>
+                            </select>
+                            <select class="filter__from-select js-choice-select" >
+                                <option value="Направление"></option>
+                                <option value="Направление 2"></option>
+                                <option value="Направление 3"></option>
+                            </select>
+                    </fieldset>
+                </form>
+            </div>
+        {{/if}}
+
+
+        {{#if data.employees}}
+            <div class="filter">
+                <h2 class="filter__title title-h2">
+                    Сотрудники
+                </h2>
+                <form class="filter__form">
+                    <fieldset class="filter__form-selects">
+                        <div class="filter__form-input-wrapper">
+                            <input class="filter__form-input" type="text" placeholder="Поиск по ФИО">
+                            <span class="filter__form-input-placeholder">Поиск по ФИО</span>
+                            <span class="filter__form-input-search">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#search" />
                                 </svg>
-                                Сбросить фильтры
-                            </button>
-                        </fieldset>
+                            </span>
+                        </div>
+                            <select class="filter__from-select js-choice-select">
+                                <option value="Область деятельности"></option>
+                                <option value="Область деятельности 2"></option>
+                                <option value="Область деятельности 3"></option>
+                                <option value="Область деятельности 4"></option>
+                                <option value="Область деятельности 5"></option>
+                                <option value="Область деятельности 6"></option>
+                            </select>
+                            <select class="filter__from-select js-choice-select" >
+                                <option value="Лаборатория"></option>
+                                <option value="Лаборатория 2"></option>
+                                <option value="Лаборатория 3"></option>
+                            </select>
+                    </fieldset>
+                </form>
+            </div>
+        {{/if}}
+
+         {{#if data.caseStudy}}
+            <div class="filter">
+                <h2 class="filter__title title-h2">
+                    Кейс-стади
+                </h2>
+                <div class="filter__desc desc">
+                    <p>
+                        Реализованные кейс-стади под реальные задачи малого, среднего и крупного бизнеса
+                    </p>
+                </div>
+                <form class="filter__form">
+                    <fieldset class="filter__form-selects filter__form-selects--column">
+                        <div class="filter__form-input-wrapper">
+                            <input class="filter__form-input" type="text" placeholder="Поиск по названию/ руководителю">
+                            <span class="filter__form-input-placeholder">Поиск по названию/ руководителю</span>
+                            <span class="filter__form-input-search">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#search" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="filter__form-selects-inner">
+                            <select class="filter__from-select js-choice-select">
+                                <option value="Период реализации"></option>
+                                <option value="Период реализации 2"></option>
+                                <option value="Период реализации 3"></option>
+                                <option value="Период реализации 4"></option>
+                            </select>
+                            <select class="filter__from-select js-choice-select">
+                                <option value="Индустрия"></option>
+                                <option value="Индустрия 2"></option>
+                                <option value="Индустрия 3"></option>
+                                <option value="Индустрия 4"></option>
+                                <option value="Индустрия 5"></option>
+                            </select>
+                            <select class="filter__from-select js-choice-select">
+                                <option value="Вид задачи"></option>
+                                <option value="Вид задачи 2"></option>
+                                <option value="Вид задачи 3"></option>
+                            </select>
+                            <select class="filter__from-select js-choice-select">
+                                <option value="Размер компании"></option>
+                                <option value="Размер компании 2"></option>
+                                <option value="Размер компании 3"></option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset class="filter__footer">
+                        <div class="filter__footer-list">
+                            <label class="filter__footer-list-item">
+                                <input class="filter__footer-list-item-input" type="checkbox" checked>
+                                <span class="filter__footer-list-item-text">Все</span>
+                            </label>
+                            <label class="filter__footer-list-item">
+                                <input class="filter__footer-list-item-input" type="checkbox">
+                                <span class="filter__footer-list-item-text">Разработка под заказчика</span>
+                            </label>
+                            <label class="filter__footer-list-item">
+                                <input class="filter__footer-list-item-input" type="checkbox">
+                                <span class="filter__footer-list-item-text">Разработка силами центра</span>
+                            </label>
+                            <label class="filter__footer-list-item">
+                                <input class="filter__footer-list-item-input" type="checkbox">
+                                <span class="filter__footer-list-item-text">Требует инвестиций</span>
+                            </label>
+                        </div>
+                        <button class="filter__footer-reset" type="reset">
+                            <svg width="16" height="16">
+                                <use xlink:href="#delete" />
+                            </svg>
+                            Сбросить фильтры
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+        {{/if}}
+
+
+        {{#if data.eventsAndOlympiads}}
+            <div class="filter">
+                <h2 class="filter__title title-h2">
+                    Мероприятия и олимпиады
+                </h2>
+                <div class="filter__tabs js-init-tabs">
+                {{>components/tabs-buttons button1="Ближайшие" button2="Активные и завершенные"}}
+                    <div class="filter__tabs-content">
+                        <form class="filter__tabs-content-box js-tab-body">
+                            <fieldset class="filter__form-selects filter__form-selects--column">
+                                <div class="filter__form-input-wrapper">
+                                    <input class="filter__form-input" type="text" placeholder="Поиск по названию">
+                                    <span class="filter__form-input-placeholder">Поиск по названию</span>
+                                    <span class="filter__form-input-search">
+                                        <svg width="20" height="20">
+                                            <use xlink:href="#search" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="filter__form-selects-inner">
+                                    <select class="filter__from-select js-choice-select">
+                                        <option value="Все года"></option>
+                                        <option value="Все года 2"></option>
+                                        <option value="Все года 3"></option>
+                                        <option value="Все года 4"></option>
+                                    </select>
+                                    <select class="filter__from-select js-choice-select">
+                                        <option value="Категория участников"></option>
+                                        <option value="Категория участников 2"></option>
+                                        <option value="Категория участников 3"></option>
+                                        <option value="Категория участников 4"></option>
+                                        <option value="Категория участников 5"></option>
+                                    </select>
+                                    <select class="filter__from-select js-choice-select">
+                                        <option value="Формат участия"></option>
+                                        <option value="Формат участия 2"></option>
+                                        <option value="Формат участия 3"></option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <fieldset class="filter__footer">
+                                <div class="filter__footer-list">
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox" checked>
+                                        <span class="filter__footer-list-item-text">Все</span>
+                                    </label>
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox">
+                                        <span class="filter__footer-list-item-text">Соревнования</span>
+                                    </label>
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox">
+                                        <span class="filter__footer-list-item-text">Олимпиады</span>
+                                    </label>
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox">
+                                        <span class="filter__footer-list-item-text">Хакатоны</span>
+                                    </label>
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox">
+                                        <span class="filter__footer-list-item-text">День открытых дверей</span>
+                                    </label>
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox">
+                                        <span class="filter__footer-list-item-text">Курсы и летняя школа</span>
+                                    </label>
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox">
+                                        <span class="filter__footer-list-item-text">Научный семинар</span>
+                                    </label>
+                                </div>
+                                <button class="filter__footer-reset" type="reset">
+                                    <svg width="16" height="16">
+                                        <use xlink:href="#delete" />
+                                    </svg>
+                                    Сбросить фильтры
+                                </button>
+                            </fieldset>
+                        </form>
+                        <form class="filter__tabs-content-box js-tab-body">
+                            <fieldset class="filter__form-selects filter__form-selects--column">
+                                <div class="filter__form-input-wrapper">
+                                    <input class="filter__form-input" type="text" placeholder="Поиск по названию">
+                                    <span class="filter__form-input-placeholder">Поиск по названию</span>
+                                    <span class="filter__form-input-search">
+                                        <svg width="20" height="20">
+                                            <use xlink:href="#search" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="filter__form-selects-inner">
+                                    <select class="filter__from-select js-choice-select">
+                                        <option value="Все года"></option>
+                                        <option value="Все года 2"></option>
+                                        <option value="Все года 3"></option>
+                                        <option value="Все года 4"></option>
+                                    </select>
+                                    <select class="filter__from-select js-choice-select">
+                                        <option value="Категория участников"></option>
+                                        <option value="Категория участников 2"></option>
+                                        <option value="Категория участников 3"></option>
+                                        <option value="Категория участников 4"></option>
+                                        <option value="Категория участников 5"></option>
+                                    </select>
+                                    <select class="filter__from-select js-choice-select">
+                                        <option value="Формат участия"></option>
+                                        <option value="Формат участия 2"></option>
+                                        <option value="Формат участия 3"></option>
+                                    </select>
+                                    <select class="filter__from-select js-choice-select">
+                                        <option value="Статус мероприятия"></option>
+                                        <option value="Статус мероприятия 2"></option>
+                                        <option value="Статус мероприятия 3"></option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <fieldset class="filter__footer">
+                                <div class="filter__footer-list">
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox" checked>
+                                        <span class="filter__footer-list-item-text">Все</span>
+                                    </label>
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox">
+                                        <span class="filter__footer-list-item-text">Соревнования</span>
+                                    </label>
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox">
+                                        <span class="filter__footer-list-item-text">Олимпиады</span>
+                                    </label>
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox">
+                                        <span class="filter__footer-list-item-text">Хакатоны</span>
+                                    </label>
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox">
+                                        <span class="filter__footer-list-item-text">День открытых дверей</span>
+                                    </label>
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox">
+                                        <span class="filter__footer-list-item-text">Курсы и летняя школа</span>
+                                    </label>
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox">
+                                        <span class="filter__footer-list-item-text">Научный семинар</span>
+                                    </label>
+                                </div>
+                                <button class="filter__footer-reset" type="reset">
+                                    <svg width="16" height="16">
+                                        <use xlink:href="#delete" />
+                                    </svg>
+                                    Сбросить фильтры
+                                </button>
+                            </fieldset>
+                        </form>
                     </div>
                 </div>
             </div>
-            {{/if}}
-        </form>
-      </div>
+        {{/if}}
+
+
+        {{#if data.blog}}
+            <div class="filter">
+                <h2 class="filter__title title-h2">
+                    Блог
+                </h2>
+                <div class="filter__tabs js-init-tabs">
+                {{>components/tabs-buttons button1="Новости" button2="Статьи"}}
+                    <div class="filter__tabs-content">
+                        <form class="filter__tabs-content-box js-tab-body">
+                            <fieldset class="filter__form-selects">
+                                    <select class="filter__from-select js-choice-select">
+                                        <option value="Год побликации"></option>
+                                        <option value="Год побликации 2"></option>
+                                        <option value="Год побликации 3"></option>
+                                        <option value="Год побликации 4"></option>
+                                    </select>
+                                    <select class="filter__from-select js-choice-select">
+                                        <option value="Месяц публикации"></option>
+                                        <option value="Месяц публикации 2"></option>
+                                        <option value="Месяц публикации 3"></option>
+                                        <option value="Месяц публикации 4"></option>
+                                        <option value="Месяц публикации 5"></option>
+                                    </select>
+                            </fieldset>
+                            <fieldset class="filter__footer">
+                                <div class="filter__footer-list">
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox" checked>
+                                        <span class="filter__footer-list-item-text">Все</span>
+                                    </label>
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox">
+                                        <span class="filter__footer-list-item-text">Стартап и бизнес</span>
+                                    </label>
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox">
+                                        <span class="filter__footer-list-item-text">Наука</span>
+                                    </label>
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox">
+                                        <span class="filter__footer-list-item-text">Образование</span>
+                                    </label>
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox">
+                                        <span class="filter__footer-list-item-text">Наши победы</span>
+                                    </label>
+                                </div>
+                                <button class="filter__footer-reset" type="reset">
+                                    <svg width="16" height="16">
+                                        <use xlink:href="#delete" />
+                                    </svg>
+                                    Сбросить фильтры
+                                </button>
+                            </fieldset>
+                        </form>
+                        <form class="filter__tabs-content-box js-tab-body">
+                            <fieldset class="filter__form-selects">
+                                    <select class="filter__from-select js-choice-select">
+                                        <option value="Год побликации"></option>
+                                        <option value="Год побликации 2"></option>
+                                        <option value="Год побликации 3"></option>
+                                        <option value="Год побликации 4"></option>
+                                    </select>
+                                    <select class="filter__from-select js-choice-select">
+                                        <option value="Месяц публикации"></option>
+                                        <option value="Месяц публикации 2"></option>
+                                        <option value="Месяц публикации 3"></option>
+                                        <option value="Месяц публикации 4"></option>
+                                        <option value="Месяц публикации 5"></option>
+                                    </select>
+                            </fieldset>
+                            <fieldset class="filter__footer">
+                                <div class="filter__footer-list">
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox" checked>
+                                        <span class="filter__footer-list-item-text">Все</span>
+                                    </label>
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox">
+                                        <span class="filter__footer-list-item-text">Стартап и бизнес</span>
+                                    </label>
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox">
+                                        <span class="filter__footer-list-item-text">Наука</span>
+                                    </label>
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox">
+                                        <span class="filter__footer-list-item-text">Образование</span>
+                                    </label>
+                                    <label class="filter__footer-list-item">
+                                        <input class="filter__footer-list-item-input" type="checkbox">
+                                        <span class="filter__footer-list-item-text">Наши победы</span>
+                                    </label>
+                                </div>
+                                <button class="filter__footer-reset" type="reset">
+                                    <svg width="16" height="16">
+                                        <use xlink:href="#delete" />
+                                    </svg>
+                                    Сбросить фильтры
+                                </button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        {{/if}}
 
     {{/content}}
 {{/extend}}

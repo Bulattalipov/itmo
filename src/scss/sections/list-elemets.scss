@@ -1,0 +1,31 @@
+.list-elemets{
+
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6rem 2rem;
+
+        @include breakpoint(tablet) {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 4rem 2rem;
+        }
+    }
+
+    &__btn{
+        margin-top: 5.6rem; 
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: $primary-700;
+        @extend %fs-button-1;
+        border: 0.1px solid $primary-700;
+        border-radius: 999px;
+        padding: 2.1rem;
+
+        &:active,
+        &:link{
+            color: $primary-700;
+        }
+    }
+    
+}

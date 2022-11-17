@@ -894,12 +894,9 @@
       "title": "",
       "mods": "",
       "breadcrumbs": [
-        {"name": "Главная"},
-        {"name": "Наука"}
+        {"name": "Главная"}
       ],
-      "titleMain": "Научные публикации",
-      "desc": "Реализованные кейс-стади под реальные задачи малого, среднего и крупного бизнеса",
-      "inputAndSelect": true
+      "filterResulSearch": true
     },
     "filter2": {
       "block": "filter",
@@ -910,9 +907,7 @@
         {"name": "Главная"},
         {"name": "Наука"}
       ],
-      "titleMain": "Результат поиска",
-      "desc": "",
-      "simplyBlock": true
+      "scientificPublications": true
     },
     "filter3": {
       "block": "filter",
@@ -920,12 +915,9 @@
       "title": "",
       "mods": "",
       "breadcrumbs": [
-        {"name": "Главная"},
-        {"name": "Наука"}
+        {"name": "Главная"}
       ],
-      "titleMain": "Результат поиска",
-      "desc": "",
-      "bigBox": true
+      "employees": true
     },
     "filter4": {
       "block": "filter",
@@ -936,10 +928,28 @@
         {"name": "Главная"},
         {"name": "Бизнес"}
       ],
-      "titleMain": "Кейс-стади",
-      "desc": "Реализованные кейс-стади под реальные задачи малого, среднего и крупного бизнеса",
-      "bigBox": true,
-      "tabs": true
+      "caseStudy": true
+    },
+    "filter5": {
+      "block": "filter",
+      "dot": false,
+      "title": "",
+      "mods": "",
+      "breadcrumbs": [
+        {"name": "Главная"},
+        {"name": "Образование"}
+      ],
+      "eventsAndOlympiads": true
+    },
+    "filter6": {
+      "block": "filter",
+      "dot": false,
+      "title": "",
+      "mods": "",
+      "breadcrumbs": [
+        {"name": "Главная"}
+      ],
+      "blog": true
     },
     "cardsSimple": {
       "block": "cards",
