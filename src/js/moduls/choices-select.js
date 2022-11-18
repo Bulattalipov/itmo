@@ -8,18 +8,34 @@ export default function choicesSelector(){
         const btnReset = form.querySelector('.filter__footer-reset');
 
         elements.forEach(elem => {
-            const choices = new Choices(elem, {
+            const select = new Choices(elem, {
                 searchEnabled: false,
                 itemSelectText: '',
-                shouldSort: false
+                shouldSort: false,
+                placeholder: true,
+                placeholderValue: "jghreguri"
             });
+
+            select.passedElement.element.addEventListener(
+                'change',
+                function(event) {
+                    elem.closest(".filter__from-select-box").classList.add("is-active");
+                },
+                false,
+            );
 
             if(btnReset){
                 btnReset.addEventListener('click', function(){
-                    choices.destroy();
-                    choices.init();
+                    select.destroy();
+                    select.init();
                 })
             }
         })
     });
+
+    // const choicesItems = elem.querySelectorAll('.choices__item');
+
+    // choicesItems.forEach(item => {
+    //     console.log(item);
+    // })
 }
