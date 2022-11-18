@@ -12,10 +12,11 @@
     }
 
     &__btn{
-        margin-top: 5.6rem; 
+        margin-top: 5.6rem;
         display: block;
         width: 100%;
         text-align: center;
+        text-transform: uppercase;
         color: $primary-700;
         @extend %fs-button-1;
         border: 0.1px solid $primary-700;
@@ -26,6 +27,24 @@
         &:link{
             color: $primary-700;
         }
+
+        transition: background-color $tt $te, border-color $tt $te, border $tt $te;
+
+
+        &:hover{
+            background-color: $primary-500;
+            color: $grayscale-100;
+            border: 0.1px solid $primary-500;
+        }
+
+        &:focus{
+            background-color: $primary-400;
+            border: 0.1px solid $primary-400;
+        }
+
+        @include breakpoint(laptop) {
+            margin-top: 4rem;
+        }
     }
-    
+
 }
