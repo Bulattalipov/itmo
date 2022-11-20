@@ -187,173 +187,194 @@
     
     
     
-                <div class="filter">
-                    <h2 class="filter__title title-h2">
-                        Мероприятия и олимпиады
-                    </h2>
-                    <div class="filter__tabs js-init-tabs">
-                    <ul class="tabs-buttons">
-                        <li class="tabs-buttons__wrapper">
-                            <button class="tabs-buttons__tab js-tab-btn" type="button">
-                                Ближайшие
-                            </button>
-                        </li>
-                        <li class="tabs-buttons__wrapper">
-                            <button class="tabs-buttons__tab js-tab-btn" type="button">
-                                Активные и завершенные
-                            </button>
-                        </li>
-                    </ul>                    <div class="filter__tabs-content">
-                            <form class="filter__tabs-content-box js-tab-body">
-                                <fieldset class="filter__form-selects filter__form-selects--column">
-                                    <div class="filter__form-input-wrapper">
-                                        <input class="filter__form-input" type="text" placeholder="Поиск по названию">
-                                        <span class="filter__form-input-placeholder">Поиск по названию</span>
-                                        <span class="filter__form-input-search">
-                                            <svg width="20" height="20">
-                                                <use xlink:href="#search" />
-                                            </svg>
-                                        </span>
-                                    </div>
-                                    <div class="filter__form-selects-inner">
-                                        <select class="filter__from-select js-choice-select">
-                                            <option value="Все года"></option>
-                                            <option value="Все года 2"></option>
-                                            <option value="Все года 3"></option>
-                                            <option value="Все года 4"></option>
-                                        </select>
-                                        <select class="filter__from-select js-choice-select">
-                                            <option value="Категория участников"></option>
-                                            <option value="Категория участников 2"></option>
-                                            <option value="Категория участников 3"></option>
-                                            <option value="Категория участников 4"></option>
-                                            <option value="Категория участников 5"></option>
-                                        </select>
-                                        <select class="filter__from-select js-choice-select">
-                                            <option value="Формат участия"></option>
-                                            <option value="Формат участия 2"></option>
-                                            <option value="Формат участия 3"></option>
-                                        </select>
-                                    </div>
-                                </fieldset>
-                                <fieldset class="filter__footer">
-                                    <div class="filter__footer-list">
-                                        <label class="filter__footer-list-item">
-                                            <input class="filter__footer-list-item-input" type="checkbox" checked>
-                                            <span class="filter__footer-list-item-text">Все</span>
-                                        </label>
-                                        <label class="filter__footer-list-item">
-                                            <input class="filter__footer-list-item-input" type="checkbox">
-                                            <span class="filter__footer-list-item-text">Соревнования</span>
-                                        </label>
-                                        <label class="filter__footer-list-item">
-                                            <input class="filter__footer-list-item-input" type="checkbox">
-                                            <span class="filter__footer-list-item-text">Олимпиады</span>
-                                        </label>
-                                        <label class="filter__footer-list-item">
-                                            <input class="filter__footer-list-item-input" type="checkbox">
-                                            <span class="filter__footer-list-item-text">Хакатоны</span>
-                                        </label>
-                                        <label class="filter__footer-list-item">
-                                            <input class="filter__footer-list-item-input" type="checkbox">
-                                            <span class="filter__footer-list-item-text">День открытых дверей</span>
-                                        </label>
-                                        <label class="filter__footer-list-item">
-                                            <input class="filter__footer-list-item-input" type="checkbox">
-                                            <span class="filter__footer-list-item-text">Курсы и летняя школа</span>
-                                        </label>
-                                        <label class="filter__footer-list-item">
-                                            <input class="filter__footer-list-item-input" type="checkbox">
-                                            <span class="filter__footer-list-item-text">Научный семинар</span>
-                                        </label>
-                                    </div>
-                                    <button class="filter__footer-reset" type="reset">
-                                        <svg width="16" height="16">
-                                            <use xlink:href="#delete" />
-                                        </svg>
-                                        Сбросить фильтры
-                                    </button>
-                                </fieldset>
-                            </form>
-                            <form class="filter__tabs-content-box js-tab-body">
-                                <fieldset class="filter__form-selects filter__form-selects--column">
-                                    <div class="filter__form-input-wrapper">
-                                        <input class="filter__form-input" type="text" placeholder="Поиск по названию">
-                                        <span class="filter__form-input-placeholder">Поиск по названию</span>
-                                        <span class="filter__form-input-search">
-                                            <svg width="20" height="20">
-                                                <use xlink:href="#search" />
-                                            </svg>
-                                        </span>
-                                    </div>
-                                    <div class="filter__form-selects-inner">
-                                        <select class="filter__from-select js-choice-select">
-                                            <option value="Все года"></option>
-                                            <option value="Все года 2"></option>
-                                            <option value="Все года 3"></option>
-                                            <option value="Все года 4"></option>
-                                        </select>
-                                        <select class="filter__from-select js-choice-select">
-                                            <option value="Категория участников"></option>
-                                            <option value="Категория участников 2"></option>
-                                            <option value="Категория участников 3"></option>
-                                            <option value="Категория участников 4"></option>
-                                            <option value="Категория участников 5"></option>
-                                        </select>
-                                        <select class="filter__from-select js-choice-select">
-                                            <option value="Формат участия"></option>
-                                            <option value="Формат участия 2"></option>
-                                            <option value="Формат участия 3"></option>
-                                        </select>
-                                        <select class="filter__from-select js-choice-select">
-                                            <option value="Статус мероприятия"></option>
-                                            <option value="Статус мероприятия 2"></option>
-                                            <option value="Статус мероприятия 3"></option>
-                                        </select>
-                                    </div>
-                                </fieldset>
-                                <fieldset class="filter__footer">
-                                    <div class="filter__footer-list">
-                                        <label class="filter__footer-list-item">
-                                            <input class="filter__footer-list-item-input" type="checkbox" checked>
-                                            <span class="filter__footer-list-item-text">Все</span>
-                                        </label>
-                                        <label class="filter__footer-list-item">
-                                            <input class="filter__footer-list-item-input" type="checkbox">
-                                            <span class="filter__footer-list-item-text">Соревнования</span>
-                                        </label>
-                                        <label class="filter__footer-list-item">
-                                            <input class="filter__footer-list-item-input" type="checkbox">
-                                            <span class="filter__footer-list-item-text">Олимпиады</span>
-                                        </label>
-                                        <label class="filter__footer-list-item">
-                                            <input class="filter__footer-list-item-input" type="checkbox">
-                                            <span class="filter__footer-list-item-text">Хакатоны</span>
-                                        </label>
-                                        <label class="filter__footer-list-item">
-                                            <input class="filter__footer-list-item-input" type="checkbox">
-                                            <span class="filter__footer-list-item-text">День открытых дверей</span>
-                                        </label>
-                                        <label class="filter__footer-list-item">
-                                            <input class="filter__footer-list-item-input" type="checkbox">
-                                            <span class="filter__footer-list-item-text">Курсы и летняя школа</span>
-                                        </label>
-                                        <label class="filter__footer-list-item">
-                                            <input class="filter__footer-list-item-input" type="checkbox">
-                                            <span class="filter__footer-list-item-text">Научный семинар</span>
-                                        </label>
-                                    </div>
-                                    <button class="filter__footer-reset" type="reset">
-                                        <svg width="16" height="16">
-                                            <use xlink:href="#delete" />
-                                        </svg>
-                                        Сбросить фильтры
-                                    </button>
-                                </fieldset>
-                            </form>
+    <div class="filter">
+        <h2 class="filter__title title-h2">
+            Мероприятия и олимпиады
+        </h2>
+        <div class="filter__tabs js-init-tabs">
+            <ul class="tabs-buttons">
+                <li class="tabs-buttons__wrapper">
+                    <button class="tabs-buttons__tab js-tab-btn" type="button">
+                        Ближайшие
+                    </button>
+                </li>
+                <li class="tabs-buttons__wrapper">
+                    <button class="tabs-buttons__tab js-tab-btn" type="button">
+                        Активные и завершенные
+                    </button>
+                </li>
+            </ul>        <div class="filter__tabs-content">
+                <form class="filter__tabs-content-box js-tab-body">
+                    <fieldset class="filter__form-selects filter__form-selects--column">
+                        <div class="filter__form-input-wrapper">
+                            <input class="filter__form-input" type="text" placeholder="Поиск по названию">
+                            <span class="filter__form-input-placeholder">Поиск по названию</span>
+                            <span class="filter__form-input-search">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#search" />
+                                </svg>
+                            </span>
                         </div>
-                    </div>
-                </div>
+                        <div class="filter__form-selects-inner">
+                             <div class="filter__from-select-box">
+                                <span class="filter__from-select-label">Все года</span>
+                                <select class="filter__from-select js-choice-select">
+                                    <option value="Все года"></option>
+                                    <option value="Все года 2"></option>
+                                    <option value="Все года 3"></option>
+                                    <option value="Все года 4"></option>
+                                </select>
+                            </div>
+                             <div class="filter__from-select-box">
+                                <span class="filter__from-select-label">Категория участников</span>
+                                <select class="filter__from-select js-choice-select">
+                                    <option value="Категория участников"></option>
+                                    <option value="Категория участников 2"></option>
+                                    <option value="Категория участников 3"></option>
+                                    <option value="Категория участников 4"></option>
+                                    <option value="Категория участников 5"></option>
+                                </select>
+                            </div>
+                             <div class="filter__from-select-box">
+                                <span class="filter__from-select-label">Формат участия</span>
+                                <select class="filter__from-select js-choice-select">
+                                    <option value="Формат участия"></option>
+                                    <option value="Формат участия 2"></option>
+                                    <option value="Формат участия 3"></option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="filter__footer">
+                        <div class="filter__footer-list">
+                            <label class="filter__footer-list-item">
+                                <input class="filter__footer-list-item-input" type="checkbox" checked>
+                                <span class="filter__footer-list-item-text">Все</span>
+                            </label>
+                            <label class="filter__footer-list-item">
+                                <input class="filter__footer-list-item-input" type="checkbox">
+                                <span class="filter__footer-list-item-text">Соревнования</span>
+                            </label>
+                            <label class="filter__footer-list-item">
+                                <input class="filter__footer-list-item-input" type="checkbox">
+                                <span class="filter__footer-list-item-text">Олимпиады</span>
+                            </label>
+                            <label class="filter__footer-list-item">
+                                <input class="filter__footer-list-item-input" type="checkbox">
+                                <span class="filter__footer-list-item-text">Хакатоны</span>
+                            </label>
+                            <label class="filter__footer-list-item">
+                                <input class="filter__footer-list-item-input" type="checkbox">
+                                <span class="filter__footer-list-item-text">День открытых дверей</span>
+                            </label>
+                            <label class="filter__footer-list-item">
+                                <input class="filter__footer-list-item-input" type="checkbox">
+                                <span class="filter__footer-list-item-text">Курсы и летняя школа</span>
+                            </label>
+                            <label class="filter__footer-list-item">
+                                <input class="filter__footer-list-item-input" type="checkbox">
+                                <span class="filter__footer-list-item-text">Научный семинар</span>
+                            </label>
+                        </div>
+                        <button class="filter__footer-reset" type="reset">
+                            <svg width="16" height="16">
+                                <use xlink:href="#delete" />
+                            </svg>
+                            Сбросить фильтры
+                        </button>
+                    </fieldset>
+                </form>
+                <form class="filter__tabs-content-box js-tab-body">
+                    <fieldset class="filter__form-selects filter__form-selects--column">
+                        <div class="filter__form-input-wrapper">
+                            <input class="filter__form-input" type="text" placeholder="Поиск по названию">
+                            <span class="filter__form-input-placeholder">Поиск по названию</span>
+                            <span class="filter__form-input-search">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#search" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="filter__form-selects-inner">
+                             <div class="filter__from-select-box">
+                                <span class="filter__from-select-label">Все года</span>
+                                <select class="filter__from-select js-choice-select">
+                                    <option value="Все года"></option>
+                                    <option value="Все года 2"></option>
+                                    <option value="Все года 3"></option>
+                                    <option value="Все года 4"></option>
+                                </select>
+                            </div>
+                             <div class="filter__from-select-box">
+                                <span class="filter__from-select-label">Категория участников</span>
+                                <select class="filter__from-select js-choice-select">
+                                    <option value="Категория участников"></option>
+                                    <option value="Категория участников 2"></option>
+                                    <option value="Категория участников 3"></option>
+                                    <option value="Категория участников 4"></option>
+                                    <option value="Категория участников 5"></option>
+                                </select>
+                            </div>
+                             <div class="filter__from-select-box">
+                                <span class="filter__from-select-label">Формат участия</span>
+                                <select class="filter__from-select js-choice-select">
+                                    <option value="Формат участия"></option>
+                                    <option value="Формат участия 2"></option>
+                                    <option value="Формат участия 3"></option>
+                                </select>
+                            </div>
+                             <div class="filter__from-select-box">
+                                <span class="filter__from-select-label">Статус мероприятия</span>
+                                <select class="filter__from-select js-choice-select">
+                                    <option value="Статус мероприятия"></option>
+                                    <option value="Статус мероприятия 2"></option>
+                                    <option value="Статус мероприятия 3"></option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="filter__footer">
+                        <div class="filter__footer-list">
+                            <label class="filter__footer-list-item">
+                                <input class="filter__footer-list-item-input" type="checkbox" checked>
+                                <span class="filter__footer-list-item-text">Все</span>
+                            </label>
+                            <label class="filter__footer-list-item">
+                                <input class="filter__footer-list-item-input" type="checkbox">
+                                <span class="filter__footer-list-item-text">Соревнования</span>
+                            </label>
+                            <label class="filter__footer-list-item">
+                                <input class="filter__footer-list-item-input" type="checkbox">
+                                <span class="filter__footer-list-item-text">Олимпиады</span>
+                            </label>
+                            <label class="filter__footer-list-item">
+                                <input class="filter__footer-list-item-input" type="checkbox">
+                                <span class="filter__footer-list-item-text">Хакатоны</span>
+                            </label>
+                            <label class="filter__footer-list-item">
+                                <input class="filter__footer-list-item-input" type="checkbox">
+                                <span class="filter__footer-list-item-text">День открытых дверей</span>
+                            </label>
+                            <label class="filter__footer-list-item">
+                                <input class="filter__footer-list-item-input" type="checkbox">
+                                <span class="filter__footer-list-item-text">Курсы и летняя школа</span>
+                            </label>
+                            <label class="filter__footer-list-item">
+                                <input class="filter__footer-list-item-input" type="checkbox">
+                                <span class="filter__footer-list-item-text">Научный семинар</span>
+                            </label>
+                        </div>
+                        <button class="filter__footer-reset" type="reset">
+                            <svg width="16" height="16">
+                                <use xlink:href="#delete" />
+                            </svg>
+                            Сбросить фильтры
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
     
     
     
@@ -401,6 +422,225 @@
             </div>
         </div>
     </section>
+    <section class="section section--list-elemets section--bg-transparent section--adaptive-without-padding">
+        <div class="container">
+            <div class="section__inner">
+                <div class="section__heading">
+                    <h2></h2>
+                </div>
+                <div class="section__content">
+                    <div class="list-elemets">
+                        <div class="list-elemets__wrapper">
+                            <div class="ordinary-slider__slide">
+                                <div class="ordinary-slider__slide-box">
+                                    <img class="ordinary-slider__slide-box-img" src="img/content/cards-main/1.jpg" alt="Лаборатория">
+                                    <ul class="ordinary-slider__slide-box-list">
+                                        <li>
+                                            Разработка под заказчика
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ordinary-slider__slide-wrapper">
+                                    <div class="ordinary-slider__slide-content">
+                                        <ul class="ordinary-slider__slide-content-header">
+                                            <li class="ordinary-slider__slide-content-header-item">
+                                                Разработка
+                                            </li>
+                                            <li class="ordinary-slider__slide-content-header-item">
+                                                2021
+                                            </li>
+                                        </ul>
+                                        <a class="ordinary-slider__slide-content-title" href="#">
+                                            Разработка личного кабинета для Сбербанка
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ordinary-slider__slide">
+                                <div class="ordinary-slider__slide-box">
+                                    <img class="ordinary-slider__slide-box-img" src="img/content/cards-main/1.jpg" alt="Лаборатория">
+                                    <ul class="ordinary-slider__slide-box-list">
+                                        <li>
+                                            Разработка под заказчика
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ordinary-slider__slide-wrapper">
+                                    <div class="ordinary-slider__slide-content">
+                                        <ul class="ordinary-slider__slide-content-header">
+                                            <li class="ordinary-slider__slide-content-header-item">
+                                                Разработка
+                                            </li>
+                                            <li class="ordinary-slider__slide-content-header-item">
+                                                2021
+                                            </li>
+                                        </ul>
+                                        <a class="ordinary-slider__slide-content-title" href="#">
+                                            Разработка личного кабинета для Сбербанка
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ordinary-slider__slide">
+                                <div class="ordinary-slider__slide-box">
+                                    <img class="ordinary-slider__slide-box-img" src="img/content/cards-main/1.jpg" alt="Лаборатория">
+                                    <ul class="ordinary-slider__slide-box-list">
+                                        <li>
+                                            Разработка под заказчика
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ordinary-slider__slide-wrapper">
+                                    <div class="ordinary-slider__slide-content">
+                                        <ul class="ordinary-slider__slide-content-header">
+                                            <li class="ordinary-slider__slide-content-header-item">
+                                                Разработка
+                                            </li>
+                                            <li class="ordinary-slider__slide-content-header-item">
+                                                2021
+                                            </li>
+                                        </ul>
+                                        <a class="ordinary-slider__slide-content-title" href="#">
+                                            Разработка личного кабинета для Сбербанка
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ordinary-slider__slide">
+                                <div class="ordinary-slider__slide-box">
+                                    <img class="ordinary-slider__slide-box-img" src="img/content/cards-main/1.jpg" alt="Лаборатория">
+                                    <ul class="ordinary-slider__slide-box-list">
+                                        <li>
+                                            Разработка под заказчика
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ordinary-slider__slide-wrapper">
+                                    <div class="ordinary-slider__slide-content">
+                                        <ul class="ordinary-slider__slide-content-header">
+                                            <li class="ordinary-slider__slide-content-header-item">
+                                                Разработка
+                                            </li>
+                                            <li class="ordinary-slider__slide-content-header-item">
+                                                2021
+                                            </li>
+                                        </ul>
+                                        <a class="ordinary-slider__slide-content-title" href="#">
+                                            Разработка личного кабинета для Сбербанка
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ordinary-slider__slide">
+                                <div class="ordinary-slider__slide-box">
+                                    <img class="ordinary-slider__slide-box-img" src="img/content/cards-main/1.jpg" alt="Лаборатория">
+                                    <ul class="ordinary-slider__slide-box-list">
+                                        <li>
+                                            Разработка под заказчика
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ordinary-slider__slide-wrapper">
+                                    <div class="ordinary-slider__slide-content">
+                                        <ul class="ordinary-slider__slide-content-header">
+                                            <li class="ordinary-slider__slide-content-header-item">
+                                                Разработка
+                                            </li>
+                                            <li class="ordinary-slider__slide-content-header-item">
+                                                2021
+                                            </li>
+                                        </ul>
+                                        <a class="ordinary-slider__slide-content-title" href="#">
+                                            Разработка личного кабинета для Сбербанка
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ordinary-slider__slide">
+                                <div class="ordinary-slider__slide-box">
+                                    <img class="ordinary-slider__slide-box-img" src="img/content/cards-main/1.jpg" alt="Лаборатория">
+                                    <ul class="ordinary-slider__slide-box-list">
+                                        <li>
+                                            Разработка под заказчика
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ordinary-slider__slide-wrapper">
+                                    <div class="ordinary-slider__slide-content">
+                                        <ul class="ordinary-slider__slide-content-header">
+                                            <li class="ordinary-slider__slide-content-header-item">
+                                                Разработка
+                                            </li>
+                                            <li class="ordinary-slider__slide-content-header-item">
+                                                2021
+                                            </li>
+                                        </ul>
+                                        <a class="ordinary-slider__slide-content-title" href="#">
+                                            Разработка личного кабинета для Сбербанка
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ordinary-slider__slide">
+                                <div class="ordinary-slider__slide-box">
+                                    <img class="ordinary-slider__slide-box-img" src="img/content/cards-main/1.jpg" alt="Лаборатория">
+                                    <ul class="ordinary-slider__slide-box-list">
+                                        <li>
+                                            Разработка под заказчика
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ordinary-slider__slide-wrapper">
+                                    <div class="ordinary-slider__slide-content">
+                                        <ul class="ordinary-slider__slide-content-header">
+                                            <li class="ordinary-slider__slide-content-header-item">
+                                                Разработка
+                                            </li>
+                                            <li class="ordinary-slider__slide-content-header-item">
+                                                2021
+                                            </li>
+                                        </ul>
+                                        <a class="ordinary-slider__slide-content-title" href="#">
+                                            Разработка личного кабинета для Сбербанка
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ordinary-slider__slide">
+                                <div class="ordinary-slider__slide-box">
+                                    <img class="ordinary-slider__slide-box-img" src="img/content/cards-main/1.jpg" alt="Лаборатория">
+                                    <ul class="ordinary-slider__slide-box-list">
+                                        <li>
+                                            Разработка под заказчика
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ordinary-slider__slide-wrapper">
+                                    <div class="ordinary-slider__slide-content">
+                                        <ul class="ordinary-slider__slide-content-header">
+                                            <li class="ordinary-slider__slide-content-header-item">
+                                                Разработка
+                                            </li>
+                                            <li class="ordinary-slider__slide-content-header-item">
+                                                2021
+                                            </li>
+                                        </ul>
+                                        <a class="ordinary-slider__slide-content-title" href="#">
+                                            Разработка личного кабинета для Сбербанка
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="list-elemets__btn" href="#">
+                            Показать еще
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     </main>
     <footer class="footer">
         <div class="container">

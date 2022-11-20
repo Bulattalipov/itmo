@@ -179,37 +179,43 @@
     
     
     
-                <div class="filter">
-                    <h2 class="filter__title title-h2">
-                        Сотрудники
-                    </h2>
-                    <form class="filter__form">
-                        <fieldset class="filter__form-selects">
-                            <div class="filter__form-input-wrapper">
-                                <input class="filter__form-input" type="text" placeholder="Поиск по ФИО">
-                                <span class="filter__form-input-placeholder">Поиск по ФИО</span>
-                                <span class="filter__form-input-search">
-                                    <svg width="20" height="20">
-                                        <use xlink:href="#search" />
-                                    </svg>
-                                </span>
-                            </div>
-                                <select class="filter__from-select js-choice-select">
-                                    <option value="Область деятельности"></option>
-                                    <option value="Область деятельности 2"></option>
-                                    <option value="Область деятельности 3"></option>
-                                    <option value="Область деятельности 4"></option>
-                                    <option value="Область деятельности 5"></option>
-                                    <option value="Область деятельности 6"></option>
-                                </select>
-                                <select class="filter__from-select js-choice-select" >
-                                    <option value="Лаборатория"></option>
-                                    <option value="Лаборатория 2"></option>
-                                    <option value="Лаборатория 3"></option>
-                                </select>
-                        </fieldset>
-                    </form>
+    <div class="filter">
+        <h2 class="filter__title title-h2">
+            Сотрудники
+        </h2>
+        <form class="filter__form">
+            <fieldset class="filter__form-selects">
+                <div class="filter__form-input-wrapper">
+                    <input class="filter__form-input" type="text" placeholder="Поиск по ФИО">
+                    <span class="filter__form-input-placeholder">Поиск по ФИО</span>
+                    <span class="filter__form-input-search">
+                        <svg width="20" height="20">
+                            <use xlink:href="#search" />
+                        </svg>
+                    </span>
                 </div>
+                <div class="filter__from-select-box">
+                    <span class="filter__from-select-label">Сделать выбор</span>
+                    <select class="filter__from-select js-choice-select">
+                        <option value="Область деятельности"></option>
+                        <option value="Область деятельности 2"></option>
+                        <option value="Область деятельности 3"></option>
+                        <option value="Область деятельности 4"></option>
+                        <option value="Область деятельности 5"></option>
+                        <option value="Область деятельности 6"></option>
+                    </select>
+                </div>
+                <div class="filter__from-select-box">
+                    <span class="filter__from-select-label">Лаборатория</span>
+                    <select class="filter__from-select js-choice-select">
+                        <option value="Лаборатория"></option>
+                        <option value="Лаборатория 2"></option>
+                        <option value="Лаборатория 3"></option>
+                    </select>
+                </div>
+            </fieldset>
+        </form>
+    </div>
     
     
     

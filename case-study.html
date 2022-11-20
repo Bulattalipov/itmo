@@ -185,80 +185,92 @@
 
 
 
-            <div class="filter">
-                <h2 class="filter__title title-h2">
-                    Кейс-стади
-                </h2>
-                <div class="filter__desc desc">
-                    <p>
-                        Реализованные кейс-стади под реальные задачи малого, среднего и крупного бизнеса
-                    </p>
-                </div>
-                <form class="filter__form">
-                    <fieldset class="filter__form-selects filter__form-selects--column">
-                        <div class="filter__form-input-wrapper">
-                            <input class="filter__form-input" type="text" placeholder="Поиск по названию/ руководителю">
-                            <span class="filter__form-input-placeholder">Поиск по названию/ руководителю</span>
-                            <span class="filter__form-input-search">
-                                <svg width="20" height="20">
-                                    <use xlink:href="#search" />
-                                </svg>
-                            </span>
-                        </div>
-                        <div class="filter__form-selects-inner">
-                            <select class="filter__from-select js-choice-select">
-                                <option value="Период реализации"></option>
-                                <option value="Период реализации 2"></option>
-                                <option value="Период реализации 3"></option>
-                                <option value="Период реализации 4"></option>
-                            </select>
-                            <select class="filter__from-select js-choice-select">
-                                <option value="Индустрия"></option>
-                                <option value="Индустрия 2"></option>
-                                <option value="Индустрия 3"></option>
-                                <option value="Индустрия 4"></option>
-                                <option value="Индустрия 5"></option>
-                            </select>
-                            <select class="filter__from-select js-choice-select">
-                                <option value="Вид задачи"></option>
-                                <option value="Вид задачи 2"></option>
-                                <option value="Вид задачи 3"></option>
-                            </select>
-                            <select class="filter__from-select js-choice-select">
-                                <option value="Размер компании"></option>
-                                <option value="Размер компании 2"></option>
-                                <option value="Размер компании 3"></option>
-                            </select>
-                        </div>
-                    </fieldset>
-                    <fieldset class="filter__footer">
-                        <div class="filter__footer-list">
-                            <label class="filter__footer-list-item">
-                                <input class="filter__footer-list-item-input" type="checkbox" checked>
-                                <span class="filter__footer-list-item-text">Все</span>
-                            </label>
-                            <label class="filter__footer-list-item">
-                                <input class="filter__footer-list-item-input" type="checkbox">
-                                <span class="filter__footer-list-item-text">Разработка под заказчика</span>
-                            </label>
-                            <label class="filter__footer-list-item">
-                                <input class="filter__footer-list-item-input" type="checkbox">
-                                <span class="filter__footer-list-item-text">Разработка силами центра</span>
-                            </label>
-                            <label class="filter__footer-list-item">
-                                <input class="filter__footer-list-item-input" type="checkbox">
-                                <span class="filter__footer-list-item-text">Требует инвестиций</span>
-                            </label>
-                        </div>
-                        <button class="filter__footer-reset" type="reset">
-                            <svg width="16" height="16">
-                                <use xlink:href="#delete" />
-                            </svg>
-                            Сбросить фильтры
-                        </button>
-                    </fieldset>
-                </form>
+<div class="filter">
+    <h2 class="filter__title title-h2">
+        Кейс-стади
+    </h2>
+    <div class="filter__desc desc">
+        <p>
+            Реализованные кейс-стади под реальные задачи малого, среднего и крупного бизнеса
+        </p>
+    </div>
+    <form class="filter__form">
+        <fieldset class="filter__form-selects filter__form-selects--column">
+            <div class="filter__form-input-wrapper">
+                <input class="filter__form-input" type="text" placeholder="Поиск по названию/ руководителю">
+                <span class="filter__form-input-placeholder">Поиск по названию/ руководителю</span>
+                <span class="filter__form-input-search">
+                    <svg width="20" height="20">
+                        <use xlink:href="#search" />
+                    </svg>
+                </span>
             </div>
+            <div class="filter__form-selects-inner">
+                <div class="filter__from-select-box">
+                    <span class="filter__from-select-label">Период реализации</span>
+                    <select class="filter__from-select js-choice-select">
+                        <option value="Период реализации"></option>
+                        <option value="Период реализации 2"></option>
+                        <option value="Период реализации 3"></option>
+                        <option value="Период реализации 4"></option>
+                    </select>
+                </div>
+                <div class="filter__from-select-box">
+                    <span class="filter__from-select-label">Индустрия</span>
+                    <select class="filter__from-select js-choice-select">
+                        <option value="Индустрия"></option>
+                        <option value="Индустрия 2"></option>
+                        <option value="Индустрия 3"></option>
+                        <option value="Индустрия 4"></option>
+                        <option value="Индустрия 5"></option>
+                    </select>
+                </div>
+                 <div class="filter__from-select-box">
+                    <span class="filter__from-select-label">Сделать выбор</span>
+                    <select class="filter__from-select js-choice-select">
+                        <option value="Вид задачи"></option>
+                        <option value="Вид задачи 2"></option>
+                        <option value="Вид задачи 3"></option>
+                    </select>
+                </div>
+                <div class="filter__from-select-box">
+                    <span class="filter__from-select-label">Сделать выбор</span>
+                    <select class="filter__from-select js-choice-select">
+                        <option value="Размер компании"></option>
+                        <option value="Размер компании 2"></option>
+                        <option value="Размер компании 3"></option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="filter__footer">
+            <div class="filter__footer-list">
+                <label class="filter__footer-list-item">
+                    <input class="filter__footer-list-item-input" type="checkbox" checked>
+                    <span class="filter__footer-list-item-text">Все</span>
+                </label>
+                <label class="filter__footer-list-item">
+                    <input class="filter__footer-list-item-input" type="checkbox">
+                    <span class="filter__footer-list-item-text">Разработка под заказчика</span>
+                </label>
+                <label class="filter__footer-list-item">
+                    <input class="filter__footer-list-item-input" type="checkbox">
+                    <span class="filter__footer-list-item-text">Разработка силами центра</span>
+                </label>
+                <label class="filter__footer-list-item">
+                    <input class="filter__footer-list-item-input" type="checkbox">
+                    <span class="filter__footer-list-item-text">Требует инвестиций</span>
+                </label>
+            </div>
+            <button class="filter__footer-reset" type="reset">
+                <svg width="16" height="16">
+                    <use xlink:href="#delete" />
+                </svg>
+                Сбросить фильтры
+            </button>
+        </fieldset>
+    </form>
+</div>
 
 
 
@@ -268,7 +280,7 @@
         </div>
     </div>
 </section>
-<section class="section section--list-elemets">
+<section class="section section--list-elemets section--bg-transparent section--adaptive-without-padding">
     <div class="container">
         <div class="section__inner">
             <div class="section__heading">
@@ -774,6 +786,9 @@
                             </div>
                         </div>
                     </div>
+                    <a class="list-elemets__btn" href="#">
+                        Показать еще
+                    </a>
                 </div>
             </div>
         </div>
