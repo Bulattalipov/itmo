@@ -39,14 +39,9 @@
 
   &__logos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    align-items: center;
     gap: 2rem;
-    align-content: center;
-
-    @include breakpoint(laptop) {
-      display: flex;
-      align-items: center;
-    }
   }
 
   &__logo {

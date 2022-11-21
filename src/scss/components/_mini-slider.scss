@@ -12,6 +12,14 @@
   @include breakpoint(laptop) {
     grid-template-columns: 1fr;
     gap: 1.6rem;
+    margin-left: auto;
+    max-width: 39rem;
+  }
+
+  @include breakpoint(small-tablet) {
+    border-radius: 2.4rem;
+    max-width: 100%;
+    margin-left: 0;
   }
 
   &__slider-navigation {

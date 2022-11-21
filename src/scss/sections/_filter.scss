@@ -26,9 +26,21 @@
 
     fieldset {
 
+
+        .filter__form-selects-inner{
+            .filter__from-select-box {
+                max-width: 100%;
+            }
+        }
+
+
         .filter__from-select-box {
             max-width: 30rem;
             width: 100%;
+
+            @include breakpoint(small-tablet) {
+                max-width: 100%;
+            }
         }
 
         .choices {

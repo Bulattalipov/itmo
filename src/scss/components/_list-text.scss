@@ -27,7 +27,7 @@
     &::after {
       content: '';
       position: absolute;
-      background-image: url('../../img/tick.svg');
+      background-image: url('../img/tick.svg');
       width: 1.8rem;
       height: 1.8rem;
       left: 0.7rem;
@@ -82,7 +82,7 @@
       }
 
       &::after {
-        background-image: url('../../img/tick-big.png');
+        background-image: url('../img/tick-big.png');
         background-position: center;
         background-size: contain;
         width: 3.8rem;

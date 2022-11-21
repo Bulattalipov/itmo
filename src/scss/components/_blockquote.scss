@@ -11,7 +11,7 @@
     &::before{
         content: "";
         position: absolute;
-        background-image: url(../../img/content/quote/head.svg);
+        background-image: url("../img/content/quote/head.svg");
         background-size: cover;
         width: 2.4rem;
         height: 1.8rem;

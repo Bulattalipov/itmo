@@ -1,6 +1,7 @@
 .breadcrumbs {
   max-width: 21rem;
   margin-right: 2rem;
+  width: 100%;
 
   @include breakpoint(laptop) {
     max-width: 100%;

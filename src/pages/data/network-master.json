@@ -3,8 +3,7 @@
     "introSimple": {
       "breadcrumbs": [
         {"name": "Главная"},
-        {"name": "Бизнес"},
-        {"name": "Кейс-стади"}
+        {"name": "Бизнес"}
       ]
     },
     "benefitsMain": {

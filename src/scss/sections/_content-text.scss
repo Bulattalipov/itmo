@@ -213,7 +213,7 @@
         margin-top: 4rem;
 
         &.round-buttons::after {
-            background-image: url(../../img/arrow-down-white.svg);
+            background-image: url("../img/arrow-down-white.svg");
         }
 
         @include breakpoint(small-tablet) {

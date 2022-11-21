@@ -5,7 +5,7 @@
     display: inline-block;
 
     &.round-buttons::after {
-      background-image: url("../../img/download.svg");
+      background-image: url("../img/download.svg");
     }
 
     @include breakpoint(small-tablet) {

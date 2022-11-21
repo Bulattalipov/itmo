@@ -68,6 +68,8 @@
       stroke: $grayscale-900;
     }
 
+    @extend %interactive-svg-stroke-button;
+
     &--open {
       left: 0;
     }

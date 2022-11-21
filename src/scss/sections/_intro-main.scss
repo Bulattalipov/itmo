@@ -3,6 +3,10 @@
   &--modf{
     .breadcrumbs{
       width: 100%;
+
+      @include breakpoint(laptop) {
+        max-width: 16rem;
+      }
     }
     .intro-main__inner{
       background-position: center;
@@ -15,9 +19,32 @@
     }
     .intro-main__heading-block{
       gap: 0;
+
+      @include breakpoint(laptop) {
+        flex-direction: column;
+      }
     }
     .intro-main__menu{
       display: none;
+    }
+    .intro-main__heading {
+      margin-top: 0;
+  
+      @include breakpoint(laptop) {
+        margin-top: 0;
+        margin-left: 12rem;
+      }
+  
+      @include breakpoint(small-tablet) {
+        margin-top: 0;
+        margin-left: 0;
+      }
+    }
+    .intro-main__description{
+
+      @include breakpoint(small-tablet) {
+        margin-left: 0;
+      }
     }
     .intro-main__heading-decoration{
       display: none;
@@ -64,6 +91,7 @@
     @include breakpoint(small-tablet) {
       padding: 0;
       background: none;
+      border-radius: 2.4rem;
     }
   }
 
@@ -113,7 +141,7 @@
     padding: 0 4rem;
     margin-bottom: 4.8rem;
 
-    @include breakpoint(laptop) {
+    @include breakpoint(small-tablet) {
       flex-direction: column;
       padding: 0 2.4rem;
     }
@@ -121,9 +149,17 @@
 
   &__heading {
     @extend %fs-hero;
+    margin-top: -2.3rem;
 
     @include breakpoint(laptop) {
+      font-size: 10rem;
+      margin-top: -1.3rem;
+    }
+
+    @include breakpoint(small-tablet) {
       order: 2;
+      margin-top: 0;
+      font-size: 6rem;
     }
   }
 
@@ -140,14 +176,21 @@
       left: calc(100% - 16rem);
 
       max-width: unset;
-      width: 88.5rem;
-      height: 70.1rem;
+      width: 139.5rem;
+      height: 76.1rem;
       object-fit: contain;
 
       opacity: 0.1;
       pointer-events: none;
 
-      @include breakpoint(laptop) {
+      @include breakpoint(laptop){
+        left: calc(100% - 9rem);
+        max-width: unset;
+        width: 94.5rem;
+        height: 53.1rem;
+      }
+
+      @include breakpoint(small-tablet) {
         display: none;
       }
     }
@@ -166,6 +209,20 @@
     border-radius: 9.6rem;
 
     @extend %fs-body-s;
+
+    @include breakpoint(laptop){
+      max-width: 23rem;
+      padding: 0.4rem 2.4rem;
+      min-height: 3.1rem;
+      font-size: 1.2rem;
+    }
+
+    @include breakpoint(small-tablet){
+      max-width: 26rem;
+      padding: 0.8rem 2.4rem;
+      min-height: 5.1rem;
+      font-size: 1.2rem;
+    }
   }
 
   &__description-block {
@@ -197,9 +254,11 @@
     @include breakpoint(laptop) {
       grid-column: 1/1;
       margin-right: 0;
+      margin-left: 14rem;;
     }
-
+    
     @include breakpoint(small-tablet) {
+      margin-left: 0;
       font-size: 1.6rem;
     }
   }

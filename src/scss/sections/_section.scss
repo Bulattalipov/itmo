@@ -65,7 +65,7 @@
       &::before{
         content: '';
         position: absolute;
-        background-image: url('../../img/content/feedback/1.svg');
+        background-image: url('../img/content/feedback/1.svg');
         background-repeat: no-repeat;
         background-size: contain;
         width: 198.8rem;
@@ -117,7 +117,7 @@
         &::before{
           content: '';
           position: absolute;
-          background-image: url('../../img/content/feedback/1.svg');
+          background-image: url('../img/content/feedback/1.svg');
           background-repeat: no-repeat;
           background-size: contain;
           width: 174.8rem;
@@ -145,7 +145,7 @@
         position: absolute;
         width: 142.6rem;
         height: 82.3rem;
-        background-image: url('../../img/content/feedback/call-bg.svg');
+        background-image: url('../img/content/feedback/call-bg.svg');
         right: -56rem;
         bottom: -23rem;
         z-index: 1;
@@ -167,7 +167,7 @@
   &--quote{
 
     .section__inner{
-      background-image: url('../../img/content/numbers-main/gradient.png');
+      background-image: url('../img/content/numbers-main/gradient.png');
       background-repeat: no-repeat;
       background-size: 60%;
       background-position: right center;
@@ -202,7 +202,7 @@
         position: absolute;
         width: 198.8rem;
         height: 173.1rem;
-        background-image: url('../../img/content/banners/bg-img.svg');
+        background-image: url('../img/content/banners/bg-img.svg');
         background-size: cover;
         left: -88rem;
         bottom: -124rem;
@@ -294,7 +294,7 @@
       &::before{
         content: '';
         position: absolute;
-        background-image: url('../../img/content/focus-block/bg-img.svg');
+        background-image: url('../img/content/focus-block/bg-img.svg');
         background-repeat: no-repeat;
         background-size: contain;
         background-position: 50% 50%;
@@ -329,7 +329,7 @@
       &::before{
         content: '';
         position: absolute;
-        background-image: url('../../img/content/platform/bg-img.svg');
+        background-image: url('../img/content/platform/bg-img.svg');
         background-repeat: no-repeat;
         background-size: cover;
         width: 54.8rem;
@@ -352,7 +352,7 @@
 
   &--preparation{
     .section__inner{
-      background-image: url('../../img/content/preparation/gradient.png');
+      background-image: url('../img/content/preparation/gradient.png');
       background-repeat: no-repeat;
       background-size: 60%;
       background-position: 0% 386%;

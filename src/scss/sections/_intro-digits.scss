@@ -24,7 +24,7 @@
       &::before {
         content: '';
         position: absolute;
-        background-image: url('../../img/circles-small.svg');
+        background-image: url('../img/circles-small.svg');
         width: 441px;
         height: 227px;
         left: 0;
@@ -35,7 +35,7 @@
       &::after {
         content: '';
         position: absolute;
-        background-image: url('../../img/circles.svg');
+        background-image: url('../img/circles.svg');
         width: 748px;
         height: 379px;
         right: 0;

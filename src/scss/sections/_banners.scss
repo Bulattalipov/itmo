@@ -1,13 +1,14 @@
 .banners{
 
     &__title{
-        max-width: 70rem;
+        max-width: 78.8rem;
+        width: 100%;
         @extend %fs-h-3;
     }
 
     &__wrapper{
         display: flex;
-        gap: 4rem 11rem;
+        gap: 4rem 2rem;
 
         @include breakpoint(small-tablet) {
             flex-direction: column;

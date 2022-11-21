@@ -28,7 +28,7 @@
     &::after{
         content: '';
         position: absolute;
-        background-image: url('../../img/content/numbers-main/book.svg');
+        background-image: url('../img/content/numbers-main/book.svg');
         background-repeat: no-repeat;
         background-size: cover;
         width: 2rem;
@@ -40,7 +40,7 @@
 
     &--download{
         &::after{
-            background-image: url('../../img/download.svg');
+            background-image: url('../img/download.svg');
         }
     }
 
