@@ -126,15 +126,17 @@
 
         @include breakpoint(tablet) {
             flex: 0 100%;
+            height: auto;
+            padding-bottom: 68%;
         }
 
-        @include breakpoint(mobile) {
-            height: 26rem;
-        }
+        // @include breakpoint(mobile) {
+        //     height: 36rem;
+        // }
 
-        @include breakpoint(small-mobile) {
-            height: 20.4rem;
-        }
+        // @include breakpoint(small-mobile) {
+        //     height: 20.4rem;
+        // }
     }
 
     &__footer-swiper-img{

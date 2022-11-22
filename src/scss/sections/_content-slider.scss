@@ -1,5 +1,11 @@
 .content-slider {
 
+  &__desc{
+    @extend %fs-roboto-l;
+    margin-bottom: 6.7rem;
+    max-width: 52rem;
+  }
+
   &__list {
     display: flex;
     justify-content: space-between;

@@ -1046,10 +1046,11 @@
     "cardsSimple3": {
       "block": "cards",
       "dot": true,
-      "title": "Компанда проекта",
-      "mods": "",
+      "title": "Команда проекта",
+      "mods": "section--bg-transparent",
       "mainTitle": "Участники проекта от ИТМО",
       "desc": "Все сотрудники нашего центра активно участвуют в исследовательских проектах в области защиты информации.",
+      "whitePaginationsBtns": true,
       "linkBtn": false,
       "swiperContent": [
         {

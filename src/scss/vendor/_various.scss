@@ -18,7 +18,7 @@
 .desc{
   @extend %fs-roboto-s;
     letter-spacing: -0.02em;
-    max-width: 520px;
+    max-width: 52rem;
     margin-bottom: 6.4rem;
 
     @include breakpoint(small-tablet) {

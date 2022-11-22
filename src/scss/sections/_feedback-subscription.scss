@@ -4,19 +4,6 @@
     width: 49%;
     margin-left: auto;
 
-    input:-webkit-autofill,
-    input:-webkit-autofill:hover,
-    input:-webkit-autofill:focus,
-    textarea:-webkit-autofill,
-    textarea:-webkit-autofill:hover,
-    textarea:-webkit-autofill:focus,
-    select:-webkit-autofill,
-    select:-webkit-autofill:hover,
-    select:-webkit-autofill:focus {
-        background-color: transparent;
-        -webkit-box-shadow: 0 0 0 30px $primary-700 inset !important;
-    }
-
     @include breakpoint(tablet) {
         width: 100%;
     }
@@ -35,5 +22,10 @@
         color: $grayscale-100;
         max-width: 59rem;
         margin-bottom: 2.4rem;
+    }
+    .input.error{
+        .input__element:focus~.input__placeholder {
+            color: $grayscale-600 !important;
+        }
     }
 }

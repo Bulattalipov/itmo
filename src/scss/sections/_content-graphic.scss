@@ -34,7 +34,7 @@
   }
 
   &__desc {
-    @extend %fs-roboto-l;
+    @extend %fs-roboto-s;
     max-width: 52rem;
     margin-bottom: 3rem;
 
@@ -80,7 +80,7 @@
       color: #fff;
     }
 
-    @include breakpoint(mobile) {
+    @include breakpoint(small-tablet) {
       width: 100%;
     }
   }
@@ -88,6 +88,12 @@
   &__data {
     display: flex;
     margin-top: 4rem;
+
+    &:first-child{
+      .content-graphic__data-text{
+          max-width: 15rem;
+      }
+    }
 
     li {
       width: 100%;
@@ -109,6 +115,7 @@
   }
 
   &__data-text {
+    display: block;
     @extend %fs-roboto-xs;
     line-height: 1.2;
   }

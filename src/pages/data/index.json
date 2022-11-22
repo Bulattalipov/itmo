@@ -3,7 +3,7 @@
     "contentGraphic": {
         "block": "cards",
         "dot": true,
-        "title": "Разрабатываем курсы",
+        "title": "Разрабатываем <br> курсы",
         "mods": "section--bg-transparent section--adaptive-without-padding",
         "capabilities": [
             {"text": "Подготовка к CTF-соревнованиям"},
