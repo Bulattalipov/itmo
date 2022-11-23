@@ -109,7 +109,7 @@
         &::before{
           content: '';
           position: absolute;
-          background-image: url('../../img/download-black.svg');
+          background-image: url('../img/download-black.svg');
           width: 1.6rem;
           height: 1.7rem;
           background-size: cover;
@@ -120,7 +120,7 @@
         &--rotation-45{
     
           &::before{
-            background-image: url('../../img/download-black-135.svg');
+            background-image: url('../img/download-black-135.svg');
           }
         }
     }

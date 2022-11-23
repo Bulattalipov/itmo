@@ -10,15 +10,16 @@
   textarea:-webkit-autofill:focus,
   select:-webkit-autofill,
   select:-webkit-autofill:hover,
-  select:-webkit-autofill:focus {
-      background-color: transparent;
+  select:-webkit-autofill:focus,
+  input:-internal-autofill-selected {
+      transition: background-color 500000000s ease-in-out 0s;
+      background-color: rgba(0, 0, 0, 0) !important;
       -webkit-text-fill-color: $grayscale-100;
-      -webkit-box-shadow: 0 0 0 30px $primary-700 inset !important;
+      -webkit-box-shadow: none !important;
   }
 
   &__wrapper{
     display: flex;
-    align-items: flex-end;
 
     @include breakpoint(small-tablet) {
       flex-direction: column;
@@ -31,7 +32,7 @@
     display: flex;
     align-items: flex-end;
     position: relative;
-    height: 40rem;
+    // height: 60rem;
 
     @include breakpoint(laptop) {
       flex: 0 1 100%;

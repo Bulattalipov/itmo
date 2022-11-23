@@ -14,10 +14,14 @@
             padding: 4rem 0 20rem;
         }
 
+        @include breakpoint(small-tablet) {
+            border-radius: 2.4rem;
+        }
+
         &::after{
             content: '';
             position: absolute;
-            background-image: url('../../img/error-page-img.svg');
+            background-image: url('../img/error-page-img.svg');
             width: 107.2rem;
             height: 111.7rem;
             right: -19rem;
@@ -45,6 +49,7 @@
         font-weight: 700;
         font-size: 18rem;
         line-height: 1;
+        text-transform: uppercase;
 
         span{
             color: #FF6584;
@@ -84,6 +89,23 @@
     &__link{
         display: inline-block;
         margin-top: 5.6rem;
+
+        &.button{
+            border: 0.1rem solid $grayscale-100;
+
+            &:hover {
+                background-color: $grayscale-200;
+                border-color: $grayscale-200;
+                color: $grayscale-900;
+            }
+
+            &:focus{
+                background-color: $grayscale-500;
+                border-color: $grayscale-500;
+                color: $grayscale-900;
+            }
+        }
+
 
         @include breakpoint(small-tablet) {
             margin-top: 3rem;

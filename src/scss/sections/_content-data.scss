@@ -1,35 +1,25 @@
 .content-data{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
     gap: 4rem 2rem;
 
-    @include breakpoint(tablet) {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem 1.6rem;
+    @include breakpoint(small-tablet) {
+        flex-direction: column;
     }
 
-
-
-    &__item{
-        &:nth-child(4n+4){
-            grid-column: span 2;
-        }
+    &__items{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem 2rem;
+        width: 100%;
+        max-width: 79rem;
 
         @include breakpoint(tablet) {
-            &:nth-child(4n+4){
-                grid-column: span 1;
-            }
-
-            &:nth-child(4){
-                order: 1;
-                grid-column: span 2;
-            }
-
-            &:last-child{
-                order: 2;
-                grid-column: span 2;
-            }
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem 1.6rem;
         }
+    }
+
+    &__item{
 
         p{
             @extend %fs-roboto-s;
@@ -39,6 +29,14 @@
             color: $grayscale-600;
         }
 
+    }
+
+    &__box{
+        width: 38.5rem;
+    }
+
+    .user-card{
+        width: 100%;
     }
 
     .user-card__info-title{

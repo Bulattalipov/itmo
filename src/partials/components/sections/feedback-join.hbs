@@ -4,7 +4,7 @@
       <div class="feedback-join">
         <div class="feedback-join__wrapper">
           <div class="feedback-join__box">
-            <img src="img/content/feedback/join-img.svg" alt="Иллюстрация">
+            <img class="lazyload" data-src="img/content/feedback/join-img.svg" alt="Иллюстрация">
             <div class="feedback-join__box-contacts">
               <a class="feedback-join__box-contacts-tell" href="tel:+78123123269">+7 (812) 312-32-69</a>
               <a class="feedback-join__box-contacts-mail" href="mailto:fbititmo@gmail.com">fbititmo@gmail.com</a>
@@ -12,7 +12,7 @@
           </div>
           <div class="feedback-join__contain">
             <h2 class="feedback-join__contain-title title-h2">
-              Присоединяйтесь к сотрудничеству
+              {{{data.mainTitle}}}
             </h2>
             {{>components/form data="form--dark" header=false desc=true message=false email=true phone=true btnText="Отправить"}}
           </div>

@@ -8,7 +8,8 @@
     textarea:-webkit-autofill:focus,
     select:-webkit-autofill,
     select:-webkit-autofill:hover,
-    select:-webkit-autofill:focus {
+    select:-webkit-autofill:focus,
+    input:-internal-autofill-selected {
         background-color: transparent !important;
         -webkit-text-fill-color: $grayscale-100;
         -webkit-box-shadow: 0 0 0 30px rgba(255, 255, 255, 0) inset !important;

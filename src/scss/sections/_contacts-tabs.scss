@@ -73,6 +73,7 @@
         padding: 1.6rem 2.4rem;
         display: flex;
         justify-content: center;
+        text-transform: uppercase;
 
         &:hover{
             color: $primary-400;
@@ -83,8 +84,11 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        height: 33rem;
 
         @include breakpoint(small-tablet) {
+            height: auto;
+
             &>div:first-child{
                 display: flex;
                 justify-content: space-between;
@@ -174,7 +178,7 @@
         &::before{
             content: '';
             position: absolute;
-            background-image: url("../../img/content/feedback/1.svg");
+            background-image: url("../img/content/feedback/1.svg");
             background-repeat: no-repeat;
             background-size: contain;
             width: 198.8rem;
@@ -198,6 +202,8 @@
     }
 
     &__illustration-wrapper{
+        margin-top: auto;
+
         img{
             width: 38.5rem;
             height: 30rem;

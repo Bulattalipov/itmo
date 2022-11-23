@@ -16,7 +16,7 @@
               {{#each contentDevelopment.directions}}
               <li>
                 <div class="content-development__list-box">
-                  <img src="{{this.urlImg}}" alt="{{this.altImg}}">
+                  <img class="lazyload" data-src="{{this.urlImg}}" alt="{{this.altImg}}">
                 </div>
                 <p class="content-development__list-text">
                   {{this.text}}

@@ -12,6 +12,14 @@
     .section__inner{
       background-color: transparent;
     }
+
+    .section__heading {
+      padding: 2.4rem 0 0;
+    }
+
+    .section__content {
+      padding: 0 0 4rem;
+    }
   }
 
   &--without-right{
@@ -396,6 +404,12 @@
 
     h1, h2, h3, h4, h5, h6 {
       @extend %fs-body-s;
+
+      @include breakpoint(laptop) {
+        br{
+          display: none;
+        }
+      }
     }
 
     @include breakpoint(laptop) {

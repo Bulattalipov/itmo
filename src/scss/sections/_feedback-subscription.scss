@@ -27,5 +27,8 @@
         .input__element:focus~.input__placeholder {
             color: $grayscale-600 !important;
         }
+        .input__placeholder{
+            color: $grayscale-600;
+        }
     }
 }

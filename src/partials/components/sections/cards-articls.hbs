@@ -15,12 +15,12 @@
           {{#each data.swiperContent}}
           <li class="cards-articls__item swiper-slide">
             <div class="cards-articls__item-box">
-              <img class="cards-articls__item-img" src={{this.imgUrl}} alt={{this.imgAlt}}>
+              <img class="cards-articls__item-img lazyload" data-src={{this.imgUrl}} alt={{this.imgAlt}}>
               {{#if this.linksLogo}} 
               <div class="cards-articls__item-links">
                 {{#each this.linksLogo}}
                 <a class="cards-articls__item-links-box" href="#">
-                  <img class="cards-articls__item-links-img" src="img/content/cards-main/logo-company.png" alt="Сбер">
+                  <img class="cards-articls__item-links-img lazyload" data-src="img/content/cards-main/logo-company.png" alt="Сбер">
                 </a>
                 {{/each}}
               </div>

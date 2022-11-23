@@ -11,12 +11,18 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 19rem;
     gap: 0.6rem 0.8rem;
+
+    @include breakpoint(laptop) {
+      max-width: 100%;
+    }
 
     @extend %fs-body-s;
 
     li {
-      &:last-child {
+      &:last-child:not(:first-child) {
         .breadcrumbs__link {
           padding-right: 0;
           &::after {
@@ -45,7 +51,7 @@
       font-size: 1.6rem;
       line-height: 1.2;
       position: absolute;
-      bottom: 0;
+      bottom: -0.3rem;
       right: 0;
     }
 

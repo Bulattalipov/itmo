@@ -1,50 +1,45 @@
-export class Map {
-    constructor(element, props) {
-        const defaultConfig = {
-            icon: {
-                url: null,
-                size: [60, 60],
-                offset: [-30, -60]
-            },
-            center: [55.76, 37.64],
-            zoom: 7,
-            controls: []
-        };
-        this.config = Object.assign(defaultConfig, props);
+import loadApi from "./moduls/loadApi";
+import initMapOverlay from "./moduls/mapOverlay";
 
-        if (!element) return;
+export default function map() {
+  const mapElement = document.querySelector('.js-map');
+  if (mapElement) {
+    const url = `https://api-maps.yandex.ru/2.1/?apikey=${mapElement.dataset.api}&lang=ru_RU`;
+    loadApi('yandex', url, () => {
+      ymaps.ready(init);
+    });
+  }
 
-        this.el = element;
+  initMapOverlay('.js-overlay', 'js-overlay-container');
 
-        this.instance = this._init();
-    }
+  function init() {
+    const map = new ymaps.Map(mapElement, {
+      center: [mapElement.dataset.initialLongitude, mapElement.dataset.initialLatitude],
+      zoom: mapElement.dataset.initialZoom,
+      controls: ['zoomControl']
+    });
 
-    _init() {
-        const instance = new ymaps.Map(this.el, {
-            center: this.config.center,
-            zoom: this.config.zoom,
-            controls: this.config.controls
-        });
+    addPlace(map, {
+      coords: [mapElement.dataset.initialLongitude, mapElement.dataset.initialLatitude],
+      image: mapElement.dataset.image
+    })
+  }
+}
 
-        instance.behaviors.disable('scrollZoom');
+function addPlace(map, {
+  coords,
+  image
+}) {
+  const placemarkProperties = {};
 
-        return instance;
-    }
+  const placemarkOptions = {
+    iconLayout: 'default#image', // pieChart
+    iconImageHref: image,
+    iconImageSize: [60, 60],
+    iconImageOffset: [-30, -60]
+  };
 
-    addPlace(coords) {
-        const placemarkProperties = {};
+  const placemark = new ymaps.Placemark(coords, placemarkProperties, placemarkOptions);
 
-        const placemarkOptions = {
-            iconLayout: 'default#image',
-            iconImageHref: this.config.icon.url,
-            iconImageSize: this.config.icon.size,
-            iconImageOffset: this.config.icon.offset
-        };
-
-        const placemark = new ymaps.Placemark(coords, placemarkProperties, placemarkOptions);
-
-        this.instance.geoObjects.add(placemark);
-
-        return placemark;
-    }
+  map.geoObjects.add(placemark);
 }

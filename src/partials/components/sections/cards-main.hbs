@@ -17,7 +17,7 @@
                 {{#each data.swiperContent}}
                 <div class="ordinary-slider__slide swiper-slide"> 
                   <div class="ordinary-slider__slide-box">
-                    <img class="ordinary-slider__slide-box-img" src={{this.imgUrl}} alt={{this.imgAlt}}>
+                    <img class="ordinary-slider__slide-box-img lazyload" data-src={{this.imgUrl}} alt={{this.imgAlt}}>
                     <ul class="ordinary-slider__slide-box-list">
                       {{#each this.listItems}}
                       <li>
@@ -28,7 +28,7 @@
                   </div>
                   <div class="ordinary-slider__slide-wrapper">
                     <div class="ordinary-slider__slide-logo">
-                      <img class="ordinary-slider__slide-logo-img" src={{this.logoCompany}} alt="Сбер">
+                      <img class="ordinary-slider__slide-logo-img lazyload" data-src={{this.logoCompany}} alt="Сбер">
                     </div>
                     <div class="ordinary-slider__slide-content">
                       <ul class="ordinary-slider__slide-content-header">

@@ -89,18 +89,16 @@
     display: flex;
     margin-top: 4rem;
 
-    &:first-child{
-      .content-graphic__data-text{
-          max-width: 15rem;
-      }
-    }
-
     li {
       width: 100%;
       max-width: 260px;
 
       &:first-child {
         margin-right: 2.4rem;
+
+        .content-graphic__data-text{
+          max-width: 15rem;
+        }
       }
     }
 

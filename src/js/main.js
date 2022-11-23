@@ -1,3 +1,4 @@
+import 'lazysizes';
 import {
   Swiper,
   Navigation,
@@ -8,9 +9,7 @@ import {
 } from 'swiper';
 import HystModal from './HystModal';
 import Forms from './Forms';
-import {
-  Map
-} from './Map';
+import map from './map';
 import debug from './utils/debug';
 import mobileSlider from './moduls/mobileSlider';
 import tabsSlider from './moduls/tabsSlider';
@@ -35,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   modals();
   forms();
-  maps();
+  map();
   debug(); // Нажми 5 раз "d" на клавиатуре
   accordions();
   searchFields();
@@ -88,18 +87,24 @@ function forms() {
   });
 }
 
-function maps() {
-  ymaps.ready(() => {
-    [...document.querySelectorAll('.js-map')].forEach(map => {
-      const instance = new Map(map, {
-        icon: {
-          url: 'img/placemark.svg'
-        }
-      });
-      instance.addPlace([55.76, 37.64]);
-    });
-  });
-}
+// function maps() {
+//   [...document.querySelectorAll('.js-map')].forEach(map => {
+
+
+//     const url = `https://api-maps.yandex.ru/2.1/?apikey=${map.dataset.api}&lang=ru_RU`;
+
+//     loadApi('yandex', url, () => {
+//       ymaps.ready(() => {
+//         const instance = new Map(map, {
+//           icon: {
+//             url: 'img/placemark.svg'
+//           }
+//         });
+//         instance.addPlace([map.dataset.initialLongitude, map.dataset.initialLatitude]);
+//       });
+//     });
+//   });
+// }
 
 function accordions() {
   new Accordions({
