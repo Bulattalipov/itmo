@@ -162,8 +162,6 @@
 
     background-color: $grayscale-200;
 
-    @extend %interactive-svg-stroke-button;
-
     svg {
       width: 2rem;
       height: 2rem;

@@ -1,9 +1,12 @@
 .header {
   position: relative;
   z-index: 20;
-
   padding-top: 1.6rem;
-  padding-bottom: 3.2rem;
+  padding-bottom: 2rem;
+
+  @include breakpoint(laptop) {
+    padding-bottom: 1rem;
+  }
 
   &__top {
     display: grid;

@@ -12,7 +12,7 @@
   select:-webkit-autofill:hover,
   select:-webkit-autofill:focus,
   input:-internal-autofill-selected {
-      transition: background-color 500000000s ease-in-out 0s;
+      transition: background-color 5000000000s ease-in-out 0s;
       background-color: rgba(0, 0, 0, 0) !important;
       -webkit-text-fill-color: $grayscale-100;
       -webkit-box-shadow: none !important;

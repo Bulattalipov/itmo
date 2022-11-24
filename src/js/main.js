@@ -313,30 +313,5 @@ function searchFields() {
         return resultSearch.classList.remove('active');
       }
     });
-
-
-
-
-  });
-}
-
-
-// функция замена цвета кнопки при клике на инпут
-function colorReplacementBtn(){
-  const parentBlock = document.querySelector('.feedback-subscription');
-
-  if(!parentBlock){
-    return;
-  }
-
-  const input = parentBlock.querySelector('.input__element');
-  const btn = parentBlock.querySelector('.email-form__button');
-
-  input.addEventListener('focus', function(){
-    btn.classList.add('email-form__button--color');
-  });
-
-  input.addEventListener('blur', function(){
-    btn.classList.remove('email-form__button--color');
   });
 }

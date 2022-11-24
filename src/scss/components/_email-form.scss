@@ -4,16 +4,11 @@
   &--on-dark{
     max-width: 59rem;
 
-    .input{
-      &:focus~.email-form__button{
-        background-color: $primary-700;
-      }
-    }
-
     .input.error{
       .input__element{
         border-color: $yellow;
       }
+
       .input__validation-message{
         color: $yellow;
       }
@@ -23,38 +18,104 @@
     }
 
     .input__element{
+      color: $grayscale-100;
+
       &:placeholder-shown ~ .input__placeholder{
         color: $grayscale-100;
+      }
+
+      &:placeholder-shown ~ .email-form__button{
+        background-color: $grayscale-100;
+        border-color: $grayscale-100;
+
+        svg {
+          stroke: $grayscale-900;
+        }
+
+        &:focus {
+          background-color: $primary-500;
+          border-color: $primary-500;
+  
+          svg {
+            stroke: $grayscale-100;
+          }
+        }
+  
+        &:hover {
+          background-color: $primary-400;
+          border-color: $primary-400;
+  
+          svg {
+            stroke: $grayscale-100;
+          }
+        }
       }
 
       &:focus {
         border-color: $grayscale-100;
         background-color: $grayscale-100;
+        color: $grayscale-900;
 
         &:placeholder-shown ~ .input__placeholder{
           color: $grayscale-900;
+        }
+
+        &:placeholder-shown ~ .email-form__button{
+          background-color: $primary-500;
+          border-color: $primary-500;
+
+          svg {
+            stroke: $grayscale-100;
+          }
+
+          &:focus {
+            background-color: $primary-500;
+            border-color: $primary-500;
+    
+            svg {
+              stroke: $grayscale-100;
+            }
+          }
+    
+          &:hover {
+            background-color: $primary-400;
+            border-color: $primary-400;
+    
+            svg {
+              stroke: $grayscale-100;
+            }
+          }
         }
       }
 
     }
 
     .email-form__button{
-      background-color: $grayscale-100;
+      transition: background-color $tt $te, border-color $tt $te;
+        background-color: $primary-500;
+        border-color: $primary-500;
 
-      @extend %interactive-svg-stroke-button;
-
-      svg{
-        stroke: $grayscale-900;
-      }
-
-      &--color{
-        background-color: $primary-700;
-
-        svg{
+        svg {
           stroke: $grayscale-100;
         }
-      }
 
+        &:focus {
+          background-color: $primary-500;
+          border-color: $primary-500;
+  
+          svg {
+            stroke: $grayscale-100;
+          }
+        }
+  
+        &:hover {
+          background-color: $primary-400;
+          border-color: $primary-400;
+  
+          svg {
+            stroke: $grayscale-100;
+          }
+        }
     }
   }
 
@@ -98,7 +159,7 @@
       }
 
       &:placeholder-shown ~ .input__placeholder {
-        transform: translateY(1.85rem);
+        transform: translateY(1.65rem);
       }
 
       &:focus {
@@ -116,6 +177,7 @@
     &__placeholder {
       left: 2.8rem;
       transform: translateY(0);
+      top: 0.3rem;
 
       @include breakpoint(small-tablet) {
         left: 1.6rem;

@@ -63,7 +63,7 @@
         display: flex;
         gap: 1rem 1.2rem;
 
-        @include breakpoint(small-tablet) {
+        @include breakpoint(small-mobile) {
             margin-top: 4rem;
             flex-direction: column;
         }

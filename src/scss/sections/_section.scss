@@ -66,8 +66,6 @@
       background-color: $primary-700;
       padding: 7.2rem 4.8rem 8rem;
       width: 100%;
-      border-radius: 3.2rem;
-      overflow: hidden;
       position: relative;
 
       &::before{
@@ -389,6 +387,10 @@
 
     @include breakpoint(laptop) {
       grid-template-columns: 1fr;
+    }
+
+    @include breakpoint(small-tablet) {
+      border-radius: 2.4rem;
     }
   }
 

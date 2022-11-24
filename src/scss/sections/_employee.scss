@@ -33,6 +33,7 @@
 
     &__desc{
         margin-bottom: 5.6rem;
+        max-width: 100%;
 
         @include breakpoint(laptop) {
             margin-bottom: 3.6rem;
@@ -60,6 +61,7 @@
         }
 
         span{
+            display: block;
             @extend %fs-roboto-xl;
             margin-bottom: 0.4rem;
         }
@@ -142,13 +144,13 @@
     }
 
     &__img-box{
-        flex: 0 1 28%;
+        flex: 0 1 26.8%;
         background-color: $grayscale-300;
         position: relative;
         overflow: hidden;
         border-radius: 1.8rem;
         flex-shrink: 0;
-        padding-bottom: 33%;        
+        padding-bottom: 32.6%;        
 
         img{
             position: absolute;

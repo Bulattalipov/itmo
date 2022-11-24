@@ -88,6 +88,14 @@
         }
     }
 
+    span{
+        @extend %fs-roboto-s;
+
+        @include breakpoint(small-tablet) {
+            font-size: 1.2rem;
+        }
+    }
+
     ul:not(.documents-list, .documents-list__item-list, .swiper-wrapper, .narrow-list){
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -142,12 +150,14 @@
     }
 
     .js-iframe-wrapper{
-        margin: 6rem 0;
+        margin: 6.4rem 0 4rem;
+        height: 68rem;
         width: calc(100% + 13.5rem);
 
         @include breakpoint(laptop) {
             margin: 3rem 0;
             width: 100%;
+            height: auto;
         }
 
         @include breakpoint(small-tablet) {
@@ -184,6 +194,8 @@
     }
 
     .js-table-wrapper{
+        margin-top: 6.4rem;
+        margin-bottom: 0;
         width: calc(100% + 13.5rem);
 
         @include breakpoint(laptop) {
@@ -199,7 +211,6 @@
     table{
         border-collapse: collapse;
         table-layout: fixed;
-        margin-top: 6.4rem;
         margin-right: -5rem;
 
         @include breakpoint(laptop) {
@@ -235,23 +246,19 @@
         }
     }
 
-    &__btn{
-        margin-top: 4rem;
-
-        &.round-buttons::after {
-            background-image: url("../img/arrow-down-white.svg");
+    &.content-text--news-section{
+        p{
+            @extend %fs-body-m;
         }
 
-        @include breakpoint(small-tablet) {
-            &.round-buttons{
-                display: block;
+        blockquote{
+            font-size: 1.6rem;
+
+            @include breakpoint(small-tablet) {
+                font-size: 1.4rem;
             }
-            margin-top: 3.2rem;
         }
-    }
 
-
-    &--news-section{
         @include breakpoint(laptop) {
             padding-right: 0;
         }
@@ -259,6 +266,18 @@
         img:not(.documents-list__item-img-box img, .content-text__swiper-item-box){
             width: 100%;
             margin: 0;
+        }
+    }
+
+    &__btn{
+        margin-top: 4rem;
+
+        &.round-buttons::after {
+            background-image: url("../img/arrow-down-white.svg");
+        }
+
+        @include breakpoint(small-mobile) {
+            margin-top: 3.2rem;
         }
     }
 

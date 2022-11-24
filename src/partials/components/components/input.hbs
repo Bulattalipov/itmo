@@ -5,4 +5,11 @@
         <input class="input__element" name="{{data.name}}" type="{{data.type}}" placeholder="{{data.placeholder}}" {{#if data.required}}required{{/if}}>
     {{/if}}
     <span class="input__placeholder">{{data.placeholder}}</span>
+    {{#if btn}}
+        <button class="email-form__button" type="submit" title="Отправить">
+            <svg width="20" height="20">
+                <use xlink:href="#arrow" />
+            </svg>
+        </button>
+    {{/if}}
 </div>

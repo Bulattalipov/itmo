@@ -7,7 +7,11 @@
     text-transform: uppercase;
     @extend %fs-button-2;
     transition: $tt $te, border-color $tt $te, color $tt $te;
-    text-align: center;
+    text-align: left;
+
+    @include breakpoint(small-mobile) {
+        display: block;
+    }
 
     &--dark{
         border: 1px solid $primary-700;

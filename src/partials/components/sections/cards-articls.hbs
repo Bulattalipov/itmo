@@ -15,7 +15,7 @@
           {{#each data.swiperContent}}
           <li class="cards-articls__item swiper-slide">
             <div class="cards-articls__item-box">
-              <img class="cards-articls__item-img lazyload" data-src={{this.imgUrl}} alt={{this.imgAlt}}>
+              <img class="cards-articls__item-img lazyload" data-src="{{this.imgUrl}}" alt="{{this.imgAlt}}">
               {{#if this.linksLogo}} 
               <div class="cards-articls__item-links">
                 {{#each this.linksLogo}}
@@ -26,7 +26,7 @@
               </div>
               {{/if}} 
             </div>
-            <a class="cards-articls__item-title" href={{this.link}}>
+            <a class="cards-articls__item-title" href="{{this.link}}">
               {{this.title}}
               <svg width="24" height="24">
                 <use xlink:href="#arrow-link-45" />

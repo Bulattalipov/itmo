@@ -3,7 +3,7 @@
     <li>
     <div class="documents-list__item">
         <div class="documents-list__item-img-box">
-        <img src={{this.imgUrl}} alt="icon">
+        <img src="{{this.imgUrl}}" alt="icon">
         </div>
         <div class="documents-list__item-content">
         <div class="documents-list__item-title">
@@ -16,7 +16,7 @@
             </li>
             {{/each}}
         </ul>
-        <a class="documents-list__item-link {{#if this.thirdPartyResource}}documents-list__item-link--rotation-45{{/if}}" href={{this.link}} {{#unless this.thirdPartyResource}}download{{/unless}}>{{this.linkName}}</a>
+        <a class="documents-list__item-link {{#if this.thirdPartyResource}}documents-list__item-link--rotation-45{{/if}}" href="{{this.link}}" {{#unless this.thirdPartyResource}}download{{/unless}}>{{this.linkName}}</a>
         </div>
     </div>
     </li>
