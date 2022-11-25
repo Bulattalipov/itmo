@@ -10,9 +10,20 @@
     select:-webkit-autofill:hover,
     select:-webkit-autofill:focus,
     input:-internal-autofill-selected {
-        background-color: transparent !important;
+        transition: background-color 5000000000s ease-in-out 0s;
+        background-color: rgba(0, 0, 0, 0) !important;
         -webkit-text-fill-color: $grayscale-100;
-        -webkit-box-shadow: 0 0 0 30px rgba(255, 255, 255, 0) inset !important;
+        -webkit-box-shadow: none !important;
+    }
+
+    &__title{
+        @media only screen and (max-width: (430px)) {
+            font-size: 2.6rem;
+        }
+
+        @media only screen and (max-width: (400px)) {
+            font-size: 2.3rem;
+        }
     }
 
     .form--dark{
@@ -22,7 +33,7 @@
             max-width: 50rem;
         }
     }
-    
+
     .form__desc{
         max-width: 50rem;
     }
