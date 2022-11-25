@@ -57,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
   partnersSlider();
   choicesSelector();
   editableTextContainer();
-  colorReplacementBtn();
 });
 
 // document.fonts.ready.then((res) => {
@@ -247,6 +246,9 @@ function ordinarySlider() {
 
 function ordinary3slide() {
   const ordinary3slide = document.querySelectorAll('.cards-simple__slider');
+
+
+
   ordinary3slide.forEach(slider => {
     new Swiper(slider.querySelector('.cards-simple__swiper'), {
       speed: 500,

@@ -22,10 +22,7 @@ export default class Accordions {
     }
 
     setEventListeners() {
-        console.log(this.container);
         const elements = [...this.container.querySelectorAll(this.config.selectors.wrapper)];
-
-        console.log(this.config.selectors.wrapper);
 
         document.addEventListener('click', event => {
             if (event.target.matches(this.config.selectors.button) || event.target.closest(this.config.selectors.button)) {

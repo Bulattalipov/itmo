@@ -19,16 +19,13 @@
         }
     }
 
-    &__item{
+    &__title{
+        @extend %fs-roboto-s;
+        margin-bottom: 0.4rem;
+    }
 
-        p{
-            @extend %fs-roboto-s;
-            margin-bottom: 0.4rem;
-        }
-        span{
-            color: $grayscale-600;
-        }
-
+    &__label{
+        color: $grayscale-600;
     }
 
     &__box{

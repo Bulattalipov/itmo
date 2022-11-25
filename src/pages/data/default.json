@@ -210,6 +210,7 @@
   "sections": {
     "introMain": {
       "modf": false,
+      "bgImg": "img/content/intro-main/mobile.jpg",
       "mobileBgIbg": "img/content/intro-main/mobile.jpg",
       "mainTitle": "МНОЦ",
       "desc": "Первый научно-образовательный центр, занимающийся реализацией проектов в области информационной безопасности на стыке науки и бизнеса.",
@@ -259,7 +260,7 @@
       "desc": "Сегодня факультет БИТ – это факультет с устоявшимися академическими традициями, ориентированный на новейшие и передовые исследования и технологии, как в науке, так и в образовании.",
       "breadcrumbs": true, 
       "mobileBgIbg": "img/content/about-the-center/bg.webp",
-      "bgImg": "../../img/content/about-the-center/bg.webp",
+      "bgImg": "img/content/about-the-center/bg.webp",
       "boxCard": true,
       "slider": false,
       "slides": [

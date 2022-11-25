@@ -1,6 +1,5 @@
 export default function tabs() {
   const tabsContainers = Array.from(document.querySelectorAll('.js-init-tabs'));
-  console.log(tabsContainers);
 
   tabsContainers.forEach(tabsContainer => {
     const btns = Array.from(tabsContainer.querySelectorAll('.js-tab-btn'));

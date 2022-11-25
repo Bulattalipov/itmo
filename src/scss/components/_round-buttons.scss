@@ -1,5 +1,6 @@
 .round-buttons{
-    display: inline-block;
+    display: block;
+    width: max-content;
     border: 1px solid $grayscale-500;
     padding: 2.1rem 1.8rem 2.1rem 6.8rem;
     border-radius: 999px;
@@ -10,7 +11,7 @@
     text-align: left;
 
     @include breakpoint(small-mobile) {
-        display: block;
+        width: auto;
     }
 
     &--dark{

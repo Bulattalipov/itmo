@@ -16,6 +16,23 @@
 
     &__wrapper{
         max-width: 92.5rem; 
+
+        &>*{
+            @extend %fs-roboto-s;
+            margin: 3.2rem 0;
+    
+            @include breakpoint(small-tablet) {
+                margin: 2rem 0;
+            }
+    
+            &:first-child{
+                margin-top: 0;
+    
+                &>{
+                    margin-top: 0;
+                }
+            }
+        }
     }
 
     h2{
@@ -26,10 +43,6 @@
         word-break: break-word;
 
         margin-top: 12rem;
-
-        &:first-child{
-            margin-top: 0;
-        }
 
         @include breakpoint(laptop) {
             margin-top: 8rem;
@@ -79,15 +92,6 @@
         }
     }
 
-    p{
-        @extend %fs-roboto-s;
-        margin: 3.2rem 0;
-
-        @include breakpoint(small-tablet) {
-            margin: 2rem 0;
-        }
-    }
-
     span{
         @extend %fs-roboto-s;
 
@@ -106,6 +110,7 @@
     li:not(.documents-list li, .swiper-slide){
         position: relative;
         padding-left: 1.6rem;
+        margin: 0;
 
         &::before{
             content: '';

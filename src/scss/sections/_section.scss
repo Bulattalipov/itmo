@@ -14,11 +14,17 @@
     }
 
     .section__heading {
-      padding: 2.4rem 0 0;
+
+      @include breakpoint(laptop) {
+        padding: 2.4rem 0 0;
+      }
     }
 
     .section__content {
-      padding: 0 0 4rem;
+
+      @include breakpoint(laptop) {
+        padding: 0 0 4rem;
+      }
     }
   }
 
