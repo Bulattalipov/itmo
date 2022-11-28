@@ -412,8 +412,12 @@
 
     h1, h2, h3, h4, h5, h6 {
       @extend %fs-body-s;
+      min-height: 3rem;
+      display: flex;
+      align-items: center;
 
       @include breakpoint(laptop) {
+        min-height: auto;
         br{
           display: none;
         }

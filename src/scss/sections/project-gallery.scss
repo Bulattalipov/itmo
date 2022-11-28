@@ -1,0 +1,81 @@
+.project-gallery{
+    overflow: hidden;
+    
+    &__slider{
+        position: relative;
+        min-width: 0;
+        margin-right: 6rem;  
+    }
+
+    &__swiper{
+        width: auto;
+    }
+
+    .swiper-slide {
+        position: relative;
+    
+        &.swiper-slide-duplicate-prev{
+        position: relative;
+        transition: all $tt $te;
+
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 2;
+            background: linear-gradient(0deg, rgba(37, 37, 68, 0.8), rgba(37, 37, 68, 0.8));
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 2rem;
+        }
+
+            @include breakpoint(small-tablet) {
+                &::after{
+                display: none;
+                }
+            }
+        }
+    }
+
+    &__swiper-item{
+        position: relative;
+        height: 44rem;
+        background-color: #eff1f4;
+        border-radius: 2rem;
+
+        @include breakpoint(laptop) {
+            height: 38rem;
+        }
+
+        @include breakpoint(small-mobile) {
+            height: 28rem;
+        }
+
+        @media only screen and (max-width: 500px){
+            height: 20rem;
+        }
+    }
+
+    &__swiper-img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+        object-position: top center;
+        border-radius: 2rem;
+    }
+
+    &__navigation{
+        position: absolute;
+        right: 0;
+        top: -9rem;
+
+        @include breakpoint(laptop) {
+            position: static;
+            margin-top: 2rem;
+        }
+    }
+}

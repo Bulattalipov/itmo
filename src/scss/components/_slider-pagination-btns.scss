@@ -61,13 +61,12 @@
   &--bg-white{
     background-color: $grayscale-100;
 
-    &:hover,
-    &:focus {
-      background-color: $grayscale-100;
+    &:hover{
+      background-color: $grayscale-200;
     }
 
-    &:active {
-      background-color: $grayscale-100;
+    &:focus {
+      background-color: $grayscale-200;
     }
   }
 

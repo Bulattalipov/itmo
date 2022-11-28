@@ -34,5 +34,11 @@
     "dot": true,
     "title": "",
     "mods": ""
+  },
+  "projectGallery": {
+    "block": "content",
+    "dot": true,
+    "title": "Галерея <br> проекта",
+    "mods": "section--bg-transparent section--adaptive-without-padding section--without-right"
   }
 }

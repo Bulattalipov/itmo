@@ -26,6 +26,7 @@ import timer from './moduls/timer';
 import choicesSelector from './moduls/choices-select'
 import oneSlideSlider from './moduls/oneSlideSlider';
 import mobileSliderNews from './moduls/mobileSliderNews';
+import projectGallery from './moduls/projectGallery';
 
 document.addEventListener('DOMContentLoaded', function () {
   window.itmo = {}; // Тут будут лежать всякие функции с фронта
@@ -50,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
   tabsSliderMain();
   oneSlideSlider();
   mobileSliderNews();
+  projectGallery();
 
   timer();
   fancyboxVideo();
@@ -58,9 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
   choicesSelector();
   editableTextContainer();
 });
-
-// document.fonts.ready.then((res) => {
-// })
 
 function modals() {
   new HystModal({
@@ -85,25 +84,6 @@ function forms() {
     }
   });
 }
-
-// function maps() {
-//   [...document.querySelectorAll('.js-map')].forEach(map => {
-
-
-//     const url = `https://api-maps.yandex.ru/2.1/?apikey=${map.dataset.api}&lang=ru_RU`;
-
-//     loadApi('yandex', url, () => {
-//       ymaps.ready(() => {
-//         const instance = new Map(map, {
-//           icon: {
-//             url: 'img/placemark.svg'
-//           }
-//         });
-//         instance.addPlace([map.dataset.initialLongitude, map.dataset.initialLatitude]);
-//       });
-//     });
-//   });
-// }
 
 function accordions() {
   new Accordions({
@@ -219,11 +199,16 @@ function contentSliders() {
 function ordinarySlider() {
   const ordinarySlider = document.querySelectorAll('.cards-main__slider');
   ordinarySlider.forEach(slider => {
+
+    const nextEl = slider.querySelector(".next");
+    const prevEl = slider.querySelector(".prev");
+
     new Swiper(slider.querySelector('.ordinary-slider'), {
       speed: 500,
       slidesPerView: 1,
       spaceBetween: 20,
       autoHeight: true,
+      loop: true,
       modules: [Navigation, Pagination],
       breakpoints: {
         1024: {
@@ -232,8 +217,8 @@ function ordinarySlider() {
         }
       },
       navigation: {
-        nextEl: '.cards-main__slider .next',
-        prevEl: '.cards-main__slider .prev'
+        nextEl: nextEl,
+        prevEl: prevEl
       },
       on: {
         init: function (swiper) {
@@ -247,14 +232,13 @@ function ordinarySlider() {
 function ordinary3slide() {
   const ordinary3slide = document.querySelectorAll('.cards-simple__slider');
 
-
-
   ordinary3slide.forEach(slider => {
     new Swiper(slider.querySelector('.cards-simple__swiper'), {
       speed: 500,
       slidesPerView: 1,
       spaceBetween: 20,
       modules: [Navigation],
+      loop: true,
       breakpoints: {
         768: {
           slidesPerView: 2,

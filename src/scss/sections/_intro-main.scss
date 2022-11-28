@@ -94,6 +94,16 @@
     }
   }
 
+  &__desktop-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+  }
+
   &__mobile-wrapper {
     position: relative;
 
@@ -165,6 +175,18 @@
 
   &__heading-decoration {
     position: relative;
+    border-radius: 9.6rem;
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+      backdrop-filter: blur(2.05rem);
+    }
 
     @include breakpoint(laptop) {
       order: 1;
@@ -206,7 +228,7 @@
     min-height: 5.1rem;
 
     background-color: rgba(#1D1F20, 0.1);
-    border-radius: 9.6rem;
+    position: relative;
 
     @extend %fs-body-s;
 
@@ -272,19 +294,21 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 2rem;
+    position: relative;
+    z-index: 2;
 
     @include breakpoint(laptop) {
       grid-template-columns: repeat(2, 1fr);
     }
     
     @include breakpoint(small-tablet) {
-      position: relative;
       display: contents;
     }
   }
 
   &__footer-decoration {
     position: absolute;
+    z-index: 3;
     bottom: 0;
     left: 0;
 
@@ -308,6 +332,7 @@
 
   &__menu {
     position: absolute;
+    z-index: 4;
     margin-right: 35rem;
     grid-column: 1/8;
 

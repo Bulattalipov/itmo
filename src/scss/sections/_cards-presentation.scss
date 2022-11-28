@@ -97,7 +97,6 @@
 
     &__content-center-btn{
         display: inline-block;
-        @extend %interactive-white-btn;
         padding: 2.1rem 3.2rem;
         border-radius: 999px;
         background-color: $grayscale-100;

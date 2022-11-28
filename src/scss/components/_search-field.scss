@@ -30,10 +30,31 @@
       display: block;
     }
 
+    .search-field__button--open{
+      &:focus {
+        background-color: $grayscale-100;
+        border-color: $grayscale-100;
+    
+        svg {
+          stroke: $grayscale-900;
+        }
+      }
+    
+      &:hover {
+        background-color: $grayscale-100;
+        border-color: $grayscale-100;
+    
+        svg {
+          stroke: $grayscale-900;
+        }
+      }
+    }
+
     .search-field__button--close {
       opacity: 1;
       visibility: visible;
-
+      width: 4.6rem;
+      height: 4.6rem;
       transition: opacity $tt $te $tt, visibility $tt $te $tt;
     }
   }
@@ -77,6 +98,8 @@
     &--close {
       right: 0;
 
+      width: 0;
+      height: 0;
       opacity: 0;
       visibility: hidden;
 

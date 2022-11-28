@@ -12,6 +12,10 @@
   @media screen and (min-width: 1681px) {
     --fs-html: 10px;
   }
+
+  @media screen and (max-width: 389px) {
+    --fs-html: 9px;
+  }
 }
 
 // fonts
