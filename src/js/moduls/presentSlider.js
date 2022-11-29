@@ -9,8 +9,12 @@ import {
 export default function presentSlider() {
     const presentSlider = document.querySelectorAll('.js-present-slider');
     presentSlider.forEach(slider => {
+
+      const arroySlide = slider.querySelectorAll('.swiper-slide');
+      let loop = arroySlide.length < 2 ? false : true;
+
       new Swiper(slider.querySelector('.swiper'), {
-        loop: true,
+        loop: loop,
         speed: 500,
         slidesPerView: 1,
         spaceBetween: 0,
@@ -41,5 +45,13 @@ export default function presentSlider() {
           },
         },
       });
+
+      const btn = slider.querySelector('.slider-pagination-btns__button').classList.contains('swiper-button-lock');
+      if(btn){
+        slider.querySelector('.slider-pagination-btns__button').parentElement.classList.add('hide');
+      } else{
+        slider.querySelector('.slider-pagination-btns__button').parentElement.classList.remove('hide');
+      }
+
     });
   }

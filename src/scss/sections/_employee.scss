@@ -19,10 +19,6 @@
         }
     }
 
-    &__inner{
-        flex: 0 1 61%;
-    }
-
     &__title{
         margin-bottom: 2.4rem;
 
@@ -108,11 +104,12 @@
             border-radius: 50%;
             flex-shrink: 0;
             left: 0;
-            top: 0.55rem;
+            top: 0.45rem;
         }
     }
 
     &__footer-item-title{
+        display: block;
         color: $grayscale-600;
         @extend %fs-body-s;
         margin-bottom: 0.4rem;

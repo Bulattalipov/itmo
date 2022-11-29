@@ -1,32 +1,34 @@
-<form class="form {{data}} js-form" action="/">
+<div class="form-block js-form">
     {{#if header}}
-    <div class="form__heading-block">
-        <h2 class="form__heading">Остались вопросы?</h2>
-        <span class="form__heading-label">Задайте их напрямую!</span>
+    <div class="form-block__heading-block">
+        <h2 class="form-block__heading">Остались вопросы?</h2>
+        <span class="form-block__heading-label">Задайте их напрямую!</span>
     </div>
     {{/if}}
     {{#if desc}}
-    <div class="form__desc">
+    <div class="form-block__desc">
         <p>
             Оставьте контактные данные и мы свяжемся с вами чтобы обсудить наше сотрудничество
         </p>
     </div>
     {{/if}}
-    <fieldset class="form__inputs {{#if inputsRow}}form__inputs--row{{/if}}">
-        {{>components/input data=inputs.name}}
-        {{#if email}}
-            {{>components/input data=inputs.email}}
-        {{/if}}
-        {{#if phone}}
-        {{>components/input data=inputs.phone}}
-        {{/if}}
-        {{#if message}}
-            {{>components/input data=inputs.message}}
-        {{/if}}
-    </fieldset>
+    <form class="form-block__form" action="/">
+        <fieldset class="form-block__form-inputs">
+            {{>components/input data=inputs.name}}
+            {{#if email}}
+                {{>components/input data=inputs.email}}
+            {{/if}}
+            {{#if phone}}
+            {{>components/input data=inputs.phone}}
+            {{/if}}
+            {{#if message}}
+                {{>components/input data=inputs.message}}
+            {{/if}}
+        </fieldset>
 
-    <div class="form__footer">
-        <button class="button  js-form-submit" type="submit">{{btnText}}</button>
-        {{>components/policy}}
-    </div>
-</form>
+        <div class="form-block__form-footer">
+            <button class="button  js-form-submit" type="submit">{{btnText}}</button>
+            {{>components/policy}}
+        </div>
+    </form>
+</div>

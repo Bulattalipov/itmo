@@ -200,6 +200,9 @@ function ordinarySlider() {
   const ordinarySlider = document.querySelectorAll('.cards-main__slider');
   ordinarySlider.forEach(slider => {
 
+    const arroySlide = slider.querySelectorAll('.swiper-slide');
+    let loop = arroySlide.length <= 2 ? false : true;
+
     const nextEl = slider.querySelector(".next");
     const prevEl = slider.querySelector(".prev");
 
@@ -208,7 +211,7 @@ function ordinarySlider() {
       slidesPerView: 1,
       spaceBetween: 20,
       autoHeight: true,
-      loop: true,
+      loop: loop,
       modules: [Navigation, Pagination],
       breakpoints: {
         1024: {
@@ -226,6 +229,14 @@ function ordinarySlider() {
         },
       }
     });
+
+    const btn = slider.querySelector('.slider-pagination-btns__button').classList.contains('swiper-button-lock');
+    if(btn){
+      slider.querySelector('.slider-pagination-btns__button').parentElement.classList.add('hide');
+    } else{
+      slider.querySelector('.slider-pagination-btns__button').parentElement.classList.remove('hide');
+    }
+
   });
 }
 
@@ -233,12 +244,16 @@ function ordinary3slide() {
   const ordinary3slide = document.querySelectorAll('.cards-simple__slider');
 
   ordinary3slide.forEach(slider => {
+
+    const arroySlide = slider.querySelectorAll('.swiper-slide');
+    let loop = arroySlide.length <= 3 ? false : true;
+
     new Swiper(slider.querySelector('.cards-simple__swiper'), {
       speed: 500,
       slidesPerView: 1,
       spaceBetween: 20,
       modules: [Navigation],
-      loop: true,
+      loop: loop,
       breakpoints: {
         768: {
           slidesPerView: 2,
@@ -257,6 +272,13 @@ function ordinary3slide() {
         },
       }
     });
+
+    const btn = slider.querySelector('.slider-pagination-btns__button').classList.contains('swiper-button-lock');
+    if(btn){
+      slider.querySelector('.slider-pagination-btns__button').parentElement.classList.add('hide');
+    } else{
+      slider.querySelector('.slider-pagination-btns__button').parentElement.classList.remove('hide');
+    }
   });
 }
 

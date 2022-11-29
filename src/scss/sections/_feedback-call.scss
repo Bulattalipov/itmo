@@ -45,4 +45,81 @@
     .input{
         width: 100%;
     }
+
+    .form-block__form-inputs{
+        flex-direction: row;
+  
+        @include breakpoint(tablet) {
+          flex-direction: column;
+        }
+      }
+  
+      .form-block{
+        max-width: 79rem;
+        color: $grayscale-100;
+  
+        .input__element{
+          color: $grayscale-100;
+          border-bottom: 0.1rem solid $grayscale-100;
+  
+          &:placeholder-shown ~ .input__placeholder{
+            color: $grayscale-100;
+          }
+  
+          &:focus{
+            border-color: $grayscale-100;
+            & ~ .input__placeholder {
+              color: $grayscale-600;
+            }
+          }
+        }
+  
+        .input__placeholder{
+          color: $grayscale-100;
+        }
+  
+        .form-block__form-footer{
+  
+          .button{
+            background-color: $grayscale-100;
+            color: $primary-700;
+            
+            transition: background-color $tt $te, border-color $tt $te, color $tt $te;
+  
+            &:focus {
+              background-color: $grayscale-500;
+              color: $primary-900;
+            }
+  
+            &:hover {
+              background-color: $grayscale-400;
+              color: $primary-500;
+            }
+          }
+        }
+  
+        .policy{
+          max-width: 28rem;
+          
+          a{
+  
+            &:link,
+            &:visited{
+              color: $grayscale-200;
+            }
+          }
+        }
+  
+        .input.error{
+          .input__element{
+            border-color: $yellow;
+          }
+          .input__validation-message{
+            color: $yellow;
+          }
+          .input__placeholder{
+            color: $yellow !important;
+          }
+        }
+    }
 }

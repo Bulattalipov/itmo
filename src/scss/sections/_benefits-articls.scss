@@ -10,7 +10,7 @@
 
   &__swiper{
 
-    @include breakpoint(small-tablet){
+    @include breakpoint(tablet){
       margin-right: 12rem;
       width: auto;
     }
@@ -22,15 +22,10 @@
     margin-right: 8.7rem;
     gap: 7.5rem 15.5rem;
 
-    @include breakpoint(laptop){
-      margin-right: 0;
-      gap: 3.5rem 5.5rem;
-    }
-
-    @include breakpoint(small-tablet){
+    @include breakpoint(tablet){
       display: flex;
       gap: 0;
-      margin-right: 0;
+      margin-right: 0;;
     }
   }
 
@@ -71,24 +66,21 @@
     object-fit: cover;
   }
 
-  &__swiper-item-content{
+  &__swiper-item-title{
+    display: block;
+    @extend %fs-roboto-s;
+    margin-bottom: 2.4rem;
 
-    span{
-      display: block;
-      @extend %fs-roboto-s;
-      margin-bottom: 2.4rem;
-
-      @include breakpoint(tablet){
-        margin-bottom: 2rem;
-      }
+    @include breakpoint(tablet){
+      margin-bottom: 2rem;
     }
+  }
 
-    p{
-      font-weight: 400;
-      font-size: 1.4rem;
-      line-height: 1.2;
-      color: $grayscale-600;
-    }
+  &__swiper-item-description{
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    color: $grayscale-600;
   }
 
 }

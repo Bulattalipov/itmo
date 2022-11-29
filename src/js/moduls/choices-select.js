@@ -32,10 +32,4 @@ export default function choicesSelector(){
             }
         })
     });
-
-    // const choicesItems = elem.querySelectorAll('.choices__item');
-
-    // choicesItems.forEach(item => {
-    //     console.log(item);
-    // })
 }

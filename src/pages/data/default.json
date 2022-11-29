@@ -534,29 +534,7 @@
       "headTitle": "Планируемые курсы",
       "desc": "Текст — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов. Существуют две основные трактовки понятия «текст»: имманентная и репрезентативная.",
       "swiperContent": [
-          {
-              "imgUrl": "img/content/cards-main/1.jpg",
-              "imgAlt": "Лаборатория",
-              "listItems": [
-                  {"text": "Бесплатно"}
-              ],
-              "headerList": [
-                  {"name": "Среднее время прохождения — 1&nbsp;месяц"}
-              ],
-              "title": "Название курса/ мастер-класса"
-          },
-          {
-              "imgUrl": "img/content/cards-main/2.jpg",
-              "imgAlt": "Лаборатория",
-              "listItems": [
-                  {"text": "Бесплатно"}
-              ],
-              "headerList": [
-                {"name": "Среднее время прохождения — 1&nbsp;месяц"}
-              ],
-              "title": "Название курса/ мастер-класса"
-          },
-          {
+        {
             "imgUrl": "img/content/cards-main/1.jpg",
             "imgAlt": "Лаборатория",
             "listItems": [
@@ -566,6 +544,28 @@
                 {"name": "Среднее время прохождения — 1&nbsp;месяц"}
             ],
             "title": "Название курса/ мастер-класса"
+        },
+        {
+            "imgUrl": "img/content/cards-main/2.jpg",
+            "imgAlt": "Лаборатория",
+            "listItems": [
+                {"text": "Бесплатно"}
+            ],
+            "headerList": [
+              {"name": "Среднее время прохождения — 1&nbsp;месяц"}
+            ],
+            "title": "Название курса/ мастер-класса"
+        },
+        {
+          "imgUrl": "img/content/cards-main/1.jpg",
+          "imgAlt": "Лаборатория",
+          "listItems": [
+              {"text": "Бесплатно"}
+          ],
+          "headerList": [
+              {"name": "Среднее время прохождения — 1&nbsp;месяц"}
+          ],
+          "title": "Название курса/ мастер-класса"
         },
         {
             "imgUrl": "img/content/cards-main/2.jpg",
@@ -875,6 +875,27 @@
       "desc": "Подписывайтесь на рассылку <br> полезных материалов",
       "mods": ""
     },
+    "feedbackSubcription2": {
+      "block": "feedback-subscription",
+      "dot": false,
+      "title": "Узнавайте о новых <br> кейс-стади <br> первыми!",
+      "desc": "Подпишитесь на рассылку и будьте в курсе новых кейс-стади",
+      "mods": ""
+    },
+    "feedbackSubcription3": {
+      "block": "feedback-subscription",
+      "dot": false,
+      "title": "Узнавайте <br> о мероприятиях и событиях центра первыми!",
+      "desc": "Подписывайтесь на рассылку мероприятий и событий",
+      "mods": ""
+    },
+    "feedbackSubcription4": {
+      "block": "feedback-subscription",
+      "dot": false,
+      "title": "Узнавайте о новых публикациях центра первыми!",
+      "desc": "Подписывайтесь на рассылку публикаций центра",
+      "mods": ""
+    },
     "feedbackJoin": {
       "block": "feedback-join",
       "dot": false,
@@ -1075,27 +1096,6 @@
           "imgAlt": "Доцент",
           "link": "#",
           "name": "Яковлев Петр Иванович",
-          "post": "Кандидат технических наук, доцент"
-        },
-        {
-          "imgUrl": "img/content/education/3.jpg",
-          "imgAlt": "Доцент",
-          "link": "#",
-          "name": "Якупова Ольга Викторовна",
-          "post": "Кандидат технических наук, доцент"
-        },
-        {
-          "imgUrl": "img/content/education/1.jpg",
-          "imgAlt": "Доцент",
-          "link": "#",
-          "name": "Павел Валерьевич Кустарев",
-          "post": "Кандидат технических наук, доцент"
-        },
-        {
-          "imgUrl": "img/content/education/1.jpg",
-          "imgAlt": "Доцент",
-          "link": "#",
-          "name": "Павел Валерьевич Кустарев",
           "post": "Кандидат технических наук, доцент"
         }
       ]

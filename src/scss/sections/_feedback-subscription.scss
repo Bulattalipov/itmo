@@ -12,6 +12,10 @@
         margin-bottom: 8.8rem;
         color: $grayscale-100;
 
+        @include breakpoint(tablet) {
+            max-width: 50rem;
+        }
+
         @include breakpoint(small-tablet) {
             margin-bottom: 4rem;
         }
@@ -31,4 +35,124 @@
             color: $grayscale-600;
         }
     }
+
+
+    .email-form{
+        max-width: 59rem;
+  
+        .input.error{
+          .input__element{
+            border-color: $yellow;
+          }
+    
+          .input__validation-message{
+            color: $yellow;
+          }
+          .input__placeholder{
+            color: $yellow !important;
+          }
+        }
+    
+        .input__element{
+          color: $grayscale-100;
+    
+          &:placeholder-shown ~ .input__placeholder{
+            color: $grayscale-100;
+          }
+    
+          &:placeholder-shown ~ .email-form__button{
+            background-color: $grayscale-100;
+            border-color: $grayscale-100;
+    
+            svg {
+              stroke: $grayscale-900;
+            }
+    
+            &:focus {
+              background-color: $primary-500;
+              border-color: $primary-500;
+      
+              svg {
+                stroke: $grayscale-100;
+              }
+            }
+      
+            &:hover {
+              background-color: $primary-400;
+              border-color: $primary-400;
+      
+              svg {
+                stroke: $grayscale-100;
+              }
+            }
+          }
+    
+          &:focus {
+            border-color: $grayscale-100;
+            background-color: $grayscale-100;
+            color: $grayscale-900;
+    
+            &:placeholder-shown ~ .input__placeholder{
+              color: $grayscale-900;
+            }
+    
+            &:placeholder-shown ~ .email-form__button{
+              background-color: $primary-500;
+              border-color: $primary-500;
+    
+              svg {
+                stroke: $grayscale-100;
+              }
+    
+              &:focus {
+                background-color: $primary-500;
+                border-color: $primary-500;
+        
+                svg {
+                  stroke: $grayscale-100;
+                }
+              }
+        
+              &:hover {
+                background-color: $primary-400;
+                border-color: $primary-400;
+        
+                svg {
+                  stroke: $grayscale-100;
+                }
+              }
+            }
+          }
+    
+        }
+    
+        .email-form__button{
+          transition: background-color $tt $te, border-color $tt $te;
+            background-color: $primary-500;
+            border-color: $primary-500;
+    
+            svg {
+              stroke: $grayscale-100;
+            }
+    
+            &:focus {
+              background-color: $primary-500;
+              border-color: $primary-500;
+      
+              svg {
+                stroke: $grayscale-100;
+              }
+            }
+      
+            &:hover {
+              background-color: $primary-400;
+              border-color: $primary-400;
+      
+              svg {
+                stroke: $grayscale-100;
+              }
+            }
+        }
+    }
+
 }

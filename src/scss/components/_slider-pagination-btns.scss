@@ -22,6 +22,10 @@
     background-color: $grayscale-200;
   }
 
+  &.hide{
+    display: none;
+  }
+
   button {
     height: 4.2rem;
     width: 4.2rem;

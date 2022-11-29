@@ -3,30 +3,33 @@ import {
   } from 'swiper';
 
 export default function mobileSliderNews() {
-    const container = document.querySelector('.js-mobile-sliderNews');
-    if (!container) return;
+    const mobileSliderNews = document.querySelectorAll('.js-mobile-sliderNews');
 
-    const spaceBetween = container.dataset.space ? Number(container.dataset.space) : 20;
+    mobileSliderNews.forEach(slider => {
+        if (!slider) return;
 
-    let mql = window.matchMedia('(max-width: 1024px)');
-    if (mql.matches) {
-        new Swiper(container, {
-            speed: 500,
-            slidesPerView: 1,
-            spaceBetween: spaceBetween,
-            autoHeight: true,
-            breakpoints: {
-                640: {
-                  slidesPerView: 2,
-                }
-              },
-            on: {
-                init: function (swiper) {
-                    swiper.el.classList.remove("loading")
+        const spaceBetween = slider.dataset.space ? Number(slider.dataset.space) : 20;
+
+        let mql = window.matchMedia('(max-width: 1024px)');
+        if (mql.matches) {
+            new Swiper(slider, {
+                speed: 500,
+                slidesPerView: 1,
+                spaceBetween: spaceBetween,
+                autoHeight: true,
+                breakpoints: {
+                    640: {
+                    slidesPerView: 2,
+                    }
                 },
-            }
-        })
-    }  else {
-        container.classList.remove('loading')
-    }
+                on: {
+                    init: function (swiper) {
+                        swiper.el.classList.remove("loading")
+                    },
+                }
+            })
+        }  else {
+            slider.classList.remove('loading')
+        }
+    })
 }

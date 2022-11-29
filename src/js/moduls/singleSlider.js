@@ -8,6 +8,7 @@ import {
 export default function singleSlider() {
   const singleSlider = document.querySelectorAll('.quote-single__slider');
   singleSlider.forEach(slider => {
+    
     const textSwiper = new Swiper(slider.querySelector('.quote-single__swiper-text'), {
       speed: 500,
       slidesPerView: 1,

@@ -28,7 +28,7 @@ export default class Forms {
             this.initPhoneMask(form);
             this.initValidation(form);
             this.initTextAreaAutoSize(form);
-            this.setEventListeners(form);
+            // this.setEventListeners(form);
         });
     }
 
@@ -74,35 +74,35 @@ export default class Forms {
         });
     }
 
-    setEventListeners(form) {
-        const submitButtons = [...form.querySelectorAll(this.config.submitSelector)];
+    // setEventListeners(form) {
+    //     const submitButtons = [...form.querySelectorAll(this.config.submitSelector)];
 
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            this._disableSubmitButtons(submitButtons);
-            const formData = new FormData(form);
-            const url = form.action;
+    //     form.addEventListener('submit', e => {
+    //         e.preventDefault();
+    //         this._disableSubmitButtons(submitButtons);
+    //         const formData = new FormData(form);
+    //         const url = form.action;
 
-            fetch(url, {
-                body: formData,
-                method: 'POST'
-            })
-                .then(response => {
-                    if (response.ok) {
-                        this.config.onSuccess(form, response);
-                        this._reset(form);
-                    } else {
-                        this.config.onError(form, response);
-                    }
-                })
-                .catch(err => {
-                    console.error(err);
-                })
-                .finally(() => {
-                    this._enableSubmitButtons(submitButtons);
-                });
-        });
-    }
+    //         fetch(url, {
+    //             body: formData,
+    //             method: 'POST'
+    //         })
+    //             .then(response => {
+    //                 if (response.ok) {
+    //                     this.config.onSuccess(form, response);
+    //                     this._reset(form);
+    //                 } else {
+    //                     this.config.onError(form, response);
+    //                 }
+    //             })
+    //             .catch(err => {
+    //                 console.error(err);
+    //             })
+    //             .finally(() => {
+    //                 this._enableSubmitButtons(submitButtons);
+    //             });
+    //     });
+    // }
 
     _disableSubmitButtons(buttons) {
         buttons.forEach(button => {

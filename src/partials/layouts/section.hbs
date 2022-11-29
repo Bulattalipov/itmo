@@ -2,7 +2,9 @@
     <div class="container">
         <div class="section__inner">
             <div class="section__heading {{#if data.dot}}section__heading--dot{{/if}}">
+                {{#if data.title}}
                 <h2>{{{data.title}}}</h2>
+                {{/if}}
                 {{#if data.breadcrumbs}}
                     {{> components/breadcrumbs}}
                 {{/if}}

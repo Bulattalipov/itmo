@@ -19,27 +19,9 @@
             grid-template-columns: repeat(1, 1fr);
             gap: 1.8rem 5.5rem; 
         }
-
-        span{
-            @extend %fs-roboto-s;
-            letter-spacing: -0.02em;
-        }
-
-        p{
-            margin-top: 0.8rem;
-            margin-left: 9.6rem;
-            color: $grayscale-600;
-            font-weight: 400;
-            font-size: 1.4rem;
-            line-height: 1.2;
-
-            @include breakpoint(small-tablet) {
-                margin-left: 8rem;
-            }
-        }
     }
 
-    &__items-contain{
+    &__item-contain{
         display: flex;
         align-items: center;
         column-gap: 2.4rem;
@@ -68,6 +50,24 @@
                 width: 3.2rem;
                 height: 3.2rem;
             }
+        }
+    }
+
+    &__item-title{
+        @extend %fs-roboto-s;
+        letter-spacing: -0.02em;
+    }
+
+    &__item-description{
+        margin-top: 0.8rem;
+        margin-left: 9.6rem;
+        color: $grayscale-600;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 1.2;
+
+        @include breakpoint(small-tablet) {
+            margin-left: 8rem;
         }
     }
 
