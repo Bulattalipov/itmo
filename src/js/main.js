@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // document.header = document.querySelector('.header');
 
-  modals();
+  initModals();
   forms();
   map();
   debug(); // Нажми 5 раз "d" на клавиатуре
@@ -61,8 +61,8 @@ document.addEventListener('DOMContentLoaded', function () {
   editableTextContainer();
 });
 
-function modals() {
-  new HystModal({
+function initModals() {
+  window.modals = new HystModal({
     beforeOpen: instance => {
       // const target = instance.starter;
       //
@@ -77,10 +77,10 @@ function modals() {
 function forms() {
   new Forms({
     onSuccess: (form, response) => {
-      modals.open('#success');
+      window.modals.open('#success');
     },
     onError: (form, response) => {
-      modals.open('#error');
+      window.modals.open('#error');
     }
   });
 }

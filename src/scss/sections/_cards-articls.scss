@@ -178,6 +178,7 @@
     height: 6.4rem;
     background-color: #eff1f4;
     flex-shrink: 0;
+    z-index: 2;
 
     @include breakpoint(laptop) {
       width: 4.4rem;
@@ -206,6 +207,8 @@
     @extend %fs-roboto-l;
     padding-left: 6.4rem;
 
+    @extend %interactive;
+
     &::after{
       content: '';
       position: absolute;
@@ -213,6 +216,7 @@
       height: 100%;
       left: 0;
       top: 0;
+      z-index: 1;
     }
 
     svg{

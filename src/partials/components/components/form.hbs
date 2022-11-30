@@ -1,4 +1,4 @@
-<div class="form-block js-form">
+<div class="form-block">
     {{#if header}}
     <div class="form-block__heading-block">
         <h2 class="form-block__heading">Остались вопросы?</h2>
@@ -12,7 +12,7 @@
         </p>
     </div>
     {{/if}}
-    <form class="form-block__form" action="/">
+    <form class="form-block__form js-form" action="/">
         <fieldset class="form-block__form-inputs">
             {{>components/input data=inputs.name}}
             {{#if email}}

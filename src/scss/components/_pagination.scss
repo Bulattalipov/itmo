@@ -27,12 +27,31 @@
         border-radius: 999px;
         width: 6.4rem;
         height: 4rem;
+        @extend %interactive-svg-stroke-button;
+
+        &:hover{
+            color: $grayscale-100;
+        }
 
         &--active{
             background-color: $grayscale-100;
         }
 
         @include breakpoint(small-mobile) {
+            width: 5rem;
+            height: 3.2rem;
+        }
+    }
+
+    &__list-points{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 6.4rem;
+        height: 4rem;
+
+        @include breakpoint(small-mobile) {
+            width: 5rem;
             height: 3.2rem;
         }
     }

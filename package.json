@@ -6,6 +6,7 @@
   "scripts": {
     "build": "gulp build-production",
     "dev": "gulp build && gulp serve",
+    "preghp": "npm run build",
     "ghp": "gh-pages -d build"
   },
   "keywords": [],

@@ -273,6 +273,12 @@
     }
   }
 
+  &--search-list{
+    .section__inner{
+      overflow: visible;
+    }
+  }
+
   &--contactsTabs{
     @include breakpoint(small-tablet) {
       .section__heading{

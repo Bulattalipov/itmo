@@ -12,8 +12,7 @@ export default function choicesSelector(){
                 searchEnabled: false,
                 itemSelectText: '',
                 shouldSort: false,
-                placeholder: true,
-                placeholderValue: "jghreguri"
+                placeholder: true
             });
 
             select.passedElement.element.addEventListener(
@@ -28,6 +27,7 @@ export default function choicesSelector(){
                 btnReset.addEventListener('click', function(){
                     select.destroy();
                     select.init();
+                    elem.closest(".filter__from-select-box").classList.remove("is-active");
                 })
             }
         })

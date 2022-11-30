@@ -184,6 +184,7 @@
             }
             .cards-presentation__swiper-item-btn{
                 display: inline-block;
+                padding: 2rem 1.9rem;
 
                 @include breakpoint(small-tablet) {
                     width: 100%;
@@ -275,18 +276,17 @@
         }
     }
 
-    &__swiper-contain{
-        div{
-            margin-bottom: 1.2rem;
-        }
-        span{
-            display: inline-block;
-            @extend %fs-roboto-l;
-            margin-bottom: 3.2rem;
+    &__swiper-contain-text{
+        margin-bottom: 1.2rem;
+    }
 
-            @include breakpoint(small-tablet) {
-                margin-bottom: 2rem;
-            }
+    &__swiper-contain-title{
+        display: inline-block;
+        @extend %fs-roboto-l;
+        margin-bottom: 3.2rem;
+
+        @include breakpoint(small-tablet) {
+            margin-bottom: 2rem;
         }
     }
 
