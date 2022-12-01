@@ -9,53 +9,64 @@
     }
 
     &__box{
-        width: 100%;
         border-collapse: collapse;
+        overflow-x: auto;
+        display: block;
+        width: 100%;
+    }
+
+    tbody{
+        display: block;
+        width: 100%;
+    }
+
+    td, th {
+        vertical-align: middle;
+        border-right: 1rem solid transparent;
+        border-left: 1rem solid transparent;
+        min-width: 21rem;
+        word-break: break-all;
+
+        @include breakpoint(small-tablet){
+            border-right: 0rem solid transparent;
+            border-left: 0rem solid transparent;
+        }
+
+        &.tables__box-row-date{
+            max-width: 11.5rem;
+            border-left: 0rem solid transparent;
+            min-width: 11.5rem;
+        }
+
+        &.tables__box-row-title{
+            width: 100%;
+            @extend %fs-body-l;
+            color: $grayscale-900;
+            min-width: 40rem;
+    
+            @include breakpoint(small-tablet) {
+                margin-bottom: 1.6rem;
+            }
+        }
     }
 
     &__box-row{
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
         border-bottom: 1px solid $grayscale-500;
         padding: 4rem 0;
         @extend %fs-body-m;
         color: $grayscale-600;
-        gap: 0.4rem 2rem;
+        display: block;
 
-        &:first-child{
-            padding-top: 0;
-        }
+            &:first-child{
+                padding-top: 0;
+            }
 
-        &>*{
-            word-break: break-word;
-        }
-
-        @include breakpoint(small-tablet) {
-            grid-template-columns: repeat(1, 1fr);
-            padding: 2rem 0;
-        }
-    }
-
-    &__box-row-title{
-        @extend %fs-body-l;
-        color: $grayscale-900;
-        margin-right: auto;
-        grid-column: span 5;
-
-        @include breakpoint(small-tablet) {
-            margin-bottom: 1.6rem;
-            grid-column: span 1;
-        }
-    }
-
-    &__box-row-span{
-        max-width: 21rem;
-        width: 100%;
-        grid-column: span 2;
-
-        @include breakpoint(small-tablet) {
-            grid-column: span 1;
-        }
+            @include breakpoint(small-tablet){
+                display: flex;
+                flex-direction: column;
+                row-gap: 0.4rem;
+                padding: 2rem 0;
+            }
     }
 
     &__links{

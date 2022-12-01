@@ -23,16 +23,19 @@
 
         scrollbar-width: 0rem;
         scrollbar-color: $grayscale-500 transparent;
+
         &::-webkit-scrollbar {
-        width: 0rem;
-        height: 0;
+            width: 0rem;
+            height: 0;
         }
+
         &::-webkit-scrollbar-track {
-        border-radius: 0rem;
-        background-color: transparent;
+            border-radius: 0rem;
+            background-color: transparent;
         }
+
         &::-webkit-scrollbar-thumb {
-        border-radius: 0rem;
+            border-radius: 0rem;
         }
 
         li {
@@ -44,14 +47,14 @@
         }
     }
 
-    .tabs-buttons__tab{
+    .tabs-buttons__tab {
         text-transform: uppercase;
     }
 
     fieldset {
 
 
-        .filter__form-selects-inner{
+        .filter__form-selects-inner {
             .filter__from-select-box {
                 max-width: 100%;
             }
@@ -193,10 +196,10 @@
                 flex-direction: column;
             }
         }
-        
-        .choices__list--single.choices__item{
 
-            &.is-active{
+        .choices__list--single.choices__item {
+
+            &.is-active {
                 opacity: 1;
             }
         }
@@ -212,6 +215,10 @@
 
         &--column {
             flex-direction: column;
+        }
+
+        option {
+            color: #a4a5bb;
         }
     }
 
@@ -230,24 +237,32 @@
         }
     }
 
-    &__from-select{
+    &__from-select {
         height: 5.6rem;
         width: 100%;
         border: 0.1rem solid #e1e3ea;
         border-radius: 1.2rem;
+        background-color: transparent;
+        color: #a4a5bb;
+        padding-left: 1.7rem;
+        font-size: inherit;
+        font-family: inherit;
+        appearance: none;
+        font-weight: 400
     }
 
     &__from-select-box {
         position: relative;
 
-        &.is-active{
-            .filter__from-select-label{
+        &.is-active {
+            .filter__from-select-label {
                 transform: translate(0);
                 font-size: 1.2rem;
                 top: 1rem;
             }
-            .choices__list--single{
-                .choices__item{
+
+            .choices__list--single {
+                .choices__item {
                     opacity: 1 !important;
                     @extend %fs-body-m;
                     color: $grayscale-900;
@@ -271,7 +286,7 @@
         font-size: 1.2rem;
         color: #a4a5bb;
         pointer-events: none;
-        transition: transform .3s ease,font-size .3s ease,color .3s ease;
+        transition: transform .3s ease, font-size .3s ease, color .3s ease;
         font-size: inherit;
         padding-right: 3.5rem;
     }

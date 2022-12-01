@@ -2,9 +2,71 @@
   display: flex;
   align-items: center;
   gap: 3.6rem;
+  position: relative;
+
+  &__item{
+    transition: all $tt $te;
+
+    &:hover{
+      transition: all $tt $te;
+      .main-menu__second-box{
+        visibility: visible;
+      }
+    }
+
+    @include breakpoint(laptop) {
+      
+    }
+  }
 
   &__link {
     @extend %fs-roboto-m;
     @extend %interactive;
+  }
+
+  &__second-box{
+    visibility: hidden;
+    margin-top: -0.5rem;
+    padding-top: 2.5rem;
+    position: absolute;
+    left: 0;
+    transition: all $tt $te;
+  }
+
+  &__second{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+    background-color: $grayscale-100;
+    border-radius: 2rem;
+    padding: 4.8rem 5rem;
+  }
+
+  &__second-link{
+    display: inline-block;
+    @extend %fs-body-s;
+    padding-left: 3.4rem;
+    position: relative;
+    width: 25rem;
+
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -0.2rem;
+      background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.05664 3.99561H13.9433V14.3317' stroke='%2321222E' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpath d='M13.9433 3.99561L4.05664 13.8823' stroke='%2321222E' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+      width: 1.8rem;
+      height: 1.8rem;
+      background-size: cover;
+      transform: all $tt $te;
+    }
+
+    &:hover{
+      color: $primary-500;
+
+      &::before{
+        background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.05664 3.99561H13.9433V14.3317' stroke='%234F51AE' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpath d='M13.9433 3.99561L4.05664 13.8823' stroke='%234F51AE' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+      }
+    }
   }
 }

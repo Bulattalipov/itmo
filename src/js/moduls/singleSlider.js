@@ -8,6 +8,15 @@ import {
 export default function singleSlider() {
   const singleSlider = document.querySelectorAll('.quote-single__slider');
   singleSlider.forEach(slider => {
+
+    const sliders = slider.querySelector('.quote-single__swiper-text').querySelectorAll('.swiper-slide');
+    const btn = slider.querySelector('.slider-pagination-btns__button');
+
+    if(sliders.length < 2){
+      slider.querySelector('.slider-pagination-btns__button').parentElement.classList.add('hide');
+    } else{
+      slider.querySelector('.slider-pagination-btns__button').parentElement.classList.remove('hide');
+    }
     
     const textSwiper = new Swiper(slider.querySelector('.quote-single__swiper-text'), {
       speed: 500,

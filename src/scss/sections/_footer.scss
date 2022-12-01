@@ -133,6 +133,10 @@
         @include breakpoint(laptop) {
           margin-right: 2rem;
         }
+
+        @include breakpoint(tablet) {
+          margin-right: 0;
+        }
       }
     }
   }

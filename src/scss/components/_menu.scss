@@ -11,7 +11,7 @@
   .big-buttons {
     justify-content: flex-end;
 
-    margin-bottom: 1.2rem;
+    margin-bottom: 3.2rem;
 
     .search-field {
       flex-grow: 1;
@@ -58,6 +58,53 @@
 
     svg {
       stroke: $grayscale-100;
+    }
+  }
+
+  .footer__menu{
+    @include breakpoint(desktop) {
+      grid-template-columns: 1fr;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .footer__menu>:nth-child(4n+4) {
+    margin-right: 0;
+  }
+
+  .footer__menu>* {
+    grid-column: span 1;
+  }
+
+  .footer__menu .js-accordion {
+    padding-bottom: 2rem;
+  }
+
+  .footer__menu-heading{
+    font-weight: 400;
+  }
+
+  .footer__submenu{
+    background-color: $primary-900;
+    border-radius: 2.4rem;
+    padding: 2.4rem;
+    margin-top: 2rem;
+  }
+
+  .footer__menu .footer__submenu>:first-of-type {
+    padding-top: 0;
+  }
+
+  
+  .js-accordion {
+    .footer__submenu{
+      height: auto;
+      overflow: visible;
+    }
+
+    .footer__submenu-box {
+      height: 0;
+      overflow: hidden;
     }
   }
 }

@@ -4,7 +4,36 @@
         <div class="menu">
             {{> components/langs}}
             {{> components/big-buttons}}
-            {{> components/main-menu}}
+
+            <ul class="footer__menu js-footer-accordions">
+                {{#each menu.header}}
+                    <li {{#if this.name}}class="js-accordion"{{/if}}>
+                        <div class="footer__menu-heading-block">
+                            {{#if this.name}}
+                                <a class="footer__menu-heading" href="{{this.link}}">{{this.name}}</a>
+
+                                <button class="footer__menu-heading-button show-on-laptop js-accordion-btn" type="button">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="#arrow" />
+                                    </svg>
+                                </button>
+                            {{else}}
+                                <span class="footer__menu-heading hide-on-laptop">&nbsp;</span>
+                            {{/if}}
+                        </div>
+                        <div class="footer__submenu-box {{#if this.name}}js-accordion-content{{/if}}">
+                            <ul class="footer__submenu">
+                                {{#each this.secondMenu}}
+                                    <li>
+                                        <a class="footer__menu-link" href="{{this.link}}">{{this.name}}</a>
+                                    </li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </li>
+                {{/each}}
+            </ul>
+            
             {{> components/secondary-menu}}
             {{> components/change-version}}
         </div>

@@ -9,20 +9,17 @@
   }
 
   &__slider{
-    padding-top: 10rem;
-    position: relative;
+    display: flex;
+    flex-direction: column;
 
-    @include breakpoint(tablet) {
-      padding-top: 6rem;
-    }
-
-    @media only screen and (max-width: (800px)) {
-      padding-top: 0;
-    }
   }
 
   &__swiper{
     overflow: hidden;
+
+    @media only screen and (max-width: (800px)) {
+      order: -1;
+    }
   }
 
   &__slider-item{
@@ -34,13 +31,16 @@
   }
 
   &__navigation{
-    position: absolute;
-    left: 0;
-    top: 0;
+    margin-bottom: 6rem;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 4rem;
+    }
 
     @media only screen and (max-width: (800px)) {
       position: relative;
       margin-top: 4rem;
+      margin-bottom: 0;
     }
   }
 
