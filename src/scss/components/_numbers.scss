@@ -3,7 +3,9 @@
     &--big{
         
         .numbers__title{
+            display: block;
             @extend %fs-h-2;
+            margin-bottom: 0.5rem;
         }
 
         .numbers__desc{

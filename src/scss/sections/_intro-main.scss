@@ -489,10 +489,16 @@
       margin-left: auto;
       display: flex;
       gap: 2rem;
+      max-width: 50rem;
+
+      @include breakpoint(laptop) {
+        max-width: 40rem;
+      }
 
       @include breakpoint(small-tablet) {
           padding: 2.4rem;
           border-radius: 2.4rem;
+          max-width: 100%;
       }
   }
 

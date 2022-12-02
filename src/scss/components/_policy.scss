@@ -11,4 +11,13 @@
 
     @extend %interactive;
   }
+
+  &--white{
+    a{
+      &:link,
+      &:visited {
+        color: $grayscale-100;
+      }
+    }
+  }
 }

@@ -106,6 +106,7 @@
     &__content-title{
         @extend %fs-h-5;
         margin-bottom: 4rem;
+        text-transform: uppercase;
 
         @include breakpoint(laptop) {
             margin-bottom: 2rem;

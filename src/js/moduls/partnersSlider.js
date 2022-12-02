@@ -16,9 +16,11 @@ export default function partnersSlider() {
 
     new Swiper(slider.querySelector('.partners__swiper'), {
       speed: 500,
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 15,
       loop: loop,
+      loopFillGroupBlank: true,
+      loopedSlides: 10,
       modules: [Navigation],
       breakpoints: {
         360: {

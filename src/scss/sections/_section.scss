@@ -447,7 +447,6 @@
     &--dot {
       display: flex;
       align-items: center;
-      gap: 1.6rem;
 
       &::before {
         content: '';
@@ -456,6 +455,7 @@
         width: 2.8rem;
         height: 2.8rem;
         flex-shrink: 0;
+        margin-right: 1.6rem;
 
         border-radius: 50%;
 

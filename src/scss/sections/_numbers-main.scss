@@ -99,15 +99,9 @@
 
         @include breakpoint(tablet) {
             margin-bottom: 2rem;
-        }
-
-        @include breakpoint(small-tablet) {
+            height: auto;
+            padding-bottom: 55%;
             max-width: 100%;
-            height: 20.6rem;
-        }
-
-        @include breakpoint(small-mobile) {
-            height: 17.6rem;
         }
     }
 

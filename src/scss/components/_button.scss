@@ -34,6 +34,27 @@
     border: 0.1rem solid $grayscale-100;
   }
 
+
+  &--outline{
+    background-color: $grayscale-100;
+    color: $primary-700;
+    border: 1px solid $primary-700;
+
+    &:hover{
+      border: 1px solid $primary-500;
+      &::before{
+          background-color: $primary-500;
+      }
+    }
+
+    &:focus{
+        border: 1px solid $primary-400;
+        &::before{
+            background-color: $primary-400;
+        }
+    }
+  }
+
   &:focus {
     background-color: $primary-400;
     border-color: $primary-400;

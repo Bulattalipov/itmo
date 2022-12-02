@@ -150,7 +150,7 @@ export default class HystModal {
         this.shadow.classList.remove('hystmodal__shadow--show');
         this.openedWindow.setAttribute('aria-hidden', 'true');
 
-        if (this.config.catchFocus) this.focusControl();
+        if (this.config.catchFocus) this.focusControl();-
         this._bodyScrollControl();
         this.isOpened = false;
         this.openedWindow.scrollTop = 0;

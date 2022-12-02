@@ -17,10 +17,16 @@
     }
 
     &__box{
-        max-width: 36.6rem;
+        max-width: 38rem;
         width: 100%;
 
+        @include breakpoint(laptop) {
+            max-width: 28rem;
+            margin-right: 5rem;
+        }
+
         @include breakpoint(small-tablet) {
+            margin-right: 0;
             max-width: 100%;
         }
     }
@@ -37,6 +43,8 @@
 
         @include breakpoint(small-tablet) {
           justify-content: space-around;
+          max-width: 34rem;
+          margin: 1.6rem auto 0;
         }
 
         &.loading{

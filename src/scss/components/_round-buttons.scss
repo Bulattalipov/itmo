@@ -10,6 +10,10 @@
     transition: $tt $te, border-color $tt $te, color $tt $te;
     text-align: left;
 
+    @include breakpoint(mobile) {
+        text-align: center;
+    }
+
     @include breakpoint(small-mobile) {
         width: auto;
     }

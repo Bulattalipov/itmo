@@ -13,6 +13,10 @@
         overflow-x: auto;
         display: block;
         width: 100%;
+
+        @include breakpoint(small-tablet) {
+            overflow: visible;
+        }
     }
 
     tbody{
@@ -26,16 +30,24 @@
         border-left: 1rem solid transparent;
         min-width: 21rem;
         word-break: break-all;
+        text-align: center;
 
         @include breakpoint(small-tablet){
             border-right: 0rem solid transparent;
             border-left: 0rem solid transparent;
+            min-width: auto;
+            text-align: left;
         }
 
         &.tables__box-row-date{
             max-width: 11.5rem;
             border-left: 0rem solid transparent;
             min-width: 11.5rem;
+            text-align: start;
+
+            @include breakpoint(small-tablet){
+                min-width: auto;
+            }
         }
 
         &.tables__box-row-title{
@@ -43,9 +55,11 @@
             @extend %fs-body-l;
             color: $grayscale-900;
             min-width: 40rem;
+            text-align: start;
     
             @include breakpoint(small-tablet) {
                 margin-bottom: 1.6rem;
+                min-width: auto;
             }
         }
     }
@@ -55,7 +69,7 @@
         padding: 4rem 0;
         @extend %fs-body-m;
         color: $grayscale-600;
-        display: block;
+        display: inline-block;
 
             &:first-child{
                 padding-top: 0;

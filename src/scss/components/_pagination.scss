@@ -23,11 +23,15 @@
         justify-content: center;
         align-items: center;
         @extend %fs-button-1;
-        color: $primary-500;
         border-radius: 999px;
         width: 6.4rem;
         height: 4rem;
         @extend %interactive-svg-stroke-button;
+        
+        &:link,
+        &:visited{
+            color: $primary-900;
+        }
 
         &:hover{
             color: $grayscale-100;

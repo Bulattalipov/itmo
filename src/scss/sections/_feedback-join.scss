@@ -143,6 +143,8 @@
         &:visited{
           color: $grayscale-200;
         }
+
+        @extend %interactive;
       }
     }
 

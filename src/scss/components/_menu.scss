@@ -78,10 +78,28 @@
 
   .footer__menu .js-accordion {
     padding-bottom: 2rem;
+    border-bottom: 0.1rem solid rgba(33,34,46,.1);
+  }
+
+  .footer__menu .footer__menu-heading-button{
+    background-color: $primary-500;
+  }
+
+  .footer__menu .js-accordion.active .footer__menu-heading-button{
+    background-color: $primary-900;
+  }
+
+  .footer__menu .js-accordion.active .footer__menu-heading-button svg {
+    transform: rotate(-90deg);
   }
 
   .footer__menu-heading{
     font-weight: 400;
+    margin-bottom: 0;
+  }
+
+  .footer__menu-heading-button svg{
+    stroke: $grayscale-100;
   }
 
   .footer__submenu{
