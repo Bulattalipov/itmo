@@ -339,18 +339,25 @@
             Блог
         </h2>
         <div class="filter__tabs js-init-tabs">
-            <ul class="tabs-buttons">
-                <li class="tabs-buttons__wrapper">
-                    <button class="tabs-buttons__tab js-tab-btn" type="button">
-                        Новости
-                    </button>
+            <ul class="filter__tabs-buttons">
+                <li>
+                    <label class="filter__tabs-buttons-label js-tab-btn">
+                        <input class="filter__tabs-buttons-input" name="tabs" type="radio" checked>
+                        <span class="filter__tabs-buttons-span" type="button">
+                            Новости
+                        </span>
+                    </label>
                 </li>
-                <li class="tabs-buttons__wrapper">
-                    <button class="tabs-buttons__tab js-tab-btn" type="button">
-                        Статьи
-                    </button>
+                <li>
+                    <label class="filter__tabs-buttons-label js-tab-btn">
+                        <input class="filter__tabs-buttons-input" name="tabs" type="radio">
+                        <span class="filter__tabs-buttons-span" type="button">
+                            Статьи
+                        </span>
+                    </label>
                 </li>
-            </ul>        <div class="filter__tabs-content">
+            </ul>
+            <div class="filter__tabs-content">
                 <form class="filter__tabs-content-box js-tab-body">
                     <fieldset class="filter__form-selects">
                         <div class="filter__from-select-box">

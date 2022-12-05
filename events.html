@@ -342,18 +342,25 @@
             Мероприятия и олимпиады
         </h2>
         <div class="filter__tabs js-init-tabs">
-            <ul class="tabs-buttons">
-                <li class="tabs-buttons__wrapper">
-                    <button class="tabs-buttons__tab js-tab-btn" type="button">
-                        Ближайшие
-                    </button>
+            <ul class="filter__tabs-buttons">
+                <li>
+                    <label class="filter__tabs-buttons-label js-tab-btn">
+                        <input class="filter__tabs-buttons-input" name="tabs" type="radio" checked>
+                        <span class="filter__tabs-buttons-span" type="button">
+                            Ближайшие
+                        </span>
+                    </label>
                 </li>
-                <li class="tabs-buttons__wrapper">
-                    <button class="tabs-buttons__tab js-tab-btn" type="button">
-                        Активные и завершенные
-                    </button>
+                <li>
+                    <label class="filter__tabs-buttons-label js-tab-btn">
+                        <input class="filter__tabs-buttons-input" name="tabs" type="radio">
+                        <span class="filter__tabs-buttons-span" type="button">
+                            Активные&nbsp;и&nbsp;завершенные
+                        </span>
+                    </label>
                 </li>
-            </ul>        <div class="filter__tabs-content">
+            </ul>
+            <div class="filter__tabs-content">
                 <form class="filter__tabs-content-box js-tab-body">
                     <fieldset class="filter__form-selects filter__form-selects--column">
                         <div class="filter__form-input-wrapper">
