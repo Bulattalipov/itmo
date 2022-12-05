@@ -4,6 +4,7 @@
   width: 13rem;
   height: 4.2rem;
   grid-column: span 2;
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,51 +15,76 @@
     height: 3.2rem;
   }
 
-  &:hover,
-  &:focus {
-    background-color: $grayscale-500;
-  }
-
-  &:active {
-    background-color: $grayscale-200;
-  }
-
   &.hide{
     display: none;
   }
 
   button {
     height: 4.2rem;
-    width: 4.2rem;
+    width: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding: 0 1.75rem;
+    
+    &:first-child{
+      justify-content: flex-start;
+    }
+
+    &:last-child{
+      justify-content: flex-end;
+    }
 
     svg{
       stroke: $grayscale-900;
     }
-
-    &:hover,
-    &:focus {
+    
+    &:hover{
+      background-color: $grayscale-500;
       svg{
         stroke: $primary-500;
       }
     }
 
-    &:active {
+    &:focus {
+      background-color: $grayscale-500;
       svg{
         stroke: $grayscale-900;
       }
     }
 
     @include breakpoint(tablet) {
-      height: 3.2rem;
-      width: 4.2rem;
+      &:hover{
+        background-color: $grayscale-300;
+        svg{
+          stroke: $grayscale-900;
+        }
+      }
+
+      &:focus {
+        background-color: $grayscale-300;
+        svg{
+          stroke: $grayscale-900;
+        }
+      }
     }
 
     &.next {
       svg {
         transform: rotate(180deg);
+      }
+    }
+
+    &.swiper-button-disabled{
+      svg{
+        stroke: $grayscale-600;
+      }
+
+      &:hover{
+        background-color: $grayscale-300;
+      }
+
+      &:focus {
+        background-color: $grayscale-300;
       }
     }
   }

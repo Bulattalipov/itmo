@@ -227,7 +227,24 @@
         Мероприятия и олимпиады
     </h2>
     <div class="filter__tabs js-init-tabs">
-        {{>components/tabs-buttons button1="Ближайшие" button2="Активные и завершенные"}}
+        <ul class="filter__tabs-buttons">
+            <li>
+                <label class="filter__tabs-buttons-label js-tab-btn">
+                    <input class="filter__tabs-buttons-input" name="tabs" type="radio" checked>
+                    <span class="filter__tabs-buttons-span" type="button">
+                        Ближайшие
+                    </span>
+                </label>
+            </li>
+            <li>
+                <label class="filter__tabs-buttons-label js-tab-btn">
+                    <input class="filter__tabs-buttons-input" name="tabs" type="radio">
+                    <span class="filter__tabs-buttons-span" type="button">
+                        Активные&nbsp;и&nbsp;завершенные
+                    </span>
+                </label>
+            </li>
+        </ul>
         <div class="filter__tabs-content">
             <form class="filter__tabs-content-box js-tab-body">
                 <fieldset class="filter__form-selects filter__form-selects--column">
@@ -409,7 +426,24 @@
         Блог
     </h2>
     <div class="filter__tabs js-init-tabs">
-        {{>components/tabs-buttons button1="Новости" button2="Статьи"}}
+        <ul class="filter__tabs-buttons">
+            <li>
+                <label class="filter__tabs-buttons-label js-tab-btn">
+                    <input class="filter__tabs-buttons-input" name="tabs" type="radio" checked>
+                    <span class="filter__tabs-buttons-span" type="button">
+                        Новости
+                    </span>
+                </label>
+            </li>
+            <li>
+                <label class="filter__tabs-buttons-label js-tab-btn">
+                    <input class="filter__tabs-buttons-input" name="tabs" type="radio">
+                    <span class="filter__tabs-buttons-span" type="button">
+                        Статьи
+                    </span>
+                </label>
+            </li>
+        </ul>
         <div class="filter__tabs-content">
             <form class="filter__tabs-content-box js-tab-body">
                 <fieldset class="filter__form-selects">

@@ -1,24 +1,24 @@
 <ul class="documents-list {{#if notLines}}documents-list--not-lines{{/if}}">
     {{#each data.listInfo}}
-    <li>
-    <div class="documents-list__item">
-        <div class="documents-list__item-img-box">
-        <img src="{{this.imgUrl}}" alt="icon">
+    <li class="js-show-hide-item">
+        <div class="documents-list__item">
+            <div class="documents-list__item-img-box">
+            <img src="{{this.imgUrl}}" alt="icon">
+            </div>
+            <div class="documents-list__item-content">
+            <div class="documents-list__item-title">
+                {{this.title}}
+            </div>
+            <ul class="documents-list__item-list">
+                {{#each this.listItem}}
+                <li>
+                    {{this.name}}
+                </li>
+                {{/each}}
+            </ul>
+            <a class="documents-list__item-link {{#if this.thirdPartyResource}}documents-list__item-link--rotation-45{{/if}}" href="{{this.link}}" {{#unless this.thirdPartyResource}}download{{/unless}}>{{this.linkName}}</a>
+            </div>
         </div>
-        <div class="documents-list__item-content">
-        <div class="documents-list__item-title">
-            {{this.title}}
-        </div>
-        <ul class="documents-list__item-list">
-            {{#each this.listItem}}
-            <li>
-                {{this.name}}
-            </li>
-            {{/each}}
-        </ul>
-        <a class="documents-list__item-link {{#if this.thirdPartyResource}}documents-list__item-link--rotation-45{{/if}}" href="{{this.link}}" {{#unless this.thirdPartyResource}}download{{/unless}}>{{this.linkName}}</a>
-        </div>
-    </div>
     </li>
     {{/each}}
 </ul>

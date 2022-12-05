@@ -29,6 +29,8 @@
     }
     .intro-main__heading {
       margin-top: 0;
+      text-transform: uppercase;
+      word-break: break-all;
   
       @include breakpoint(laptop) {
         margin-top: 0;

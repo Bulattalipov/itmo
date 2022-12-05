@@ -207,6 +207,25 @@
     @extend %fs-roboto-l;
     padding-left: 6.4rem;
 
+    @include breakpoint(laptop) {
+      padding-left: 3.4rem;
+    }
+
+    @include breakpoint(tablet) {
+      flex-direction: column;
+      align-items: stretch;
+      padding-left: 0;
+      top: 0;
+
+      svg{
+        order: -1;
+        margin-left: auto;
+        margin-bottom: 1.2rem;
+      }
+    }
+  }
+
+  a{
     @extend %interactive;
 
     &::after{
@@ -228,24 +247,6 @@
         transform: rotate(45deg);
       }
     }
-
-    @include breakpoint(laptop) {
-      padding-left: 3.4rem;
-    }
-
-    @include breakpoint(tablet) {
-      flex-direction: column;
-      align-items: stretch;
-      padding-left: 0;
-      top: 0;
-
-      svg{
-        order: -1;
-        margin-left: auto;
-        margin-bottom: 1.2rem;
-      }
-    }
-
   }
 
   &__swiper{

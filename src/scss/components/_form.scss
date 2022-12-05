@@ -57,14 +57,11 @@
     gap: 3.2rem;
     margin-top: 4rem;
 
-    @include breakpoint(laptop) {
+    @include breakpoint(small-tablet) {
+      margin-top: 3rem;
       align-items: stretch;
       flex-direction: column;
       gap: 2rem;
-    }
-
-    @include breakpoint(small-tablet) {
-      margin-top: 3rem;
     }
   }
 }

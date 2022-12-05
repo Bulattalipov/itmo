@@ -50,7 +50,7 @@
   &__box {
     display: grid;
     grid-template-columns: auto 69.5rem;
-    column-gap: 2rem;
+    column-gap: 4rem;
     position: relative;
     padding: 6rem 0 6rem 6rem;
     background-color: #fff;
@@ -131,32 +131,8 @@
     max-width: 33rem;
     margin-left: 40px;
 
-    &:hover,
-    &:focus {
-      background-color: $grayscale-500;
-    }
-
-    &:active {
-      background-color: $grayscale-200;
-    }
-
     @include breakpoint(tablet) {
       margin-left: 0;
-    }
-
-  }
-
-  &__navigation-button {
-    height: 4.2rem;
-    width: 4.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &.next {
-      svg {
-        transform: rotate(180deg);
-      }
     }
   }
 
@@ -180,6 +156,10 @@
 
     @include breakpoint(laptop) {
       margin-right: 10.5rem;
+    }
+
+    @include breakpoint(tablet) {
+      margin-right: 30rem;
     }
 
     @include breakpoint(small-tablet) {

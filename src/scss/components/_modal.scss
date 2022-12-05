@@ -1,6 +1,6 @@
 .modal {
   &__wrapper {
-    @include breakpoint(tablet) {
+    @include breakpoint(mobile) {
       justify-content: flex-end;
     }
   }

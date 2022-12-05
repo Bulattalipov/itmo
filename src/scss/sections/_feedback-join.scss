@@ -144,7 +144,25 @@
           color: $grayscale-200;
         }
 
-        @extend %interactive;
+        &:focus {
+          color: $primary-400;
+          opacity: 1;
+      
+          &:link,
+          &:visited {
+            color: $primary-400;
+          }
+        }
+      
+        &:hover {
+          color: $primary-500;
+          opacity: 1;
+      
+          &:link,
+          &:visited {
+            color: $primary-500;
+          }
+        }
       }
     }
 

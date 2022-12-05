@@ -1,15 +1,15 @@
 {{#extend "section"}}
     {{#content "content"}}
 
-      <div class="documents">
+      <div class="documents js-show-hide" data-count="3">
         <h2 class="documents title-h2">
           {{data.titleMain}}
         </h2>
         {{> components/document-list}}
         {{#if data.btn}}
-        <a class="documents__link round-buttons round-buttons--dark" href="#">
+        <button class="documents__link round-buttons round-buttons--dark js-show-hide-button" type="button">
           Загрузить еще
-        </a>
+        </button>
         {{/if}}
       </div>
 

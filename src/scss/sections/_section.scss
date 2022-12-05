@@ -161,6 +161,13 @@
         bottom: -23rem;
         z-index: 1;
         pointer-events: none;
+
+        @include breakpoint(laptop){
+          width: 120.6rem;
+          height: 48.3rem;
+          right: -28rem;
+          bottom: -10rem;
+        }
       }
     }
 
@@ -361,15 +368,23 @@
         left: 13.7rem;
 
         @include breakpoint(laptop) {
-          left: auto;
-          right: 0;
+          width: 42%;
+          left: 3.7rem;
+          background-size: contain;
         }
 
-        @include breakpoint(mobile) {
+        @include breakpoint(small-tablet) {
           left: 13.7rem;
-          right: auto;
+          width: 100%;
+          background-size: cover;
         }
       }
+    }
+  }
+
+  &--cards{
+    .section__inner{
+      overflow: visible;
     }
   }
 

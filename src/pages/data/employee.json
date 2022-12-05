@@ -31,6 +31,66 @@
               "link": "#",
               "thirdPartyResource": true,
               "linkName": "Сторонний ресурс"
+            },
+            {
+              "imgUrl": "img/content/documents/file-pdf.svg",
+              "title": "Правовые основы защиты интеллектуальной собственности - 2022",
+              "listItem": [
+                {
+                  "name": "Направление"
+                },
+                {
+                  "name": "Ткалич В.Л., Коробейников А.Г., Пирожникова О.И., Калинкина М.Е."
+                }
+              ],
+              "link": "#",
+              "thirdPartyResource": false,
+              "linkName": "PDF"
+            },
+            {
+              "imgUrl": "img/content/documents/file-doc.svg",
+              "title": "Multidimensional blockchain security analysis // Lecture Notes in Networks and Systems - 2022, Vol. 235, pp. 911-924",
+              "listItem": [
+                {
+                  "name": "Направление"
+                },
+                {
+                  "name": "Shilov I., Zakoldaev D."
+                }
+              ],
+              "link": "#",
+              "thirdPartyResource": true,
+              "linkName": "Сторонний ресурс"
+            },
+            {
+              "imgUrl": "img/content/documents/file-pdf.svg",
+              "title": "Правовые основы защиты интеллектуальной собственности - 2022",
+              "listItem": [
+                {
+                  "name": "Направление"
+                },
+                {
+                  "name": "Ткалич В.Л., Коробейников А.Г., Пирожникова О.И., Калинкина М.Е."
+                }
+              ],
+              "link": "#",
+              "thirdPartyResource": false,
+              "linkName": "PDF"
+            },
+            {
+              "imgUrl": "img/content/documents/file-doc.svg",
+              "title": "Multidimensional blockchain security analysis // Lecture Notes in Networks and Systems - 2022, Vol. 235, pp. 911-924",
+              "listItem": [
+                {
+                  "name": "Направление"
+                },
+                {
+                  "name": "Shilov I., Zakoldaev D."
+                }
+              ],
+              "link": "#",
+              "thirdPartyResource": true,
+              "linkName": "Сторонний ресурс"
             }
         ]
     }

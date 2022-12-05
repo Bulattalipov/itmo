@@ -8,17 +8,33 @@
         margin-bottom: 3.2rem;
     }
 
-    .tabs-buttons {
+    &__tabs-buttons{
+        display: flex;
+        align-items: center;
+        background-color: $grayscale-300;
+        width: max-content;
+        @extend %fs-button-1;
+        font-weight: 400;
+        padding: 0.4rem;
+        border-radius: 999px;
+        text-transform: uppercase;
         margin-bottom: 3.2rem;
 
-        @include breakpoint(small-tablet) {
-            margin-bottom: 2rem;
-        }
-
-        @include breakpoint(mobile) {
+        @include breakpoint(mobile){
+            flex-direction: column;
+            padding: 0.4rem;
+            border-radius: 2.4rem;
             flex-direction: row;
             width: 100%;
             overflow-x: auto;
+    
+            li{
+            width: 100%;
+            }
+        }
+
+        @include breakpoint(small-tablet) {
+            margin-bottom: 2rem;
         }
 
         scrollbar-width: 0rem;
@@ -47,8 +63,35 @@
         }
     }
 
-    .tabs-buttons__tab {
+    &__tabs-buttons-label{
+        padding: 1.6rem 2.4rem;
+        border-radius: 999px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
         text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover{
+            color: $primary-400;
+        }
+    
+        &.active{
+          background-color: $grayscale-100;
+          font-weight: 700;
+        }
+    
+        @include breakpoint(mobile){
+          width: 100%;
+        }
+    }
+
+    &__tabs-buttons-input{
+        position: absolute;
+        width: 0.1rem;
+        height: 0.1rem;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
     }
 
     fieldset {

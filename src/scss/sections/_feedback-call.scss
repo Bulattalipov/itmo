@@ -49,7 +49,7 @@
     .form-block__form-inputs{
         flex-direction: row;
   
-        @include breakpoint(tablet) {
+        @include breakpoint(small-tablet) {
           flex-direction: column;
         }
       }
@@ -106,6 +106,26 @@
             &:link,
             &:visited{
               color: $grayscale-200;
+            }
+
+            &:focus {
+              color: $primary-400;
+              opacity: 1;
+          
+              &:link,
+              &:visited {
+                color: $primary-400;
+              }
+            }
+          
+            &:hover {
+              color: $primary-500;
+              opacity: 1;
+          
+              &:link,
+              &:visited {
+                color: $primary-500;
+              }
             }
           }
         }

@@ -27,6 +27,7 @@ import choicesSelector from './moduls/choices-select'
 import oneSlideSlider from './moduls/oneSlideSlider';
 import mobileSliderNews from './moduls/mobileSliderNews';
 import projectGallery from './moduls/projectGallery';
+import showHide from "./moduls/showHide";
 
 document.addEventListener('DOMContentLoaded', function () {
   window.itmo = {}; // Тут будут лежать всякие функции с фронта
@@ -53,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
   mobileSliderNews();
   projectGallery();
 
+  showHide();
   timer();
   fancyboxVideo();
   tabs();
@@ -255,10 +257,10 @@ function ordinary3slide() {
       modules: [Navigation],
       loop: loop,
       breakpoints: {
-        768: {
+        640: {
           slidesPerView: 2,
         },
-        1024: {
+        768: {
           slidesPerView: 3,
         }
       },

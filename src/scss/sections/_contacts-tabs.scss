@@ -1,6 +1,22 @@
-.contacts-tabs{
+.contacts-tabs {
 
-    &__title{
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus,
+    input:-internal-autofill-selected {
+        transition: background-color 5000000000s ease-in-out 0s;
+        background-color: rgba(0, 0, 0, 0) !important;
+        -webkit-text-fill-color: $grayscale-100;
+        -webkit-box-shadow: none !important;
+    }
+
+    &__title {
         margin-bottom: 3.2rem;
 
         @include breakpoint(laptop) {
@@ -8,7 +24,7 @@
         }
     }
 
-    &__wrapper{
+    &__wrapper {
         display: flex;
         gap: 2rem;
         align-items: flex-end;
@@ -18,8 +34,8 @@
         }
     }
 
-    &__inner{
-        flex:  0 1 53%;
+    &__inner {
+        flex: 0 1 53%;
         min-width: 0;
         grid-column: span 5;
         display: flex;
@@ -34,7 +50,7 @@
         }
     }
 
-    &__tabs{
+    &__tabs {
         display: inline-flex;
         align-items: center;
         background-color: $grayscale-300;
@@ -45,13 +61,13 @@
         width: auto;
         margin-left: 0;
 
-        .swiper-slide{
+        .swiper-slide {
             width: auto;
             border-radius: 999px;
             @extend %fs-button-2;
         }
 
-        .swiper-slide.swiper-slide-thumb-active{
+        .swiper-slide.swiper-slide-thumb-active {
             background-color: $grayscale-100;
             @extend %fs-button-1;
         }
@@ -63,24 +79,24 @@
         @include breakpoint(mobile) {
             width: 100%;
 
-            .swiper-slide{
+            .swiper-slide {
                 width: 100%;
             }
         }
     }
 
-    &__tabs-item{
+    &__tabs-item {
         padding: 1.6rem 2.4rem;
         display: flex;
         justify-content: center;
         text-transform: uppercase;
 
-        &:hover{
+        &:hover {
             color: $primary-400;
         }
     }
 
-    &__inner-info{
+    &__inner-info {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -89,7 +105,7 @@
         @include breakpoint(small-tablet) {
             height: auto;
 
-            &>div:first-child{
+            &>div:first-child {
                 display: flex;
                 justify-content: space-between;
                 gap: 2rem;
@@ -98,17 +114,18 @@
         }
     }
 
-    &__social-label{
+    &__social-label {
         margin-top: 1.2rem;
         max-width: 20rem;
         display: inline-block;
         @extend %fs-body-s;
     }
-    &__active{
+
+    &__active {
         margin-bottom: 4.8rem;
     }
 
-    &__active-tel{
+    &__active-tel {
         @extend %fs-h-3;
         letter-spacing: -0.01em;
         margin-bottom: 4rem;
@@ -134,7 +151,7 @@
             grid-template-columns: 1fr;
         }
 
-        li{
+        li {
             grid-column: span 2;
         }
     }
@@ -146,21 +163,21 @@
         color: $grayscale-600;
         @extend %fs-body-xs;
 
-            @include breakpoint(small-tablet) {
-                margin-bottom: 1rem;
-            }
+        @include breakpoint(small-tablet) {
+            margin-bottom: 1rem;
         }
-
-        &__active-info-content {
-        @extend %fs-body-s;
-
-            a {
-                @extend %interactive;
-            }
     }
 
-    &__form{
-        flex:  0 1 47%;
+    &__active-info-content {
+        @extend %fs-body-s;
+
+        a {
+            @extend %interactive;
+        }
+    }
+
+    &__form {
+        flex: 0 1 47%;
         grid-column: span 5;
         border-radius: 3.2rem;
         padding: 6.4rem;
@@ -175,7 +192,7 @@
             margin-right: 0;
         }
 
-        &::before{
+        &::before {
             content: '';
             position: absolute;
             background-image: url("../img/content/feedback/1.svg");
@@ -195,16 +212,16 @@
             }
         }
 
-        .form{
+        .form {
             position: relative;
             z-index: 2;
         }
     }
 
-    &__illustration-wrapper{
+    &__illustration-wrapper {
         margin-top: auto;
 
-        img{
+        img {
             width: 38.5rem;
             height: 30rem;
             object-fit: cover;
@@ -215,7 +232,7 @@
         }
     }
 
-    &__navigation{
+    &__navigation {
         display: none;
         position: absolute;
         z-index: 20;
@@ -224,15 +241,13 @@
         justify-content: space-between;
         padding: 1rem 1.2rem;
 
-        svg{
+        svg {
             stroke: #000;
         }
 
-        .prev{
+        .prev {}
 
-        }
-
-        .next{
+        .next {
             transform: rotate(180deg);
         }
 
@@ -241,76 +256,109 @@
         }
     }
 
-    &__navigation-button{
+    &__navigation-button {
         padding: 1rem;
         border-radius: 50%;
+
+        svg {
+            stroke: $primary-500;
+        }
+
+        &.swiper-button-disabled {
+            svg {
+                stroke: $grayscale-600;
+            }
+        }
     }
 
-    .form-block{
+    .form-block {
         color: $grayscale-100;
-    
-        .input__element{
-          color: $grayscale-100;
-          border-bottom: 0.1rem solid $grayscale-100;
-    
-          &:placeholder-shown ~ .input__placeholder{
+
+        .input__element {
             color: $grayscale-100;
-          }
-    
-          &:focus{
-            border-color: $grayscale-100;
-            & ~ .input__placeholder {
-              color: $grayscale-600;
+            border-bottom: 0.1rem solid $grayscale-100;
+
+            &:placeholder-shown~.input__placeholder {
+                color: $grayscale-100;
             }
-          }
-        }
-    
-        .input__placeholder{
-          color: $grayscale-100;
-        }
-    
-        .form-block__form-footer{
-    
-          .button{
-            background-color: $grayscale-100;
-            color: $primary-700;
-            
-            transition: background-color $tt $te, border-color $tt $te, color $tt $te;
-    
+
             &:focus {
-              background-color: $grayscale-500;
-              color: $primary-900;
+                border-color: $grayscale-100;
+
+                &~.input__placeholder {
+                    color: $grayscale-600;
+                }
             }
-    
-            &:hover {
-              background-color: $grayscale-400;
-              color: $primary-500;
+        }
+
+        .input__placeholder {
+            color: $grayscale-100;
+        }
+
+        .form-block__form-footer {
+
+            .button {
+                background-color: $grayscale-100;
+                color: $primary-700;
+
+                transition: background-color $tt $te, border-color $tt $te, color $tt $te;
+
+                &:focus {
+                    background-color: $grayscale-500;
+                    color: $primary-900;
+                }
+
+                &:hover {
+                    background-color: $grayscale-400;
+                    color: $primary-500;
+                }
             }
-          }
         }
-    
-        .policy{
-          max-width: 28rem;
-          
-          a{
-    
-            &:link,
-            &:visited{
-              color: $grayscale-200;
+
+        .policy {
+            max-width: 28rem;
+
+            a {
+
+                &:link,
+                &:visited {
+                    color: $grayscale-200;
+                }
+
+                &:focus {
+                    color: $primary-400;
+                    opacity: 1;
+
+                    &:link,
+                    &:visited {
+                        color: $primary-400;
+                    }
+                }
+
+                &:hover {
+                    color: $primary-500;
+                    opacity: 1;
+
+                    &:link,
+                    &:visited {
+                        color: $primary-500;
+                    }
+                }
             }
-          }
         }
-    
-        .input.error{
-          .input__element{
-            border-color: $yellow;
-          }
-          .input__validation-message{
-            color: $yellow;
-          }
-          .input__placeholder{
-            color: $yellow !important;
-          }
+
+        .input.error {
+            .input__element {
+                border-color: $yellow;
+            }
+
+            .input__validation-message {
+                color: $yellow;
+            }
+
+            .input__placeholder {
+                color: $yellow !important;
+            }
         }
-      }
+    }
 }
