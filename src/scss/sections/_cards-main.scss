@@ -322,4 +322,10 @@
   &__slide-info-link{
     display: none;
   }
+
+  .user-card{
+    @include breakpoint(mobile) {
+      max-width: none;
+    }
+  }
 }

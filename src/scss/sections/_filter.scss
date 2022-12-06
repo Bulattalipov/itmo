@@ -96,13 +96,11 @@
 
     fieldset {
 
-
         .filter__form-selects-inner {
             .filter__from-select-box {
                 max-width: 100%;
             }
         }
-
 
         .filter__from-select-box {
             max-width: 30rem;
@@ -375,6 +373,10 @@
                 top: 0.6rem;
             }
         }
+
+        @include breakpoint(mobile) {
+            padding: 2rem 5.6rem 1.6rem 1.6rem;
+        }
     }
 
     &__form-input-placeholder {
@@ -390,6 +392,10 @@
         pointer-events: none;
 
         transition: transform $tt $te, font-size $tt $te, color $tt $te;
+
+        @include breakpoint(mobile) {
+            left: 1.6rem;
+        }
     }
 
     &__form-input-search {

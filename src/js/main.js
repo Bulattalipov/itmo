@@ -28,6 +28,7 @@ import oneSlideSlider from './moduls/oneSlideSlider';
 import mobileSliderNews from './moduls/mobileSliderNews';
 import projectGallery from './moduls/projectGallery';
 import showHide from "./moduls/showHide";
+import gallerySliders  from "./"
 
 document.addEventListener('DOMContentLoaded', function () {
   window.itmo = {}; // Тут будут лежать всякие функции с фронта

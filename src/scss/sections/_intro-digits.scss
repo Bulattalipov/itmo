@@ -126,8 +126,9 @@
   &__footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     margin-top: 8.5rem;
+    gap: 4rem 9rem;
 
     @include breakpoint(laptop) {
       margin-top: 6rem;
@@ -142,17 +143,26 @@
   }
 
   &__footer-items {
-    display: flex;
-    gap: 8rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 30rem));
+    gap: 5rem 8rem;
+
+    @include breakpoint(laptop) {
+      grid-template-columns: repeat(3, minmax(auto, 30rem));;
+    }
 
     @include breakpoint(tablet) {
-      gap: 6rem;
+      gap: 4rem 6rem;
+      grid-template-columns: repeat(2, minmax(auto, 30rem));;
     }
 
     @include breakpoint(small-tablet) {
       gap: 2rem;
       flex-direction: column;
-      margin-bottom: 4rem;
+    }
+
+    @include breakpoint(small-mobile) {
+      grid-template-columns: repeat(1, 1fr);;
     }
   }
 
@@ -164,6 +174,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    flex-shrink: 0;
     overflow: hidden;
     padding: 1.6rem;
 

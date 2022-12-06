@@ -11,5 +11,19 @@
     @include breakpoint(small-tablet) {
       margin-top: 2rem;
     }
+
+    .active-label{
+      display: none;
+    }
+
+    &.active{
+        .default-label{
+            display: none;
+        }
+
+        .active-label{
+            display: block;
+        }
+    }
   }
 }

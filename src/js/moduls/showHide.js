@@ -11,6 +11,8 @@ export default function showHide() {
     const button = container.querySelector('.js-show-hide-button');
     const items = [...container.querySelectorAll('.js-show-hide-item')];
 
+    console.log(button);
+
     if (items.length <= visibleCount) {
       button && button.remove()
       return

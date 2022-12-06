@@ -7,6 +7,7 @@
 @import 'global/utils';
 @import 'global/animations';
 @import 'global/layout';
+@import 'global/setting.scss';
 
 @import 'vendor/hystModal';
 @import 'vendor/various';
@@ -55,6 +56,7 @@
 @import 'sections/preparation';
 @import 'sections/list-elemets';
 @import 'sections/project-gallery';
+@import 'sections/participants';
 
 @import 'components/contacts';
 @import 'components/socials';
