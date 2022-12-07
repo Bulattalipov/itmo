@@ -16,6 +16,58 @@
   @media screen and (max-width: 389px) {
     --fs-html: 9px;
   }
+
+
+  // colors
+  --color-purple-900: #272862;
+  --color-purple-700: #37387B;
+  --color-blue-700: #55B2E5;
+  --color-grey-900: #21222E;
+  --color-grey-500: #A4A5BB;
+  --color-grey-300: #EFF1F4;
+  --color-grey-100: #FFFFFF;
+  --color-white: var(--color-grey-100);
+  --color-bg: var(--color-grey-300);
+
+  // Typography
+  --main-ff: "Inter", sans-serif;
+  --second-ff: "Roboto", sans-serif;
+
+  // body
+  --font-body-L: 400 1.8rem/120% var(--main-ff);
+  --font-body-M: 400 1.4rem/120% var(--main-ff);
+  --font-body-S: 400 1.2rem/110% var(--main-ff);
+
+  // title
+  --font-hero: 700 22rem/1 var(--main-ff);
+  --font-title-1: 700 9.6rem/1 var(--main-ff);
+  --font-title-2: 700 6rem/1 var(--main-ff);
+  --font-title-3: 700 3.6rem/110% var(--main-ff);
+
+  // button
+  --font-btn: 700 1.4rem/1.6rem var(--main-ff);
+
+  // parts
+  --font-roboto: 400 2.8rem/1 var(--second-ff);
+  --font-roboto-M: 400 2rem/1 var(--second-ff);
+  --font-roboto-S: 400 1.6rem/1 var(--second-ff);
+
+  // offset
+  --grid-offset: 0;
+
+  // transition
+  --transition: 200ms;
+
+  // etc
+  --header-height: 8.2rem;
+
+
+
+
+
+
+
+
 }
 
 // fonts

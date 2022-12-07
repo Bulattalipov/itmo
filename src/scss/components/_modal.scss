@@ -91,4 +91,27 @@
       flex-direction: column;
     }
   }
+
+  .form-block__heading{
+    max-width: 100%;
+  }
+
+  .form-block__heading-block{
+    flex-direction: column;
+  }
+
+  .form-block__form-footer{
+    @include breakpoint(laptop) {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .button{
+      width: 100%;
+    }
+  }
+
+  .policy{
+    max-width: 27rem;
+  }
 }

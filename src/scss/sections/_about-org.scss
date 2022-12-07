@@ -1,0 +1,144 @@
+.about-org {
+    position: relative;
+  
+    &_layer {
+      position: absolute;
+      top: 0;
+      left: -27.8rem;
+      width: 87.3rem;
+      height: 67.6rem;
+      background-image: url("../img/layer2.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  
+    &__heading {
+      display: block;
+      width: 140.9rem;
+      height: 11rem;
+      margin-bottom: 10rem;
+  
+      @include mq(sm) {
+        margin-bottom: 5.2rem;
+        width: 100%;
+        height: auto;
+        margin-bottom: 3rem;
+      }
+    }
+  
+    &__blocks {
+      @include mq(md) {
+        display: block;
+      }
+    }
+  
+    &__blocks-item {
+      grid-column: 6 span;
+  
+      @include mq(md) {
+        &:nth-child(1) {
+          margin-bottom: 5.4rem;
+        }
+      }
+    }
+  
+    &__oragnization {
+      max-width: 65rem;
+      margin-left: auto;
+      display: flex;
+      height: 100%;
+  
+      @include mq(md) {
+        max-width: 100%;
+        margin-left: 0;
+      }
+    }
+  
+    &__oragnization-icon {
+      display: block;
+      width: 7.8rem;
+      height: 4.1rem;
+      object-fit: contain;
+      margin-right: 5rem;
+      flex-shrink: 0;
+  
+      @include mq(sm) {
+        display: none;
+      }
+    }
+  
+    &__oragnization-content {
+      display: flex;
+      flex-direction: column;
+      max-width: 52rem;
+      flex-grow: 1;
+  
+      @include mq(md) {
+        max-width: 100%;
+      }
+    }
+  
+    &__oragnization-legend-text {
+      margin-bottom: 4rem;
+      font: var(--font-roboto);
+  
+      @include mq(sm) {
+        font: var(--font-roboto-M);
+        margin-bottom: 2.4rem;
+      }
+    }
+  
+    &__oragnization-text {
+      margin-bottom: 4rem;
+  
+      @include mq(sm) {
+        margin-bottom: 2.8rem;
+      }
+    }
+  
+    &__oragnization-feautures {
+      padding-top: 2.4rem;
+      border-top: 1px solid #304659;
+      display: flex;
+      align-items: center;
+      margin-top: auto;
+    }
+  
+    &__oragnization-feautures-item {
+      margin-right: 3.6rem;
+      display: flex;
+      align-items: center;
+      font: var(--font-body-S);
+  
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  
+    &__oragnization-feautures-icon {
+      display: block;
+      width: 2rem;
+      height: 2rem;
+      object-fit: cover;
+      margin-right: 0.8rem;
+      fill: none;
+      stroke: var(--color-grey-900);
+    }
+  }
+  
+  
+  .about-org__oragnization-remark {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 110%;
+    color: rgba(#21222e, 0.4);
+    margin-top: -2.5rem;
+    margin-bottom: 4rem;
+  
+    @include mq(sm) {
+      margin-bottom: 2.4rem;
+      margin-top: -1rem;
+    }
+  }

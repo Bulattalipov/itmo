@@ -1,0 +1,146 @@
+.faq {
+    &__heading {
+      max-width: 88.6rem;
+      margin-bottom: 7.2rem;
+  
+      @include mq(sm) {
+        margin-bottom: 2.4rem;
+      }
+    }
+  
+    &__content {
+      @include mq(md) {
+        display: block;
+      }
+    }
+  
+    &__small-legend {
+      display: block;
+      max-width: 12.6rem;
+  
+      @include mq(md) {
+        margin-bottom: 2.4rem;
+      }
+    }
+  
+    &__item-container {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      column-gap: var(--grid-offset);
+  
+      @include mq(lg) {
+        display: block;
+      }
+    }
+  
+    &__list {
+      grid-column: 8 span;
+    }
+  
+    &__item {
+      width: 100%;
+      background-color: var(--color-white);
+      border-radius: 6rem;
+      overflow: hidden;
+      margin-bottom: 2rem;
+  
+      &:last-child {
+        margin-bottom: 0;
+      }
+  
+      @include mq(sm) {
+        border-radius: 3.6rem;
+        margin-bottom: 0.8rem;
+      }
+    }
+  
+    &__btn {
+      padding: 3.2rem 6.4rem 3.6rem;
+      padding-right: 3.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      cursor: pointer;
+  
+      &:hover {
+        .faq__btn-icon {
+          border-color: #37387b;
+        }
+      }
+  
+      &.mod-open {
+        .faq__btn-icon {
+          span {
+            &:nth-child(2) {
+              transform: translate(-50%, -50%) rotate(0);
+            }
+          }
+        }
+      }
+  
+      @include mq(sm) {
+        padding: 1.7rem 2rem 1.7rem 2.8rem;
+      }
+    }
+  
+    &__btn-txt {
+      font: var(--font-roboto);
+      max-width: 67.4rem;
+      text-align: left;
+  
+      @include mq(sm) {
+        font: var(--font-roboto-S);
+      }
+    }
+  
+    &__btn-icon {
+      position: relative;
+      display: block;
+      width: 5rem;
+      height: 5rem;
+      background-color: var(--color-white);
+      border-radius: 50%;
+      border: 1px solid var(--color-grey-300);
+      flex-shrink: 0;
+      transition: border-color .2s;
+      @include mq(sm) {
+        width: 2.8rem;
+        height: 2.8rem;
+      }
+  
+      span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 1.6rem;
+        height: 0.2rem;
+        background-color: var(--color-purple-900);
+        transform: translate(-50%, -50%);
+        transition: transform var(--transition);
+  
+        @include mq(sm) {
+          width: 1rem;
+        }
+  
+        &:nth-child(2) {
+          transform: translate(-50%, -50%) rotate(90deg);
+        }
+      }
+    }
+  
+    &__item-body {
+      padding: 0 6.4rem 4.2rem 6.4rem;
+  
+      @include mq(sm) {
+        padding: 0 2rem 1.7rem 2.8rem;
+      }
+    }
+  }
+  
+  .faq__item-body {
+    a {
+      color: var(--color-blue-700);
+    }
+  }

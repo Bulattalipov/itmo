@@ -3,7 +3,7 @@ import Swiper, {
     Controller,
     CreativeEffect,
     Lazy,
-  } from 'swiper/swiper-bundle';
+  } from 'swiper';
   
   Swiper.use([Navigation, Controller, CreativeEffect, Lazy]);
   

@@ -1,93 +1,700 @@
-<!DOCTYPE html>
-<html lang="ru">
+{{#extend "layout"}}
+{{#content "main"}}
 
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <meta name="format-detection" content="telephone=no">
+<section class="section-two participants">
+  <div class="container grid-container participants__container">
+    <div class="participants__content-block">
+      <h2 class="participants__heading js-animated-heading"><span>Принять</span> участие может каждый</h2>
+      <div class="participants__text-container">
+        <div class="participants__text-container-block"><span class="participants__courage">Смелее!</span></div>
+        <div class="participants__text-container-block">
+          <p class="participants__text">В&nbsp;Neva CTF могут участвовать команды из&nbsp;любых школ.</p>
+          <p class="participants__text">Состав команды: от&nbsp;2&nbsp;до&nbsp;4&nbsp;участников.</p>
+          <p class="participants__small-text">Чтобы сразиться с&nbsp;соперниками из&nbsp;других команд, необязательно
+            быть профессионалом: задания подойдут как для продвинутых CTF&nbsp;&mdash;&nbsp;игроков, так и&nbsp;для
+            новичков.</p>
+        </div>
+      </div>
+    </div>
+    <div class="participants__content-block">
+      <div class="participants__slider-wrapper">
+        <div class="slider-nav participants__slider-nav">
+          <button class="slider-nav__btn button-reset js-participants-btn-prev" aria-label="Предыдущий слайд">
+            <svg class="icon icon-shevron-left slider-nav__btn-icon" width="11" height="29">
+              <use xlink:href="#shevron-left"></use>
+            </svg>
+          </button>
+          <button class="slider-nav__btn button-reset js-participants-btn-next" aria-label="Следующий слайд">
+            <svg class="icon icon-shevron-right slider-nav__btn-icon" width="11" height="29">
+              <use xlink:href="#shevron-right"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="swiper participants__slider">
+          <div class="swiper-wrapper"><img class="participants__slider-item swiper-slide"
+              src="img/content/participants/participant-1.jpg"
+              alt="Участники соревнованиий по информационной безопасности для школьников"><img
+              class="participants__slider-item swiper-slide" src="img/content/participants/participant-2.jpg"
+              alt="Участники соревнованиий по информационной безопасности для школьников"><img
+              class="participants__slider-item swiper-slide" src="img/content/participants/participant-3.jpg"
+              alt="Участники соревнованиий по информационной безопасности для школьников"><img
+              class="participants__slider-item swiper-slide" src="img/content/participants/participant-4.jpg"
+              alt="Участники соревнованиий по информационной безопасности для школьников"></div>
+        </div>
+      </div>
+      <div class="participants__slider2-wrapper">
+        <div class="swiper participants__slider2">
+          <div class="swiper-wrapper"><img class="participants__slider-item swiper-slide"
+              src="img/content/participants/participant-2.jpg"
+              alt="Участники соревнованиий по информационной безопасности для школьников"><img
+              class="participants__slider-item swiper-slide" src="img/content/participants/participant-3.jpg"
+              alt="Участники соревнованиий по информационной безопасности для школьников"><img
+              class="participants__slider-item swiper-slide" src="img/content/participants/participant-4.jpg"
+              alt="Участники соревнованиий по информационной безопасности для школьников"><img
+              class="participants__slider-item swiper-slide" src="img/content/participants/participant-1.jpg"
+              alt="Участники соревнованиий по информационной безопасности для школьников"></div>
+        </div>
+      </div>
+    </div>
+    <div class="participants__mobile-text"><span class="participants__courage">Смелее!</span>
+      <p class="participants__small-text">Чтобы сразиться с&nbsp;соперниками из&nbsp;других команд, необязательно быть
+        профессионалом: задания подойдут как для продвинутых CTF&nbsp;&mdash;&nbsp;игроков, так и&nbsp;для новичков.</p>
+    </div>
+  </div>
+</section>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+<section class="about-ctf section-two">
+  <div class="container">
+    <div class="about-ctf__container">
+      <h2 class="about-ctf__heading js-animated-heading"><span class="_circle-container"><span
+            class="_circle"></span><span class="_circle"></span><span class="_circle"></span><span
+            class="_circle"></span><span class="_circle"></span>Что</span> такое формат CTF?</h2>
+      <div class="about-ctf__blocks grid-container">
+        <div class="about-ctf__blocks-item">
+          <div class="about-ctf__img"><svg width="614" height="384" viewBox="0 0 614 384" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="7" cy="7" r="7" fill="#32336A" />
+              <circle cx="7" cy="38" r="7" fill="#32336A" />
+              <circle cx="7" cy="69" r="7" fill="#32336A" />
+              <circle cx="7" cy="100" r="7" fill="#32336A" />
+              <circle cx="7" cy="131" r="7" fill="#32336A" />
+              <circle cx="7" cy="162" r="7" fill="#32336A" />
+              <circle cx="7" cy="193" r="7" fill="#32336A" />
+              <circle cx="7" cy="224" r="7" fill="#32336A" />
+              <circle cx="7" cy="255" r="7" fill="#32336A" />
+              <circle cx="7" cy="286" r="7" fill="#32336A" />
+              <circle cx="7" cy="317" r="7" fill="#32336A" />
+              <circle cx="7" cy="317" r="7" fill="#32336A" />
+              <circle cx="7" cy="347" r="7" fill="#32336A" />
+              <circle cx="7" cy="377" r="7" fill="#32336A" />
+              <circle cx="37" cy="7" r="7" fill="#32336A" />
+              <circle cx="37" cy="38" r="7" fill="#32336A" />
+              <circle cx="37" cy="69" r="7" fill="#32336A" />
+              <circle cx="37" cy="100" r="7" fill="#32336A" />
+              <circle cx="37" cy="131" r="7" fill="#32336A" />
+              <circle cx="37" cy="162" r="7" fill="#32336A" />
+              <circle cx="37" cy="193" r="7" fill="#32336A" />
+              <circle cx="37" cy="224" r="7" fill="#32336A" />
+              <circle cx="37" cy="255" r="7" fill="#32336A" />
+              <circle cx="37" cy="286" r="7" fill="#32336A" />
+              <circle cx="37" cy="317" r="7" fill="#32336A" />
+              <circle cx="37" cy="317" r="7" fill="#32336A" />
+              <circle cx="37" cy="347" r="7" fill="#32336A" />
+              <circle cx="37" cy="377" r="7" fill="#32336A" />
+              <circle cx="67" cy="7" r="7" fill="#32336A" />
+              <circle cx="67" cy="38" r="7" fill="#32336A" />
+              <circle cx="67" cy="69" r="7" fill="#32336A" />
+              <circle cx="67" cy="100" r="7" fill="#32336A" />
+              <circle cx="67" cy="131" r="7" fill="#32336A" />
+              <circle cx="67" cy="162" r="7" fill="#32336A" />
+              <circle cx="67" cy="193" r="7" fill="#32336A" />
+              <circle cx="67" cy="224" r="7" fill="#32336A" />
+              <circle cx="67" cy="255" r="7" fill="#32336A" />
+              <circle cx="67" cy="286" r="7" fill="#32336A" />
+              <circle cx="67" cy="317" r="7" fill="#32336A" />
+              <circle cx="67" cy="317" r="7" fill="#ED1919" />
+              <circle cx="67" cy="347" r="7" fill="#32336A" />
+              <circle cx="67" cy="377" r="7" fill="#32336A" />
+              <circle cx="97" cy="7" r="7" fill="#32336A" />
+              <circle cx="97" cy="38" r="7" fill="#32336A" />
+              <circle cx="97" cy="69" r="7" fill="#32336A" />
+              <circle cx="97" cy="100" r="7" fill="#32336A" />
+              <circle cx="97" cy="131" r="7" fill="#ED1919" />
+              <circle cx="97" cy="162" r="7" fill="#32336A" />
+              <circle cx="97" cy="193" r="7" fill="#32336A" />
+              <circle cx="97" cy="224" r="7" fill="#32336A" />
+              <circle cx="97" cy="255" r="7" fill="#32336A" />
+              <circle cx="97" cy="286" r="7" fill="#32336A" />
+              <circle cx="97" cy="317" r="7" fill="#32336A" />
+              <circle cx="97" cy="317" r="7" fill="#32336A" />
+              <circle cx="97" cy="347" r="7" fill="#32336A" />
+              <circle cx="97" cy="377" r="7" fill="#32336A" />
+              <circle cx="127" cy="7" r="7" fill="#32336A" />
+              <circle cx="127" cy="38" r="7" fill="#32336A" />
+              <circle cx="127" cy="69" r="7" fill="#32336A" />
+              <circle cx="127" cy="100" r="7" fill="#32336A" />
+              <circle cx="127" cy="131" r="7" fill="#32336A" />
+              <circle cx="127" cy="162" r="7" fill="#32336A" />
+              <circle cx="127" cy="193" r="7" fill="#32336A" />
+              <circle cx="127" cy="224" r="7" fill="#32336A" />
+              <circle cx="127" cy="255" r="7" fill="#32336A" />
+              <circle cx="127" cy="286" r="7" fill="#32336A" />
+              <circle cx="127" cy="317" r="7" fill="#32336A" />
+              <circle cx="127" cy="317" r="7" fill="#32336A" />
+              <circle cx="127" cy="347" r="7" fill="#32336A" />
+              <circle cx="127" cy="377" r="7" fill="#32336A" />
+              <circle cx="157" cy="7" r="7" fill="#32336A" />
+              <circle cx="157" cy="38" r="7" fill="#32336A" />
+              <circle cx="157" cy="69" r="7" fill="#32336A" />
+              <circle cx="157" cy="100" r="7" fill="#32336A" />
+              <circle cx="157" cy="131" r="7" fill="#32336A" />
+              <circle cx="157" cy="162" r="7" fill="#32336A" />
+              <circle cx="157" cy="193" r="7" fill="#32336A" />
+              <circle cx="157" cy="224" r="7" fill="#32336A" />
+              <circle cx="157" cy="255" r="7" fill="#32336A" />
+              <circle cx="157" cy="286" r="7" fill="#32336A" />
+              <circle cx="157" cy="317" r="7" fill="#32336A" />
+              <circle cx="157" cy="317" r="7" fill="#32336A" />
+              <circle cx="157" cy="347" r="7" fill="#32336A" />
+              <circle cx="157" cy="377" r="7" fill="#32336A" />
+              <circle cx="187" cy="7" r="7" fill="#32336A" />
+              <circle cx="187" cy="38" r="7" fill="#32336A" />
+              <circle cx="187" cy="69" r="7" fill="#32336A" />
+              <circle cx="187" cy="100" r="7" fill="#32336A" />
+              <circle cx="187" cy="131" r="7" fill="#32336A" />
+              <circle cx="187" cy="162" r="7" fill="#32336A" />
+              <circle cx="187" cy="193" r="7" fill="#32336A" />
+              <circle cx="187" cy="224" r="7" fill="#32336A" />
+              <circle cx="187" cy="255" r="7" fill="#32336A" />
+              <circle cx="187" cy="286" r="7" fill="#32336A" />
+              <circle cx="187" cy="317" r="7" fill="#32336A" />
+              <circle cx="187" cy="317" r="7" fill="#32336A" />
+              <circle cx="187" cy="347" r="7" fill="#32336A" />
+              <circle cx="187" cy="377" r="7" fill="#32336A" />
+              <circle cx="217" cy="7" r="7" fill="#32336A" />
+              <circle cx="217" cy="38" r="7" fill="#32336A" />
+              <circle cx="217" cy="69" r="7" fill="#32336A" />
+              <circle cx="217" cy="100" r="7" fill="#32336A" />
+              <circle cx="217" cy="131" r="7" fill="#32336A" />
+              <circle cx="217" cy="162" r="7" fill="#32336A" />
+              <circle cx="217" cy="193" r="7" fill="#32336A" />
+              <circle cx="217" cy="224" r="7" fill="#32336A" />
+              <circle cx="217" cy="255" r="7" fill="#32336A" />
+              <circle cx="217" cy="286" r="7" fill="#32336A" />
+              <circle cx="217" cy="317" r="7" fill="#32336A" />
+              <circle cx="217" cy="317" r="7" fill="#32336A" />
+              <circle cx="217" cy="347" r="7" fill="#32336A" />
+              <circle cx="217" cy="377" r="7" fill="#32336A" />
+              <circle cx="247" cy="7" r="7" fill="#32336A" />
+              <circle cx="247" cy="38" r="7" fill="#32336A" />
+              <circle cx="247" cy="69" r="7" fill="#ED1919" />
+              <circle cx="247" cy="100" r="7" fill="#32336A" />
+              <circle cx="247" cy="131" r="7" fill="#32336A" />
+              <circle cx="247" cy="162" r="7" fill="#32336A" />
+              <circle cx="247" cy="193" r="7" fill="#32336A" />
+              <circle cx="247" cy="224" r="7" fill="#32336A" />
+              <circle cx="247" cy="255" r="7" fill="#32336A" />
+              <circle cx="247" cy="286" r="7" fill="#32336A" />
+              <circle cx="247" cy="317" r="7" fill="#32336A" />
+              <circle cx="247" cy="317" r="7" fill="#32336A" />
+              <circle cx="247" cy="347" r="7" fill="#32336A" />
+              <circle cx="247" cy="377" r="7" fill="#32336A" />
+              <circle cx="277" cy="7" r="7" fill="#32336A" />
+              <circle cx="277" cy="38" r="7" fill="#32336A" />
+              <circle cx="277" cy="69" r="7" fill="#32336A" />
+              <circle cx="277" cy="100" r="7" fill="#32336A" />
+              <circle cx="277" cy="131" r="7" fill="#32336A" />
+              <circle cx="277" cy="162" r="7" fill="#32336A" />
+              <circle cx="277" cy="193" r="7" fill="#32336A" />
+              <circle cx="277" cy="224" r="7" fill="#32336A" />
+              <circle cx="277" cy="255" r="7" fill="#32336A" />
+              <circle cx="277" cy="286" r="7" fill="#32336A" />
+              <circle cx="277" cy="317" r="7" fill="#32336A" />
+              <circle cx="277" cy="317" r="7" fill="#32336A" />
+              <circle cx="277" cy="347" r="7" fill="#32336A" />
+              <circle cx="277" cy="377" r="7" fill="#32336A" />
+              <circle cx="307" cy="7" r="7" fill="#32336A" />
+              <circle cx="307" cy="38" r="7" fill="#32336A" />
+              <circle cx="307" cy="69" r="7" fill="#32336A" />
+              <circle cx="307" cy="100" r="7" fill="#32336A" />
+              <circle cx="307" cy="131" r="7" fill="#32336A" />
+              <circle cx="307" cy="162" r="7" fill="#ED1919" />
+              <circle cx="307" cy="193" r="7" fill="#32336A" />
+              <circle cx="307" cy="224" r="7" fill="#32336A" />
+              <circle cx="307" cy="255" r="7" fill="#32336A" />
+              <circle cx="307" cy="286" r="7" fill="#32336A" />
+              <circle cx="307" cy="317" r="7" fill="#32336A" />
+              <circle cx="307" cy="317" r="7" fill="#32336A" />
+              <circle cx="307" cy="347" r="7" fill="#ED1919" />
+              <circle cx="307" cy="377" r="7" fill="#32336A" />
+              <circle cx="337" cy="7" r="7" fill="#32336A" />
+              <circle cx="337" cy="38" r="7" fill="#32336A" />
+              <circle cx="337" cy="69" r="7" fill="#32336A" />
+              <circle cx="337" cy="100" r="7" fill="#32336A" />
+              <circle cx="337" cy="131" r="7" fill="#32336A" />
+              <circle cx="337" cy="162" r="7" fill="#32336A" />
+              <circle cx="337" cy="193" r="7" fill="#32336A" />
+              <circle cx="337" cy="224" r="7" fill="#32336A" />
+              <circle cx="337" cy="255" r="7" fill="#32336A" />
+              <circle cx="337" cy="286" r="7" fill="#32336A" />
+              <circle cx="337" cy="317" r="7" fill="#32336A" />
+              <circle cx="337" cy="317" r="7" fill="#32336A" />
+              <circle cx="337" cy="347" r="7" fill="#32336A" />
+              <circle cx="337" cy="377" r="7" fill="#32336A" />
+              <circle cx="367" cy="7" r="7" fill="#32336A" />
+              <circle cx="367" cy="38" r="7" fill="#32336A" />
+              <circle cx="367" cy="69" r="7" fill="#32336A" />
+              <circle cx="367" cy="100" r="7" fill="#32336A" />
+              <circle cx="367" cy="131" r="7" fill="#32336A" />
+              <circle cx="367" cy="162" r="7" fill="#32336A" />
+              <circle cx="367" cy="193" r="7" fill="#32336A" />
+              <circle cx="367" cy="224" r="7" fill="#32336A" />
+              <circle cx="367" cy="255" r="7" fill="#32336A" />
+              <circle cx="367" cy="286" r="7" fill="#32336A" />
+              <circle cx="367" cy="317" r="7" fill="#32336A" />
+              <circle cx="367" cy="317" r="7" fill="#32336A" />
+              <circle cx="367" cy="347" r="7" fill="#32336A" />
+              <circle cx="367" cy="377" r="7" fill="#32336A" />
+              <circle cx="397" cy="7" r="7" fill="#32336A" />
+              <circle cx="397" cy="38" r="7" fill="#32336A" />
+              <circle cx="397" cy="69" r="7" fill="#32336A" />
+              <circle cx="397" cy="100" r="7" fill="#32336A" />
+              <circle cx="397" cy="131" r="7" fill="#32336A" />
+              <circle cx="397" cy="162" r="7" fill="#32336A" />
+              <circle cx="397" cy="193" r="7" fill="#32336A" />
+              <circle cx="397" cy="224" r="7" fill="#32336A" />
+              <circle cx="397" cy="255" r="7" fill="#32336A" />
+              <circle cx="397" cy="286" r="7" fill="#32336A" />
+              <circle cx="397" cy="317" r="7" fill="#32336A" />
+              <circle cx="397" cy="317" r="7" fill="#32336A" />
+              <circle cx="397" cy="347" r="7" fill="#32336A" />
+              <circle cx="397" cy="377" r="7" fill="#32336A" />
+              <circle cx="427" cy="7" r="7" fill="#32336A" />
+              <circle cx="427" cy="38" r="7" fill="#32336A" />
+              <circle cx="427" cy="69" r="7" fill="#32336A" />
+              <circle cx="427" cy="100" r="7" fill="#32336A" />
+              <circle cx="427" cy="131" r="7" fill="#32336A" />
+              <circle cx="427" cy="162" r="7" fill="#32336A" />
+              <circle cx="427" cy="193" r="7" fill="#32336A" />
+              <circle cx="427" cy="224" r="7" fill="#32336A" />
+              <circle cx="427" cy="255" r="7" fill="#32336A" />
+              <circle cx="427" cy="286" r="7" fill="#32336A" />
+              <circle cx="427" cy="317" r="7" fill="#32336A" />
+              <circle cx="427" cy="317" r="7" fill="#32336A" />
+              <circle cx="427" cy="347" r="7" fill="#32336A" />
+              <circle cx="427" cy="377" r="7" fill="#32336A" />
+              <circle cx="457" cy="7" r="7" fill="#32336A" />
+              <circle cx="457" cy="38" r="7" fill="#32336A" />
+              <circle cx="457" cy="69" r="7" fill="#32336A" />
+              <circle cx="457" cy="100" r="7" fill="#32336A" />
+              <circle cx="457" cy="131" r="7" fill="#32336A" />
+              <circle cx="457" cy="162" r="7" fill="#32336A" />
+              <circle cx="457" cy="193" r="7" fill="#32336A" />
+              <circle cx="457" cy="224" r="7" fill="#ED1919" />
+              <circle cx="457" cy="255" r="7" fill="#32336A" />
+              <circle cx="457" cy="286" r="7" fill="#32336A" />
+              <circle cx="457" cy="317" r="7" fill="#32336A" />
+              <circle cx="457" cy="317" r="7" fill="#32336A" />
+              <circle cx="457" cy="347" r="7" fill="#32336A" />
+              <circle cx="457" cy="377" r="7" fill="#32336A" />
+              <circle cx="487" cy="7" r="7" fill="#32336A" />
+              <circle cx="487" cy="38" r="7" fill="#32336A" />
+              <circle cx="487" cy="69" r="7" fill="#32336A" />
+              <circle cx="487" cy="100" r="7" fill="#32336A" />
+              <circle cx="487" cy="131" r="7" fill="#32336A" />
+              <circle cx="487" cy="162" r="7" fill="#32336A" />
+              <circle cx="487" cy="193" r="7" fill="#32336A" />
+              <circle cx="487" cy="224" r="7" fill="#32336A" />
+              <circle cx="487" cy="255" r="7" fill="#32336A" />
+              <circle cx="487" cy="286" r="7" fill="#32336A" />
+              <circle cx="487" cy="317" r="7" fill="#32336A" />
+              <circle cx="487" cy="317" r="7" fill="#32336A" />
+              <circle cx="487" cy="347" r="7" fill="#32336A" />
+              <circle cx="487" cy="377" r="7" fill="#32336A" />
+              <circle cx="517" cy="7" r="7" fill="#32336A" />
+              <circle cx="517" cy="38" r="7" fill="#32336A" />
+              <circle cx="517" cy="69" r="7" fill="#32336A" />
+              <circle cx="517" cy="100" r="7" fill="#32336A" />
+              <circle cx="517" cy="131" r="7" fill="#32336A" />
+              <circle cx="517" cy="162" r="7" fill="#32336A" />
+              <circle cx="517" cy="193" r="7" fill="#32336A" />
+              <circle cx="517" cy="224" r="7" fill="#32336A" />
+              <circle cx="517" cy="255" r="7" fill="#32336A" />
+              <circle cx="517" cy="286" r="7" fill="#32336A" />
+              <circle cx="517" cy="317" r="7" fill="#32336A" />
+              <circle cx="517" cy="317" r="7" fill="#32336A" />
+              <circle cx="517" cy="347" r="7" fill="#32336A" />
+              <circle cx="517" cy="377" r="7" fill="#32336A" />
+              <circle cx="547" cy="7" r="7" fill="#32336A" />
+              <circle cx="547" cy="38" r="7" fill="#ED1919" />
+              <circle cx="547" cy="69" r="7" fill="#32336A" />
+              <circle cx="547" cy="100" r="7" fill="#32336A" />
+              <circle cx="547" cy="131" r="7" fill="#32336A" />
+              <circle cx="547" cy="162" r="7" fill="#32336A" />
+              <circle cx="547" cy="193" r="7" fill="#32336A" />
+              <circle cx="547" cy="224" r="7" fill="#32336A" />
+              <circle cx="547" cy="255" r="7" fill="#32336A" />
+              <circle cx="547" cy="286" r="7" fill="#32336A" />
+              <circle cx="547" cy="317" r="7" fill="#32336A" />
+              <circle cx="547" cy="317" r="7" fill="#32336A" />
+              <circle cx="547" cy="347" r="7" fill="#32336A" />
+              <circle cx="547" cy="377" r="7" fill="#32336A" />
+              <circle cx="577" cy="7" r="7" fill="#32336A" />
+              <circle cx="577" cy="38" r="7" fill="#32336A" />
+              <circle cx="577" cy="69" r="7" fill="#32336A" />
+              <circle cx="577" cy="100" r="7" fill="#32336A" />
+              <circle cx="577" cy="131" r="7" fill="#32336A" />
+              <circle cx="577" cy="162" r="7" fill="#32336A" />
+              <circle cx="577" cy="193" r="7" fill="#32336A" />
+              <circle cx="577" cy="224" r="7" fill="#32336A" />
+              <circle cx="577" cy="255" r="7" fill="#32336A" />
+              <circle cx="577" cy="286" r="7" fill="#32336A" />
+              <circle cx="577" cy="317" r="7" fill="#32336A" />
+              <circle cx="577" cy="317" r="7" fill="#32336A" />
+              <circle cx="577" cy="347" r="7" fill="#32336A" />
+              <circle cx="577" cy="377" r="7" fill="#32336A" />
+              <circle cx="607" cy="7" r="7" fill="#32336A" />
+              <circle cx="607" cy="38" r="7" fill="#32336A" />
+              <circle cx="607" cy="69" r="7" fill="#32336A" />
+              <circle cx="607" cy="100" r="7" fill="#32336A" />
+              <circle cx="607" cy="131" r="7" fill="#32336A" />
+              <circle cx="607" cy="162" r="7" fill="#32336A" />
+              <circle cx="607" cy="193" r="7" fill="#32336A" />
+              <circle cx="607" cy="224" r="7" fill="#32336A" />
+              <circle cx="607" cy="255" r="7" fill="#32336A" />
+              <circle cx="607" cy="286" r="7" fill="#32336A" />
+              <circle cx="607" cy="317" r="7" fill="#32336A" />
+              <circle cx="607" cy="317" r="7" fill="#32336A" />
+              <circle cx="607" cy="347" r="7" fill="#32336A" />
+              <circle cx="607" cy="377" r="7" fill="#32336A" />
+              <circle cx="576.882" cy="192.882" r="12.8823" fill="white" />
+            </svg>
+          </div>
+        </div>
+        <div class="about-ctf__blocks-item">
+          <p class="about-ctf__txt">CTF (Capture the Flag) – соревнования по информационной безопасности, в которых
+            участники исследуют разные системы, решают таски и находят “флаги”, то есть ценную, но недостаточно
+            защищенную
+            информацию. Участники отправляют флаги на специальный сервер и получают баллы, которые идут в общий зачет и
+            отображаются на борде.</p>
+          <p class="about-ctf__txt_small">Все системы, в которых участники ищут флаги, придуманы специально для
+            соревнований, поэтому их можно ломать и тестировать как угодно. Это не преступление, если вы взломали
+            искусственную систему, и вам было весело.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Title">
-    <meta property="og:description" content="Description">
-    <meta property="og:url" content="https://example.com/">
-    <meta property="og:image" content="https://via.placeholder.com/350x150">
-    <meta property="og:site_name" content="Site Name">
-    <meta property="og:locale" content="ru_RU">
-
-    <link rel="stylesheet" href="css/styles.css"/>
-    <title>
-        ИТМО | Вёрстка | {{ title }}
-    </title>
-</head>
-
-<body class="no-touch" ontouchstart="">
-<div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
-    {{> sprite }}
-</div>
-
-<div class="page-content">
-
-    <main class="page-main">
-        <section class="section-visit participants">
-          <div class="site-container grid-container participants__container">
-            <div class="participants__content-block">
-              <h2 class="participants__heading js-animated-heading"><span>Принять</span> участие может каждый</h2>
-              <div class="participants__text-container">
-                <div class="participants__text-container-block"><span class="participants__courage">Смелее!</span></div>
-                <div class="participants__text-container-block">
-                  <p class="participants__text">В&nbsp;Neva CTF могут участвовать команды из&nbsp;любых школ.</p>
-                  <p class="participants__text">Состав команды: от&nbsp;2&nbsp;до&nbsp;4&nbsp;участников.</p>
-                  <p class="participants__small-text">Чтобы сразиться с&nbsp;соперниками из&nbsp;других команд, необязательно быть профессионалом: задания подойдут как для продвинутых CTF&nbsp;&mdash;&nbsp;игроков, так и&nbsp;для новичков.</p>
-                </div>
-              </div>
+<section class="section-two  preapare" id="prepare">
+  <div class="container preapare__container">
+    <h2 class="visually-hidden">как подготовиться</h2>
+    <svg class="icon icon-how-to-prepare preapare__svg-heading" width="1559" height="132">
+      <use xlink:href="#how-to-prepare"></use>
+    </svg>
+    <div class="preapare__content grid-container">
+      <div class="preapare__content-block"></div>
+      <div class="preapare__content-block">
+        <div class="preapare__content-item">
+          <p class="preapare__legeng-text">Таски на Neva CTF подойдут каждому, даже новичку</p>
+          <p class="preapare__text">Но&nbsp;предварительная подготовка еще никогда не&nbsp;была лишней. Если
+            вы&nbsp;хотите подтянуть навыки, знать, что вас ждет и&nbsp;иметь преимущество над соперниками,
+            мы&nbsp;рекомендуем проверенные материалы.</p>
+        </div>
+        <div class="preapare__content-item"><a class="preapare__link" href="https://course.ugractf.ru/" target="_blank">
+            <div class="preapare__link-icon-wrapper">
+              <svg class="icon icon-book preapare__link-icon" width="20" height="20">
+                <use xlink:href="images/sprites/sprite-mono.svg#book"></use>
+              </svg>
             </div>
-            <div class="participants__content-block">
-              <div class="participants__slider-wrapper">
-                <div class="slider-nav participants__slider-nav">
-                  <button class="slider-nav__btn button-reset js-participants-btn-prev" aria-label="Предыдущий слайд">
-                    <svg class="icon icon-shevron-left slider-nav__btn-icon" width="11" height="29">
-                      <use xlink:href="images/sprites/sprite-mono.svg#shevron-left"></use>
-                    </svg>
-                  </button>
-                  <button class="slider-nav__btn button-reset js-participants-btn-next" aria-label="Следующий слайд">
-                    <svg class="icon icon-shevron-right slider-nav__btn-icon" width="11" height="29">
-                      <use xlink:href="images/sprites/sprite-mono.svg#shevron-right"></use>
-                    </svg>
-                  </button>
-                </div>
-                <div class="swiper participants__slider">
-                  <div class="swiper-wrapper"><img class="participants__slider-item swiper-slide" src="img/content/participants/participant-1.jpg" alt="Участники соревнованиий по информационной безопасности для школьников"><img class="participants__slider-item swiper-slide" src="img/content/participants/participant-2.jpg" alt="Участники соревнованиий по информационной безопасности для школьников"><img class="participants__slider-item swiper-slide" src="img/content/participants/participant-3.jpg" alt="Участники соревнованиий по информационной безопасности для школьников"><img class="participants__slider-item swiper-slide" src="img/content/participants/participant-4.jpg" alt="Участники соревнованиий по информационной безопасности для школьников"></div>
-                </div>
-              </div>
-              <div class="participants__slider2-wrapper">
-                <div class="swiper participants__slider2">
-                  <div class="swiper-wrapper"><img class="participants__slider-item swiper-slide" src="img/content/participants/participant-2.jpg" alt="Участники соревнованиий по информационной безопасности для школьников"><img class="participants__slider-item swiper-slide" src="img/content/participants/participant-3.jpg" alt="Участники соревнованиий по информационной безопасности для школьников"><img class="participants__slider-item swiper-slide" src="img/content/participants/participant-4.jpg" alt="Участники соревнованиий по информационной безопасности для школьников"><img class="participants__slider-item swiper-slide" src="img/content/participants/participant-1.jpg" alt="Участники соревнованиий по информационной безопасности для школьников"></div>
-                </div>
-              </div>
+            <p>Онлайн-учебник <br> &laquo;Информационные технологии и&nbsp;их&nbsp;безопасность&raquo; от&nbsp;[team
+              Team]</p>
+          </a><a class="preapare__link"
+            href="https://ulearn.me/Course/Hackerdom/Temy_kursa_2bc58982-19aa-49ef-bae2-8aaa5d13b967" target="_blank">
+            <div class="preapare__link-icon-wrapper">
+              <svg class="icon icon-paly preapare__link-icon" width="20" height="20">
+                <use xlink:href="images/sprites/sprite-mono.svg#paly"></use>
+              </svg>
             </div>
-            <div class="participants__mobile-text"><span class="participants__courage">Смелее!</span>
-              <p class="participants__small-text">Чтобы сразиться с&nbsp;соперниками из&nbsp;других команд, необязательно быть профессионалом: задания подойдут как для продвинутых CTF&nbsp;&mdash;&nbsp;игроков, так и&nbsp;для новичков.</p>
+            <p>Видеокурсы &laquo;Основы компьютерной безопасности&raquo; от&nbsp;Hackerdom</p>
+          </a><a class="preapare__link" href="https://vk.com/spbctf" target="_blank">
+            <div class="preapare__link-icon-wrapper">
+              <svg class="icon icon-school-board preapare__link-icon" width="20" height="20">
+                <use xlink:href="images/sprites/sprite-mono.svg#school-board"></use>
+              </svg>
+            </div>
+            <p>Лекции для начинающих от&nbsp;сообщества спортивного хакинга CTF</p>
+          </a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-two common-info-block" id="prizes">
+  <div class="container">
+    <h2 class="second-heading common-info-block__heading js-animated-heading"><span> Почему </span> стоит принять
+      участие?</h2>
+    <div class="common-info-block__container grid-container">
+      <div class="grid-container__block"><span class="common-info-block__small-legend">Победители получают</span></div>
+      <div class="grid-container__block">
+        <div class="common-info-block__blocks">
+          <div class="common-info-block__card mod-border-card"><img class="lazyload common-info-block__card-img"
+              data-src="img/content/participate/img1.svg" src="#" alt="Призы от партнеров и спонсоров">
+            <p class="common-info-block__card-title">Призы от партнеров и спонсоров</p>
+          </div>
+          <div class="common-info-block__card mod-border-card"><img class="lazyload common-info-block__card-img"
+              data-src="img/content/participate/img2.svg" src="#" alt="Дополнительные баллы для поступления в ИТМО">
+            <p class="common-info-block__card-title">Дополнительные баллы для поступления в ИТМО</p>
+          </div>
+          <div class="common-info-block__card mod-border-card"><img class="lazyload common-info-block__card-img"
+              data-src="img/content/participate/img3.svg" src="#" alt="Сертификаты и дипломы победителей для портфолио">
+            <p class="common-info-block__card-title">Сертификаты и дипломы победителей для портфолио</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-two common-info-block" id="prizes">
+  <div class="container">
+    <h2 class="second-heading common-info-block__heading js-animated-heading"><span> Что </span> принести с собой?</h2>
+    <div class="common-info-block__container grid-container">
+      <div class="grid-container__block"><span class="common-info-block__small-legend">Для участия необходимо</span>
+      </div>
+      <div class="grid-container__block">
+        <div class="common-info-block__blocks mod-slider">
+          <div class="common-info-block__card"><img class="lazyload common-info-block__card-img"
+              data-src="img/content/what-bring/img1.jpg" src="#" alt="Ученический билет">
+            <p class="common-info-block__card-title">Ученический билет</p>
+          </div>
+          <div class="common-info-block__card"><img class="lazyload common-info-block__card-img"
+              data-src="img/content/what-bring/img2.jpg" src="#" alt="Ноутбук, на котором вы будете работать">
+            <p class="common-info-block__card-title">Ноутбук, на котором вы будете работать</p>
+          </div>
+          <div class="common-info-block__card"><img class="lazyload common-info-block__card-img"
+              data-src="img/content/what-bring/img3.jpg" src="#" alt="Упорство и азарт">
+            <p class="common-info-block__card-title">Упорство и азарт</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-two shield">
+  <div class="container">
+    <div class="shield__container">
+      <h3 class="first-heading shield__heading js-animated-heading"><span>Заполните</span> анкету для участия</h3>
+      <div class="shield__blocks grid-container">
+        <div class="shield__blocks-item"><img class="shield__img lazyload" data-src="img/content/shield/img1.svg"
+            src="#" alt="">
+        </div>
+        <div class="shield__blocks-item">
+          <p>Для участия в олимпиаде достаточно заполнить анкету регистрации на всю команду.</p>
+          <p>Вам останется только следить за обновлениями!</p>
+          <button class="button-reset button-two shield__btn" data-path="callback"><span
+              class="button-two__txt">Заполнить
+              анкету</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-two about-org" id="organizators">
+  <div class="about-org_layer"></div>
+  <div class="container about-org__contaoner">
+    <h2 class="visually-hidden">об организаторах</h2>
+    <svg class="icon icon-organizers about-org__heading" width="1409" height="110">
+      <use xlink:href="#organizers"></use>
+    </svg>
+    <div class="about-org__blocks grid-container">
+      <div class="about-org__blocks-item">
+        <div class="about-org__oragnization">
+          <svg class="icon icon-logo-second about-org__oragnization-icon" width="47" height="47">
+            <use xlink:href="#logo-second"></use>
+          </svg>
+          <div class="about-org__oragnization-content">
+            <p class="about-org__oragnization-legend-text">Международный научно-образовательный центр «Безопасность и
+              надежность критических цифровых технологий» Университета ИТМО</p>
+            <p class="about-org__oragnization-text">Современный факультет, с долгой историей, сочетающий в себе
+              академические традиции и инновационный подход в образовании. Выпускники всегда востребованы в российских и
+              зарубежных компаниях и организациях.</p>
+            <div class="about-org__oragnization-feautures">
+              <div class="about-org__oragnization-feautures-item">
+                <svg class="icon icon-portfolio about-org__oragnization-feautures-icon" width="20" height="20">
+                  <use xlink:href="#portfolio"></use>
+                </svg>Бизнес
+              </div>
+              <div class="about-org__oragnization-feautures-item">
+                <svg class="icon icon-book-user about-org__oragnization-feautures-icon" width="20" height="20">
+                  <use xlink:href="#book-user"></use>
+                </svg>Образование
+              </div>
+              <div class="about-org__oragnization-feautures-item">
+                <svg class="icon icon-physics about-org__oragnization-feautures-icon" width="20" height="20">
+                  <use xlink:href="#physics"></use>
+                </svg>Наука
+              </div>
             </div>
           </div>
-        </section>
+        </div>
+      </div>
+      <div class="about-org__blocks-item">
+        <div class="about-org__oragnization">
+          <svg class="icon icon-logo-arsib about-org__oragnization-icon" width="79" height="41">
+            <use xlink:href="#logo-arsib"></use>
+          </svg>
+          <div class="about-org__oragnization-content">
+            <p class="about-org__oragnization-legend-text">АРСИБ – Ассоциация руководителей служб информационной
+              безопасности</p>
+            <div class="about-org__oragnization-remark">(Соорганизатор)</div>
+            <p class="about-org__oragnization-text">Ассоциация руководителей служб информационной безопасности (АРСИБ) –
+              межрегиональное сообщество лидеров ИБ-отрасли. Члены ассоциации популяризируют идеи и профессии в области
+              информационной безопасности, воздействуют на вопросы законодательного обеспечения ИБ, повышают уровень
+              квалификации и компетенций ИБ-специалистов и развивают информационное общество.</p>
+            <div class="about-org__oragnization-feautures">
+              <div class="about-org__oragnization-feautures-item">
+                <svg class="icon icon-portfolio about-org__oragnization-feautures-icon" width="20" height="20">
+                  <use xlink:href="#portfolio"></use>
+                </svg>Бизнес
+              </div>
+              <div class="about-org__oragnization-feautures-item">
+                <svg class="icon icon-book-user about-org__oragnization-feautures-icon" width="20" height="20">
+                  <use xlink:href="#book-user"></use>
+                </svg>Образование
+              </div>
+              <div class="about-org__oragnization-feautures-item">
+                <svg class="icon icon-physics about-org__oragnization-feautures-icon" width="20" height="20">
+                  <use xlink:href="#physics"></use>
+                </svg>Государство
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section class="gallery section-two">
+  <div class="container gallery__container">
+    <div class="gallery__heading-wrapper grid-container">
+      <div class="gallery__heading-wrapper-block">
+        <h2 class="second-heading gallery__heading js-animated-heading"><span>Галерея</span> с&nbsp;мероприятий</h2>
+        <div class="slider-nav slider-nav_white gallery__nav-btns">
+          <button class="slider-nav__btn button-reset js-gallery-btn-prev" aria-label="Предыдущий слайд">
+            <svg class="icon icon-shevron-left slider-nav__btn-icon" width="11" height="29">
+              <use xlink:href="images/sprites/sprite-mono.svg#shevron-left"></use>
+            </svg>
+          </button>
+          <button class="slider-nav__btn button-reset js-gallery-btn-next" aria-label="Следующий слайд">
+            <svg class="icon icon-shevron-right slider-nav__btn-icon" width="11" height="29">
+              <use xlink:href="images/sprites/sprite-mono.svg#shevron-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="gallery__sliders grid-container">
+      <div class="gallery__sliders-block"><span class="gallery__small-legend">Как проходят наши соревнования</span>
+      </div>
+      <div class="gallery__sliders-block">
+        <div class="gallery__slider-wrapper">
+          <div class="gallery__slider swiper">
+            <div class="swiper-wrapper"><img class="gallery__slider-img swiper-slide" src="img/content/gallery/img1.jpg"
+                alt=""><img class="gallery__slider-img swiper-slide" src="img/content/gallery/img2.jpg" alt=""><img
+                class="gallery__slider-img swiper-slide" src="img/content/gallery/img3.jpg" alt=""><img
+                class="gallery__slider-img swiper-slide" src="img/content/gallery/img4.jpg" alt=""><img
+                class="gallery__slider-img swiper-slide" src="img/content/gallery/img5.jpg" alt=""><img
+                class="gallery__slider-img swiper-slide" src="img/content/gallery/img6.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="gallery__slider-wrappers">
+          <div class="gallery__slider-wrapper2">
+            <div class="gallery__slider2 swiper">
+              <div class="swiper-wrapper"><img class="gallery__slider-img swiper-slide"
+                  src="img/content/gallery/img6.jpg" alt=""><img class="gallery__slider-img swiper-slide"
+                  src="img/content/gallery/img5.jpg" alt=""><img class="gallery__slider-img swiper-slide"
+                  src="img/content/gallery/img4.jpg" alt=""><img class="gallery__slider-img swiper-slide"
+                  src="img/content/gallery/img3.jpg" alt=""><img class="gallery__slider-img swiper-slide"
+                  src="img/content/gallery/img2.jpg" alt=""><img class="gallery__slider-img swiper-slide"
+                  src="img/content/gallery/img1.jpg" alt=""></div>
+            </div>
+          </div>
+          <div class="gallery__slider-wrapper3">
+            <div class="gallery__slider3 swiper">
+              <div class="swiper-wrapper"><img class="gallery__slider-img swiper-slide"
+                  src="img/content/gallery/img3.jpg" alt=""><img class="gallery__slider-img swiper-slide"
+                  src="img/content/gallery/img4.jpg" alt=""><img class="gallery__slider-img swiper-slide"
+                  src="img/content/gallery/img5.jpg" alt=""><img class="gallery__slider-img swiper-slide"
+                  src="img/content/gallery/img6.jpg" alt=""><img class="gallery__slider-img swiper-slide"
+                  src="img/content/gallery/img1.jpg" alt=""><img class="gallery__slider-img swiper-slide"
+                  src="img/content/gallery/img2.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    </main>
-    <script
-            src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
-            integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
-            crossorigin="anonymous"></script>
-    <script src="js/app.js"></script>
-    <script src="assets/js/backend.js"></script>
-</div>
-</body>
+<section class="section-two faq" id="faq">
+  <div class="container faq__container">
+    <h2 class="faq__heading second-heading js-animated-heading"><span>Ответы</span> на частые вопросы</h2>
+    <div class="faq__content grid-container">
+      <div class="grid-container__block"><span class="faq__small-legend">Полезная информация</span></div>
+      <div class="grid-container__block faq__item-container">
+        <ul class="faq__list">
+          <li class="faq__item">
+            <button class="faq__btn button-reset js-drop-menu-btn"><span class="faq__btn-txt">Могут ли из одной школы
+                участвовать несколько команд?</span><span
+                class="faq__btn-icon"><span></span><span></span></span></button>
+            <div class="drop-menu-container js-drop-menu-container">
+              <div class="faq__item-body drop-menu js-drop-menu">
+                <p>Да, конечно! Главное, чтобы в команде было не более 4 участников.</p>
+              </div>
+            </div>
+          </li>
+          <li class="faq__item">
+            <button class="faq__btn button-reset js-drop-menu-btn"><span class="faq__btn-txt">Существует ли регламент
+                проведения олимпиады?</span><span class="faq__btn-icon"><span></span><span></span></span></button>
+            <div class="drop-menu-container js-drop-menu-container">
+              <div class="faq__item-body drop-menu js-drop-menu">
+                <p>Да, регламент проведения вы можете найти <a href="../assets/docs/reglament.pdf" target="_blank">тут</a></p>
+              </div>
+            </div>
+          </li>
+          <li class="faq__item">
+            <button class="faq__btn button-reset js-drop-menu-btn"><span class="faq__btn-txt">Я не из Санкт-Петербурга.
+                Могу ли я участвовать в Neva CTF?</span><span
+                class="faq__btn-icon"><span></span><span></span></span></button>
+            <div class="drop-menu-container js-drop-menu-container">
+              <div class="faq__item-body drop-menu js-drop-menu">
+                <p>Да, но олимпиада очная, поэтому потребуется ваше присутствие в день проведения. </p>
+              </div>
+            </div>
+          </li>
+          <li class="faq__item">
+            <button class="faq__btn button-reset js-drop-menu-btn"><span class="faq__btn-txt">Какие классы могут
+                участвовать в Neva CTF?</span><span class="faq__btn-icon"><span></span><span></span></span></button>
+            <div class="drop-menu-container js-drop-menu-container">
+              <div class="faq__item-body drop-menu js-drop-menu">
+                <p>В олимпиаде могут участвовать учащиеся 8-11 классов общеобразовательных школ. Участники из младших
+                  классов допускаются по дополнительному согласованию: напишите нам на почту <a
+                    href="mailto:fbititmo@gmai.com">fbititmo@gmai.com</a></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-</html>
+{{> sections/map}}
+
+{{/content}}
+{{/extend}}

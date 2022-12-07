@@ -26,4 +26,14 @@
         }
     }
   }
+
+  .documents-list{
+    li{
+      &:first-child{
+        .documents-list__item{
+          border-top: 0.1rem solid $grayscale-500;
+        }
+      }
+    }
+  }
 }

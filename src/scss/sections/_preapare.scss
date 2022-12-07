@@ -1,0 +1,125 @@
+.preapare {
+    &__svg-heading {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-bottom: 7rem;
+  
+      @include mq(sm) {
+        margin-bottom: 2.8rem;
+      }
+    }
+  
+    &__content {
+      @include mq(lg) {
+        display: block;
+      }
+    }
+  
+    &__content-block {
+      &:nth-child(1) {
+        grid-column: 2 span;
+      }
+  
+      &:nth-child(2) {
+        grid-column: 10 span;
+        display: grid;
+        grid-template-columns: 4fr 6fr;
+        column-gap: var(--grid-offset);
+  
+        @include mq(sm) {
+          display: block;
+        }
+      }
+    }
+  
+    &__legeng-text {
+      font: var(--font-roboto);
+      margin-bottom: 3.2rem;
+  
+      @include mq(sm) {
+        font: var(--font-roboto-M);
+        margin-bottom: 2.4rem;
+      }
+    }
+  
+    &__text {
+      max-width: 39rem;
+  
+      @include mq(sm) {
+        max-width: 100%;
+        margin-bottom: 3.2rem;
+      }
+    }
+  
+    &__content-item {
+      &:nth-child(2) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.2rem;
+        align-self: flex-start;
+  
+        @include mq(sm) {
+          flex-direction: column;
+          flex-wrap: nowrap;
+        }
+      }
+    }
+  
+    &__link {
+      display: inline-flex;
+      align-items: center;
+      padding: 1.4rem 2.5rem 1.4rem 2.2rem;
+      background-color: var(--color-white);
+      border-radius: 7rem;
+      flex-shrink: 0;
+  
+      &:hover {
+        .preapare__link-icon-wrapper {
+          background-color: #55B2E5;
+        }
+      }
+  
+      p {
+        max-width: 25.1rem;
+        flex-shrink: 0;
+        transition: color var(--transition);
+  
+        @include mq(sm) {
+          max-width: 80%;
+          br {
+            display: none;
+          }
+        }
+      }
+  
+      &:last-child {
+        margin-left: 13.1rem;
+  
+        @include mq(sm) {
+          margin-left: 0;
+        }
+      }
+    }
+  
+    &__link-icon-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3.6rem;
+      height: 3.6rem;
+      border-radius: 50%;
+      background-color: var(--color-purple-900);
+      margin-right: 2.8rem;
+      flex-shrink: 0;
+      transition: background-color .2s;
+    }
+  
+    &__link-icon {
+      display: block;
+      width: 2rem;
+      height: 2rem;
+      fill: none !important;
+      stroke: var(--color-white);
+    }
+  }

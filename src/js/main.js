@@ -28,7 +28,9 @@ import oneSlideSlider from './moduls/oneSlideSlider';
 import mobileSliderNews from './moduls/mobileSliderNews';
 import projectGallery from './moduls/projectGallery';
 import showHide from "./moduls/showHide";
-import gallerySliders  from "./"
+import gallerySliders  from "./moduls/gallerySliders";
+import participantsSlider from "./moduls/participantsSlider";
+import initModal  from "./moduls/initTabs";
 
 document.addEventListener('DOMContentLoaded', function () {
   window.itmo = {}; // Тут будут лежать всякие функции с фронта
@@ -54,6 +56,8 @@ document.addEventListener('DOMContentLoaded', function () {
   oneSlideSlider();
   mobileSliderNews();
   projectGallery();
+  gallerySliders();
+  participantsSlider();
 
   showHide();
   timer();
@@ -62,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
   partnersSlider();
   choicesSelector();
   editableTextContainer();
+  initModal();
 });
 
 function initModals() {
@@ -301,13 +306,27 @@ function searchFields() {
       closeButton.removeAttribute('disabled');
       input.focus();
     });
+
+    // if(container.classList.contains('active')){
+    //   container.addEventListener('click', function(e){
+    //     console.log(e.target);
+    //     if(e.target !== container){
+    //       onCloseBlock();
+    //     }
+    //   });
+    // }
+
     closeButton.addEventListener('click', () => {
+      onCloseBlock();
+    });
+
+    function onCloseBlock(){
       container.classList.remove('active');
       document.body.classList.remove('js-search-filed-opened');
       openButton.removeAttribute('disabled');
       closeButton.setAttribute('disabled', 'true');
       resultSearch.classList.remove('active');
-    });
+    }
 
 
     let timeout = null;
@@ -324,7 +343,13 @@ function searchFields() {
         return resultSearch.classList.remove('active');
       }
     });
+
+
+
+    // console.log(container.classList.contains('active'));
   });
+
+    
 }
 
 
